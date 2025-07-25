@@ -1,0 +1,106 @@
+{
+  "Navigation": {
+    "about": "About YAHO",
+    "about_company": "Company Profile",
+    "about_organization": "Organization",
+    "about_locations": "Global Locations",
+    "about_news": "News",
+    "about_career": "Join Us",
+    "services": "Products & Services",
+    "services_engineering": "Facility Engineering",
+    "services_system": "System Application",
+    "exhibition": "Exhibitions",
+    "exhibition_2025": "2025",
+    "sustainability": "Sustainability",
+    "sustainability_social": "Social Engagement",
+    "sustainability_operations": "Sustainable Management",
+    "sustainability_report": "Sustainability Report Download",
+    "investors": "Investor Relations",
+    "investors_finance": "Financial Information",
+    "investors_shareholders": "Shareholders",
+    "governance": "Corporate Governance",
+    "governance_board": "Board of Directors",
+    "governance_committees": "Committees",
+    "governance_audit": "Internal Audit",
+    "governance_regulations": "Regulations",
+    "governance_ethics": "Ethical Practices",
+    "governance_communication": "Communication Mechanism",
+    "governance_risk": "Risk Management"
+  },
+  "Language": {
+    "zh": "Chinese",
+    "en": "English"
+  },
+  "HomePage": {
+    "title1": "YAHO : ",
+    "titleOrange1": "Professional",
+    "title2": "Connecting the world, ",
+    "titleOrange2": "Technology",
+    "title3": "Creates Value",
+    "description": "From design to maintenance, providing complete engineering solutions for the high-tech industry",
+    "descriptionDetail1": "With over 20 years of industry experience, we offer one-stop solutions from design and installation to maintenance. Rooted in Taiwan and expanding globally, we create high performance and trustworthy futures for the semiconductor, optoelectronics, and medical industries. Our professionalism connects global technology; our service realizes sustainable value.",
+    "slidesSlogan": [
+      "Leader in Professional Solutions",
+      "Slogan slogan slogan slogan",
+      "Slogan slogan slogan slogan",
+      "Slogan slogan slogan slogan",
+      "Slogan slogan slogan slogan"
+    ],
+    "productsAndServices": "Products & Services"
+  },
+  "CoreValue": {
+    "slide1": {
+      "slogan": "Integrity",
+      "details": "Integrity is a core value of our company. We uphold honesty and believe that tangible results are the best reflection of value."
+    },
+    "slide2": {
+      "slogan": "Responsibility",
+      "details": "YAHO deeply understands that customers, suppliers, employees, shareholders, and societal welfare are vital to the company’s success. In response to stakeholder trust, we are committed to fulfilling corporate social responsibility, creating shared value, and pursuing sustainable development."
+    },
+    "slide3": {
+      "slogan": "Professionalism",
+      "details": "We value detail and strive to demonstrate professionalism and excellence. Our goal is to deliver precise and reliable services that exceed customer expectations."
+    },
+    "slide4": {
+      "slogan": "Efficiency",
+      "details": "Efficiency is the foundation of our work. We focus on streamlining processes and optimizing resource allocation to deliver fast, reliable, and high-quality solutions. Saving time and creating value is our ultimate goal."
+    },
+    "slide5": {
+      "slogan": "Customer Satisfaction",
+      "details": "At YAHO, customers are at the core. We firmly believe that the success of our customers is our success, and we equally value their competitiveness and growth."
+    }
+  },
+  "ProductsScroll": {
+    "title1": "Facility Engineering",
+    "description1": "We provide a variety of products and services focused on meeting customer needs, committed to innovation and quality. Whether it's software development, system integration, or technical support, we offer professional solutions.",
+    "title2": "System Applications",
+    "description2": "Our system application services cover the full process from requirements analysis to system design, implementation, and maintenance. Our professional team tailors solutions based on client needs to ensure efficient and stable system operations."
+  },
+  "Exhibition": {
+    "exhibition1": {
+      "dateRange": "06/13 (Fri) - 06/14 (Sat)",
+      "title": "2025 SEMICON Taiwan",
+      "href": "/about"
+    },
+    "exhibition2": {
+      "dateRange": "06/13 (Fri) - 06/14 (Sat)",
+      "title": "2025 SEMICON Taiwan",
+      "href": "/about"
+    },
+    "exhibition3": {
+      "dateRange": "06/13 (Fri) - 06/14 (Sat)",
+      "title": "2025 SEMICON Taiwan",
+      "href": "/about"
+    },
+    "exhibition4": {
+      "dateRange": "06/13 (Fri) - 06/14 (Sat)",
+      "title": "2025 SEMICON Taiwan",
+      "href": "/about"
+    },
+    "exhibition5": {
+      "dateRange": "06/13 (Fri) - 06/14 (Sat)",
+      "title": "2025 SEMICON Taiwan",
+      "href": "/about"
+    }
+  }
+}

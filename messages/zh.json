@@ -1,0 +1,143 @@
+{
+  "Navigation": {
+    "about": "關於垚鋐",
+    "about_company": "公司簡介",
+    "about_organization": "公司組織",
+    "about_locations": "全球據點",
+    "about_news": "最新消息",
+    "about_career": "加入我們",
+    "services": "產品服務",
+    "services_engineering": "廠務工程",
+    "services_system": "系統應用",
+    "exhibition": "展覽活動",
+    "exhibition_2025": "2025",
+    "sustainability": "企業永續",
+    "sustainability_social": "社會關懷",
+    "sustainability_operations": "永續經營",
+    "sustainability_report": "永續報告書下載",
+    "investors": "投資人專區",
+    "investors_finance": "財務資訊",
+    "investors_shareholders": "股東專欄",
+    "governance": "公司治理",
+    "governance_board": "董事會",
+    "governance_committees": "委員會",
+    "governance_audit": "內部稽核",
+    "governance_regulations": "重要法令規章",
+    "governance_ethics": "誠信經營",
+    "governance_communication": "溝通機制",
+    "governance_risk": "風險管理"
+  },
+  "Language": {
+    "zh": "繁體中文",
+    "en": "English"
+  },
+  "HomePage": {
+    "title1": "垚鋐 : ",
+    "titleOrange1": "專業",
+    "title2": "連結世界，",
+    "titleOrange2": "技術",
+    "title3": "創造價值",
+    "description": "從設計到維運，為高科技產業打造完整工程解決方案",
+    "descriptionDetail1": "以超過20年產業經驗為基礎，從設計、裝機到維運，提供一站式解決方案深耕台灣，布局全球，為半導體、光電、醫療產業創造高效能與高信賴的未來。我們的專業，連結世界技術；我們的服務，實踐永續價值。",
+    "slidesSlogan": [
+      "專業解決方案領導者",
+      "標語標語標語標語",
+      "標語標語標語標語",
+      "標語標語標語標語",
+      "標語標語標語ㄉ標語"
+    ],
+    "productsAndServices": "產品服務"
+  },
+  "CoreValue": {
+    "slide1": {
+      "slogan": "誠信",
+      "details": "誠信為本公司至關重要之核心價值。吾等秉持誠實守信之原則，並堅信實質成果乃彰顯價值之最佳體現。"
+    },
+    "slide2": {
+      "slogan": "負責",
+      "details": "YAHO深切體認顧客、供應商、員工、股東與社會福祉對公司成功至關重要。 為回應各利害關係人之信任，本公司承諾將積極履行企業社會責任，以期創造共享價值，並追求永續發展。"
+    },
+    "slide3": {
+      "slogan": "專業",
+      "details": "我們重視細節，力求展現專業精神與卓越品質。 我們的目標是提供精準可靠的服務，以充分發揮專業價值，進而超越客戶的期望。"
+    },
+    "slide4": {
+      "slogan": "效率",
+      "details": "效率乃工作之本。我們致力於簡化流程、優化資源配置，旨在提供迅捷、可靠且具高品質之解決方案。時間節省，價值創造，是我們的終極目標。"
+    },
+    "slide5": {
+      "slogan": "客戶滿意度",
+      "details": "於YAHO，客戶居核心地位。我們堅信，客戶之成功等同於我方之成就，並同等重視其競爭力及成長。"
+    }
+  },
+  "ProductsScroll": {
+    "title1": "廠務工程",
+    "description1": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案。",
+    "title2": "系統應用",
+    "description2": "我們的系統應用服務涵蓋了從需求分析到系統設計、實施和維護的全過程。我們的專業團隊能夠根據客戶的具體需求，確保系統的高效運行和穩定性。"
+  },
+  "Exhibition": {
+    "exhibition1": {
+      "dateRange": "06/13(五) - 06/14(六)",
+      "title": "2025 台灣半導體展 Semicon Taiwan",
+      "href": "/about"
+    },
+    "exhibition2": {
+      "dateRange": "06/13(五) - 06/14(六)",
+      "title": "2025 台灣國際智慧能源周",
+      "href": "/about"
+    },
+    "exhibition3": {
+      "dateRange": "06/13(五) - 06/14(六)",
+      "title": "2025 Semicon West",
+      "href": "/about"
+    },
+    "exhibition4": {
+      "dateRange": "06/13(五) - 06/14(六)",
+      "title": "2025 台灣國際智慧能源周",
+      "href": "/about"
+    },
+    "exhibition5": {
+      "dateRange": "06/13(五) - 06/14(六)",
+      "title": "2025 Semicon West",
+      "href": "/about"
+    }
+  },
+  "GlobalMap": {
+    "title": "全球據點",
+    "Taiwan": {
+      "title": "台灣據點",
+      "branches1": "台中總公司",
+      "branches2": "台北分公司",
+      "branches3": "高雄分公司",
+      "branches4": "新竹分公司"
+    },
+    "USA": {
+      "title": "美國據點",
+      "branches1": "舊金山分公司",
+      "branches2": "紐約分公司"
+    },
+    "Japan": {
+      "title": "日本據點",
+      "branches1": "大阪分公司"
+    },
+    "Germany": {
+      "title": "德國據點",
+      "branches1": "柏林分公司"
+    },
+    "Singapore": {
+      "title": "新加坡據點",
+      "branches1": "新加坡分公司"
+    },
+    "url": "https://www.zcstcl.com/official_web/"
+  },
+  "about": {
+    "introduction": {
+      "title": "公司簡介",
+      "homepage": "首頁",
+      "about": "關於垚鋐",
+      "url": "/about/introduction",
+      "description": "        垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。自2015年成立以來，垚鋐始終秉持專業、創新與服務精神，從保溫加熱與廠務配管工程起步，逐步擴展至自動化設備整合與與國外原廠合作代理半導體和光電廠相關設備和耗材，打造一站式解決方案。我們擁有齊全的工程設計能力、技術團隊與完整售後服務，為客戶提供「從設計到安裝、從供應到維護」的全流程服務。  「負責、誠信、效率、專業、客戶滿意」是垚鋐的使命也是企業永續的基石。期許每位加入垚鋐的夥伴都能與公司一同成長、共創價值，我們的起點是台灣，我們的舞台是世界!"
+    }
+  }
+}
