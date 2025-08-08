@@ -41,11 +41,14 @@ function BreadcrumbLink({
   const Comp = asChild ? Slot : "a"
 
   return (
-    <Comp
-      data-slot="breadcrumb-link"
-      className={cn("hover:text-foreground transition-colors", className)}
-      {...props}
-    />
+    <div className="relative group">
+      <Comp
+        data-slot="breadcrumb-link"
+        className={cn("group-hover:text-[#375978] transition-colors", className)}
+        {...props}
+      />
+      <span className="absolute left-0 -bottom-0 w-0 h-[1px] bg-[#375978] transition-all duration-300 group-hover:w-full"></span>
+    </div>
   )
 }
 

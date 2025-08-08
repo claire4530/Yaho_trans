@@ -12,6 +12,8 @@ import SlideInFromLeft from "./animations/SlideInFromLeft";
 import FadeInUp from "./animations/FadeInUp";
 import AboutLinkWhite from "./AboutLinkWhite";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { MoveRight } from 'lucide-react';
 
 type Branch = {
 	name: string;
@@ -33,6 +35,8 @@ export default function GlobalMap() {
 		branches: [
 			{ name: t("Taiwan.branches1"), href: "/about" },
 			{ name: t("Taiwan.branches2"), href: "/about" },
+			{ name: t("Taiwan.branches3"), href: "/about" },
+			{ name: t("Taiwan.branches3"), href: "/about" },
 			{ name: t("Taiwan.branches3"), href: "/about" },
 		],
 	};
@@ -215,64 +219,84 @@ export default function GlobalMap() {
 	}, []);
 
 	return (
-		<div className="relative p-4 xl:p-20 ">
+		<div className="relative p-4 xl:p-20">
+			{/* 標題區塊 */}
 			<ZoomIn delay={0.2}>
-				<div className="text-3xl lg:text-5xl xl:text-6xl flex flex-col gap-3 sm:gap-7  sm:px-24 font-[Lato] tracking-wider mt-2 mb-20">
-					<div className="flex gap-2 items-center justify-center">
-						<span className="font-extrabold text-[#FFCC5D]">Global&nbsp;</span>
-						<span className="font-extrabold text-[#FFFFFF]">Locations</span>
-					</div>
-					<span className="text-center text-[#FFFFFF]">{t("title")}</span>
+			<div className="text-3xl lg:text-5xl xl:text-6xl flex flex-col gap-3 sm:gap-7 sm:px-24 font-[Lato] tracking-wider mt-2 mb-20 text-center items-center">
+				<div className="flex gap-2 items-center justify-center">
+				<span className="font-extrabold text-[#FFCC5D]">Global&nbsp;</span>
+				<span className="font-extrabold text-[#FFFFFF]">Locations</span>
 				</div>
+				<span className="text-[#FFFFFF]">{t("title")}</span>
+			</div>
 			</ZoomIn>
+
+			{/* 地圖區塊 + infoBox 容器 */}
 			<FadeInUp delay={0.2}>
-				<div className="w-full h-[350px] lg:h-[600px] xl:h-[700px] overflow-auto mt-2 mb-20 sm:ml-5">
-					<div id="global-map" className="w-[600px] sm:w-[700px] md:w-[800px] lg:w-[1000px] xl:w-[1200px] h-full"/>
-				</div>
-			</FadeInUp>
-			
-			{regionData && (
+			<div className="relative flex justify-center items-center w-full h-[400px] lg:h-[600px] xl:h-[800px] overflow-hidden mb-8 md:mb-20 md:mt-2">
+				{/* 地圖本體 */}
 				<div
+				id="global-map"
+				className="w-[600px] sm:w-[700px] md:w-[800px] lg:w-[1000px] xl:w-[1200px] h-full "
+				></div>
+
+				{/* InfoBox 置中浮動（綠色區塊） */}
+				{regionData && (
+				<div className="absolute inset-0 flex justify-center items-center pointer-events-none">
+					<div
 					ref={infoBoxRef}
 					id="infoBox"
-					className={`absolute top-40 lg:top-80 lg:left-95 xl:top-100 xl:left-120 bg-[#EFEFEF]/80 py-4 xl:p-6 shadow-lg rounded-md w-[250px] xl:w-[450px] hover:scale-105 transition-transform duration-300 ${
-						regionData ? "block" : "hidden"
-					}`}
-				>
+					className="bg-[#EFEFEF]/80 py-4 xl:p-6 shadow-lg rounded-md w-[250px] xl:w-[450px] hover:scale-105 transition-transform duration-300 pointer-events-auto max-h-[50%] overflow-y-auto"
+					>
 					<SlideInFromLeft delay={0.2}>
-						<div
-							id="regionTitle"
-							className="text-lg xl:text-2xl grid p-2 tracking-wide font-black gap-4"
-						>
-							<div className="flex gap-2">
-								<div className="mt-1 ml-4">
-									<MapPin size={24} strokeWidth={3} color="#1C466C" />
-								</div>
-								<span className="text-[#1C466C]">
-									{regionData.regionTitle}
-								</span>
+						<div className="text-lg xl:text-2xl grid p-2 tracking-wide font-black gap-4">
+						<div className="flex gap-2">
+							<div className="block md:hidden mt-1 ml-4">
+								<MapPin size={20} strokeWidth={2} color="#1C466C" />
 							</div>
-							<span className="w-[200px] xl:w-[360px] h-[2px] bg-[#1C466C] ml-4"></span>
+							<div className="hidden md:block mt-1 ml-4">
+								<MapPin size={24} strokeWidth={3} color="#1C466C" />
+							</div>
+							<span className="text-[#1C466C]">{regionData.regionTitle}</span>
+						</div>
+						<span className="w-[200px] xl:w-[360px] h-[2px] bg-[#1C466C] ml-4"></span>
 						</div>
 					</SlideInFromLeft>
 
-					<ul className="space-y-6 text-[#1C466C] px-6 py-4 ">
+					<ul className="space-y-6 text-[#1C466C] px-6 py-4">
 						{regionData.branches.map((branch, idx) => (
-							<React.Fragment key={idx}>
-								<SlideInFromLeft delay={0.2}>
-									<li className="flex flex-col xl:flex-row justify-between items-center bg-[#ffffff] rounded-lg p-2 xl:p-4 hover:scale-95 transition-transform duration-300">
-										<div className="text-md xl:text-xl font-bold">{branch.name}</div>
-										<div className="">
-											<AboutLinkWhite text="Read More" href={branch.href} />
+						<SlideInFromLeft delay={0.2} key={idx}>
+							<li className="flex flex-col justify-between items-center bg-[#ffffff] rounded-lg p-2 xl:p-4 hover:scale-95 transition-transform duration-300">
+								<div className="flex items-center gap-4 xl:gap-10">
+									<div className="text-base xl:text-xl font-bold py-4">{branch.name}</div>
+									<Link href={branch.href} className="block md:hidden shrink-0 self-end py-2">
+										<div className="relative group">
+											<div className="inline-flex items-center gap-2 cursor-pointer text-[#375978] hover:text-[#F3981B] transition-colors duration-300">
+												<span className="text-xs font-serif">
+													Read More
+												</span>	
+												<div className="flex items-center justify-center transition-transform duration-200 group-hover:translate-x-1">
+													<MoveRight size={20} />
+												</div> 
+											</div>
+
+											{/* 🔽 這條線只在 link 區域 hover 才有效 */}
+											<span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
 										</div>
-									</li>
-								</SlideInFromLeft>
-								{/* <hr className="border border-[#1C466C]" /> */}
-							</React.Fragment>
+									</Link>
+									<div className="hidden md:block">
+										<AboutLinkWhite text="Read More" href={branch.href} />
+									</div>
+								</div>
+							</li>
+						</SlideInFromLeft>
 						))}
 					</ul>
+					</div>
 				</div>
-			)}
+				)}
+			</div>
+			</FadeInUp>
 		</div>
 	);
 }

@@ -1,14 +1,14 @@
 import * as React from "react";
 import Image from "next/image";
 import { Dot } from 'lucide-react';
-import { Card, CardContent } from "@/src/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
 	CarouselNext,
 	CarouselPrevious,
-} from "@/src/components/ui/carousel";
+} from "@/components/ui/carousel";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import FadeInUp from "@/src/components/animations/FadeInUp";

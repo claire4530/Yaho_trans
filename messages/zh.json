@@ -137,7 +137,210 @@
       "homepage": "首頁",
       "about": "關於垚鋐",
       "url": "/about/introduction",
-      "description": "        垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。自2015年成立以來，垚鋐始終秉持專業、創新與服務精神，從保溫加熱與廠務配管工程起步，逐步擴展至自動化設備整合與與國外原廠合作代理半導體和光電廠相關設備和耗材，打造一站式解決方案。我們擁有齊全的工程設計能力、技術團隊與完整售後服務，為客戶提供「從設計到安裝、從供應到維護」的全流程服務。  「負責、誠信、效率、專業、客戶滿意」是垚鋐的使命也是企業永續的基石。期許每位加入垚鋐的夥伴都能與公司一同成長、共創價值，我們的起點是台灣，我們的舞台是世界!"
+      "descriptionDetail1": "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。",
+      "descriptionDetail2": "自2015年成立以來，垚鋐始終秉持專業、創新與服務精神，從保溫加熱與廠務配管工程起步，逐步擴展至自動化設備整合與與國外原廠合作代理半導體和光電廠相關設備和耗材，打造一站式解決方案。我們擁有齊全的工程設計能力、技術團隊與完整售後服務，為客戶提供「從設計到安裝、從供應到維護」的全流程服務。  「負責、誠信、效率、專業、客戶滿意」是垚鋐的使命也是企業永續的基石。期許每位加入垚鋐的夥伴都能與公司一同成長、共創價值，我們的起點是台灣，我們的舞台是世界 !",
+      "history": {
+        "title": "公司沿革",
+        "year1": "2024",
+        "year1_description1": "美國子公司獲取當地施工license",
+        "year1_description2": "日本子公司獲取當地施工license",
+        "year1_description3": "AMAT台灣區合格廠商",
+        "year2": "2023",
+        "year2_description1": "成立美國子公司",
+        "year2_description2": "成立日本子公司",
+        "year3": "2022",
+        "year3_description1": "台灣台積電合格廠商",
+        "year3_description2": "",
+        "year4": "2020",
+        "year4_description1": "研發半導體二次配um表傳簽及流量計算軟體",
+        "year4_description2": "",
+        "year5": "2015",
+        "year5_description1": "取得Thermon伴熱帶經銷權",
+        "year5_description2": ""
+      },
+      "coreValue": {
+        "title": "核心理念",
+        "Integrity": "誠信",
+        "Responsibility": "負責",
+        "Professionalism": "專業",
+        "Efficiency": "效率",
+        "Customer Satisfaction": "客戶滿意度",
+        "Integrity description": "誠信為本公司至關重要之核心價值。吾等秉持誠實守信之原則，並堅信實質成果乃彰顯價值之最佳體現。",
+        "Responsibility description": "YAHO深切體認顧客、供應商、員工、股東與社會福祉對公司成功至關重要。 為回應各利害關係人之信任，本公司承諾將積極履行企業社會責任，以期創造共享價值，並追求永續發展。",
+        "Professionalism description": "我們重視細節，力求展現專業精神與卓越品質。 我們的目標是提供精準可靠的服務，以充分發揮專業價值，進而超越客戶的期望。",
+        "Efficiency description": "效率乃工作之本。我們致力於簡化流程、優化資源配置，旨在提供迅捷、可靠且具高品質之解決方案。時間節省，價值創造，是我們的終極目標。",
+        "Customer Satisfaction description": "於YAHO，客戶居核心地位。我們堅信，客戶之成功等同於我方之成就，並同等重視其競爭力及成長。"
+      },
+      "certificates": {
+        "title": "公司相關證書",
+        "Certification": "Certification",
+        "tw company": "垚鋐系統科技股份有限公司",
+        "tw iso": "ISO證書",
+        "tw professional": "專業委員證書",
+        "A company": "YAHO Systems Technology Inc.",
+        "A construction": "美國施工證書",
+        "j company": "YAHO Systems Technology 株式会社",
+        "j construction": "日本施工證書"
+      },
+      "awards": {
+        "title": "獲獎事蹟",
+        "tw award1": "第十八屆金炬獎",
+        "tw award2": "金炬獎證書",
+        "tw award3": "金炬獎獎盃",
+        "tw award4": "台積電年度優良廠商"
+      }
+    },
+    "organization": {
+      "about": "關於垚鋐",
+      "title": "公司組織"
+    },
+    "locations": {
+      "about": "關於垚鋐",
+      "title": "全球據點",
+      "Phone": "電話",
+      "Email": "電子郵件",
+      "Address": "地址",
+      "BusinessHours": "營業時間",
+      "businessHours": "週一至週五 08:30–17:30",
+      "ContactUs": "如有業務／技術需求，歡迎透過電話或信箱聯繫！",
+      "Content": "業務內容",
+      "Check": "查看地圖",
+      "SelectCountry": "選擇一個國家",
+      "country": {
+        "Taiwan":{
+          "Taiwan": "台灣",
+          "title": "台灣據點",
+          "branchesTotal": 4,
+          "branches1": "台中總公司",
+          "taichung": "台中",
+          "mail1": "yaho.taichung@zcstcl.com",
+          "phone1": "+886-4-12345678",
+          "address1": "台中市北屯區環中路一段485號",
+          "content1": "企業總部、工程實務",
+          "imageUrl1": "/frontPage/1.jpg",
+          "branches2": "台北分公司",
+          "mail2": "yaho.taipei@zcstcl.com",
+          "phone2": "+886-2-12345678",
+          "address2": "台北市信義區松山路123號",
+          "content2": "業務拓展、客戶服務",
+          "imageUrl2": "/frontPage/1.jpg",
+          "branches3": "高雄分公司",
+          "mail3": "yaho.kaioshung@zcstcl.com",
+          "phone3": "+886-7-12345678",
+          "address3": "高雄市苓雅區中華路456號",
+          "content3": "南部業務、技術支援",
+          "imageUrl3": "/frontPage/1.jpg",
+          "branches4": "新竹分公司",
+          "mail4": "yaho.hsinchu@zcstcl.com",
+          "phone4": "+886-3-12345678",
+          "address4": "新竹市東區光復路123號",
+          "content4": "北部業務、技術支援",
+          "imageUrl4": "/frontPage/1.jpg"
+        },
+        "USA": {
+          "USA": "美國",
+          "title": "美國據點",
+          "branchesTotal": 2,
+          "branches1": "洛杉磯分公司",
+          "mail1": "yaho.losangeles@zcstcl.com",
+          "phone1": "+1-213-123-4567",
+          "address1": "洛杉磯市中心街123號",
+          "content1": "業務拓展、客戶服務",
+          "imageUrl1": "/frontPage/1.jpg",
+          "branches2": "紐約分公司",
+          "mail2": "yaho.newyork@zcstcl.com",
+          "phone2": "+1-212-123-4567",
+          "address2": "紐約市曼哈頓區123號",
+          "content2": "業務拓展、客戶服務",
+          "imageUrl2": "/frontPage/1.jpg"
+        },
+        "Japan": {
+          "Japan": "日本",
+          "title": "日本據點",
+          "branchesTotal": 1,
+          "branches1": "大阪分公司",
+          "mail1": "yaho.osaka@zcstcl.com",
+          "phone1": "+81-6-1234-5678",
+          "address1": "大阪市北區梅田1丁目",
+          "content1": "業務拓展、客戶服務",
+          "imageUrl1": "/frontPage/1.jpg"
+        },
+        "Germany": {
+          "Germany": "德國",
+          "title": "德國據點",
+          "branchesTotal": 1,
+          "branches1": "柏林分公司",
+          "mail1": "yaho.berlin@zcstcl.com",
+          "phone1": "+49-30-12345678",
+          "address1": "柏林市中心街123號",
+          "content1": "業務拓展、客戶服務",
+          "imageUrl1": "/frontPage/1.jpg"
+        },
+        "Singapore": {
+          "Singapore": "新加坡",
+          "title": "新加坡據點",
+          "branchesTotal": 1,
+          "branches1": "新加坡分公司",
+          "mail1": "yaho.singapore@zcstcl.com",
+          "phone1": "+65-1234-5678",
+          "address1": "新加坡市中心街123號",
+          "content1": "業務拓展、客戶服務",
+          "imageUrl1": "/frontPage/1.jpg"
+        }
+      } 
+    },
+    "news": {
+      "about": "關於垚鋐",
+      "title": "最新消息"
+    },
+    "career": {
+      "about": "關於垚鋐",
+      "title": "垚鋐熱門工作",
+      "description": 
+      "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。",
+      "more": "更多熱門職缺:",
+      "104": "104人力銀行",
+      "training":{
+        "title": "教育訓練",
+        "description": "我們重視員工完整、深入的職能培養，並提供提供專業的教育訓練。",
+        "tr1": "新進人員訓練",
+        "tr2": "一般通識訓練",
+        "tr3": "外部課程補助"
+      },
+      "benefits": {
+        "title": "福利制度",
+        "subtitle1": "入職第一天起，已為你未來的薪酬進行規劃",
+        "subtitle2": "我們有明確的績效評核制度，獎金依個人貢獻發放，讓努力更有方向、回饋更有價值",
+        "subtitle3": "節日的溫度，由我們傳遞",
+        "subtitle4": "公司投保計畫",
+        "subtitle5": "延伸福利-額外的配套措施幫你解決",
+        "subtitle6": "請/休假制度與保險一切符合勞動法規",
+        "description1": {
+          "content1": "年資滿3個月、1年、3年、5年設有調薪節點 (依據個人績效表現)",
+          "content2": "每年8月會依據個人績效表現調薪",
+          "content3": "提供專業需求的教育訓練補助",
+          "content4": "享有伙食津貼"
+        },
+        "description2": {
+          "content1": "年終獎金-- 依據當年度營運與個人績效，基數平均為2個月。",
+          "content2": "年中分紅-- 依據上年度營運獲利狀況提撥"
+        },
+        "description3": {
+          "content1": "三節禮金 (五一、端午、中秋)",
+          "content2": "生日禮金"
+        },
+        "description4": {
+          "content1": "除了法規保險，入職第一天即享團險保障"
+        },
+        "description5": {
+          "content1": "出差油資補貼",
+          "content2": "調派油資補貼",
+          "content3": "租屋補助",
+          "content4": "調派津貼",
+          "content5": "配發公務機+公務機通話費補助",
+          "content6": "提供每季部門聚餐費用"
+        }
+      }
     }
   }
 }

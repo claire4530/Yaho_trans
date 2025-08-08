@@ -8,7 +8,7 @@ import {
 	CarouselItem,
 	CarouselNext,
 	CarouselPrevious,
-} from "@/src/components/ui/carousel";
+} from "@/components/ui/carousel";
 import AboutLink from "./AboutLink";
 import SlideInFromLeft from "./animations/SlideInFromLeft";
 import { useTranslations } from "next-intl";
@@ -60,10 +60,10 @@ export default function ProductsScroll() {
 					<div className="group">
 						<FadeInUp delay={0.2}>
 							<div className="p-6 md:p-8 grid gap-2">
-								<h2 className="text-xl md:text-3xl font-bold text-black group-hover:text-[#375978]">
+								<h2 className="text-xl md:text-2xl font-bold text-black group-hover:text-[#375978]">
 									{t("title1")}
 								</h2>
-								<span className="hidden md:flex absolute left-8 top-20 w-0 h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-[120px]"></span>
+								<span className="hidden md:flex absolute left-8 top-18 w-0 h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-[100px]"></span>
 								<span className="block md:hidden absolute left-6 top-16 w-0 h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-[80px]"></span>
 							</div>
 							<p className="text-sm md:text-lg text-gray-600 md:p-8 p-5 sm:leading-8">
@@ -79,11 +79,11 @@ export default function ProductsScroll() {
 					<div className="group">
 						<FadeInUp delay={0.2}>
 							<div className="p-6 md:p-8 grid gap-2">
-								<h2 className="text-xl md:text-3xl font-bold text-black group-hover:text-[#375978]">
+								<h2 className="text-xl md:text-2xl font-bold text-black group-hover:text-[#375978]">
 									{t("title2")}
 								</h2>
 								<span className="block md:hidden absolute left-6 top-16 w-0 h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-[80px]"></span>
-								<span className="hidden md:flex absolute left-8 top-20 w-0 h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-[120px]"></span>
+								<span className="hidden md:flex absolute left-8 top-18 w-0 h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-[100px]"></span>
 							</div>
 							<p className="text-sm md:text-lg text-gray-600 md:p-8 p-5 sm:leading-8">
 								&nbsp;&nbsp;&nbsp;&nbsp;{t("description2")}
