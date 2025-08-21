@@ -12,11 +12,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link"
 import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
 import ZoomIn from "@/src/components/animations/ZoomIn";
-import FadeIn from "@/src/components/animations/FadeIn";
-import FadeInUp from "@/src/components/animations/FadeInUp";
 import Image from "next/image";
 import { useState, useMemo } from "react"
-import { Button } from "@/components/ui/button";
 
 // 假資料集 (可換成 API 回傳資料)
 const newsDataset = [

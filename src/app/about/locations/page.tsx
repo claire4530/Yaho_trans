@@ -10,14 +10,7 @@ import {
 } from "@/components/ui/breadcrumb"
 import { useTranslations } from "next-intl";
 import Link from "next/link"
-import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
-import ZoomIn from "@/src/components/animations/ZoomIn";
-import FadeIn from "@/src/components/animations/FadeIn";
-import FadeInUp from "@/src/components/animations/FadeInUp";
 import Image from "next/image";
-import { useState, useMemo } from "react"
-import { Button } from "@/components/ui/button";
-import WorldMap from "@/src/components/WorldMap";
 import LocationSelector from "@/src/components/LocationSelector";
 
 export default function NewsPage() {

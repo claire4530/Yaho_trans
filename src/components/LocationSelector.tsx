@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
@@ -37,7 +36,6 @@ const embedMap: Record<string, string> = {
   	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.12345678!2d120.964999!3d24.794722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346834f258e9e96d%3A0xf70ea2b5efb6d309!2z5Y-w5YyX5biC5paw5YyX5Y2A5YWJ5qWt6LevMTIz6Jmf!5e0!3m2!1szh-TW!2stw!4v1690000000003",
 
   	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7590289179345!2d-118.24368468478408!3d34.05223548060667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7bce472b0fb%3A0x5562a441bdd2bb1f!2zTG9zIEFuZ2VsZXMsIENBLCBVU0E!5e0!3m2!1sen!2sus!4v1690000000004",
-  	"USA-2": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.949245507318!2d-74.00597258459962!3d40.712775579331776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3162d6e87b%3A0xfba43a7d1f57f9ff!2zTmV3IFlvcms!5e0!3m2!1sen!2sus!4v1690000000005",
 
   	"Japan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.844535936671!2d135.49720481548952!3d34.70248558043142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0e84e12f321%3A0x84fbd0e7e4f97a0d!2zT3NhY2EsIEphcGFu!5e0!3m2!1sja!2sjp!4v1690000000006",
 

@@ -38,7 +38,7 @@
     "titleOrange2": "技術",
     "title3": "創造價值",
     "description": "從設計到維運，為高科技產業打造完整工程解決方案",
-    "descriptionDetail1": "以超過20年產業經驗為基礎，從設計、裝機到維運，提供一站式解決方案深耕台灣，布局全球，為半導體、光電、醫療產業創造高效能與高信賴的未來。我們的專業，連結世界技術；我們的服務，實踐永續價值。",
+    "descriptionDetail1": "告別繁瑣，迎接未來。我們是整合專業團隊，提供從規劃到安裝的全方位裝機服務，省時省力更省心。垚鋐以負責、誠信、效率、專業、客戶滿意為基石，與夥伴共創價值，從台灣邁向世界！",
     "slidesSlogan": [
       "專精廠務 安全高效",
       "十年經驗 技術領先",
@@ -246,27 +246,21 @@
           "USA": "美國",
           "title": "美國據點",
           "branchesTotal": 2,
-          "branches1": "洛杉磯分公司",
-          "mail1": "yaho.losangeles@zcstcl.com",
+          "branches1": "亞歷桑那分公司",
+          "mail1": "yaho.arizona@zcstcl.com",
           "phone1": "+1-213-123-4567",
-          "address1": "洛杉磯市中心街123號",
+          "address1": "亞歷桑那州菲尼克斯市中心街123號",
           "content1": "業務拓展、客戶服務",
-          "imageUrl1": "/frontPage/1.jpg",
-          "branches2": "紐約分公司",
-          "mail2": "yaho.newyork@zcstcl.com",
-          "phone2": "+1-212-123-4567",
-          "address2": "紐約市曼哈頓區123號",
-          "content2": "業務拓展、客戶服務",
-          "imageUrl2": "/frontPage/1.jpg"
+          "imageUrl1": "/frontPage/1.jpg"
         },
         "Japan": {
           "Japan": "日本",
           "title": "日本據點",
           "branchesTotal": 1,
-          "branches1": "大阪分公司",
-          "mail1": "yaho.osaka@zcstcl.com",
+          "branches1": "熊本分公司",
+          "mail1": "yaho.kumamoto@zcstcl.com",
           "phone1": "+81-6-1234-5678",
-          "address1": "大阪市北區梅田1丁目",
+          "address1": "熊本市北區梅田1丁目",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
         },
@@ -274,10 +268,10 @@
           "Germany": "德國",
           "title": "德國據點",
           "branchesTotal": 1,
-          "branches1": "柏林分公司",
-          "mail1": "yaho.berlin@zcstcl.com",
+          "branches1": "德勒斯登分公司",
+          "mail1": "yaho.dresden@zcstcl.com",
           "phone1": "+49-30-12345678",
-          "address1": "柏林市中心街123號",
+          "address1": "德勒斯登市中心街123號",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
         },
@@ -296,7 +290,8 @@
     },
     "news": {
       "about": "關於垚鋐",
-      "title": "最新消息"
+      "title": "最新消息",
+      "": "無本年資料"
     },
     "career": {
       "about": "關於垚鋐",
