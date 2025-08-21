@@ -19,7 +19,7 @@ import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button";
 
 // 假資料集 (可換成 API 回傳資料)
-export const newsDataset = [
+const newsDataset = [
   {
     year: "2025",
     month: "MAY",
