@@ -227,9 +227,9 @@ export default function Home() {
 				</div>
 			</div>
 			{/* 連結組件 */}
-			<div className="absolute -bottom-13 right-4 sm:bottom-12 md:right-4 md:bottom-10">
+			{/* <div className="absolute -bottom-13 right-4 sm:bottom-12 md:right-4 md:bottom-10">
 				<AboutLink text="Read more" href="/about" />
-			</div>
+			</div> */}
 		</div>
 		{/* 世界地圖 */}
 		<div className="w-full">
