@@ -33,37 +33,37 @@ export default function GlobalMap() {
 	const mockRegionData: RegionData = {
 		regionTitle: t("Taiwan.title"),
 		branches: [
-			{ name: t("Taiwan.branches1"), href: "/about" },
-			{ name: t("Taiwan.branches2"), href: "/about" },
-			{ name: t("Taiwan.branches3"), href: "/about" },
-			{ name: t("Taiwan.branches3"), href: "/about" },
-			{ name: t("Taiwan.branches3"), href: "/about" },
+			{ name: t("Taiwan.branches1"), href: "/about/locations" },
+			{ name: t("Taiwan.branches2"), href: "/about/locations" },
+			{ name: t("Taiwan.branches3"), href: "/about/locations" },
+			{ name: t("Taiwan.branches3"), href: "/about/locations" },
+			{ name: t("Taiwan.branches3"), href: "/about/locations" },
 		],
 	};
 
 	const mockRegionData2: RegionData = {
 		regionTitle: t("USA.title"),
 		branches: [
-			{ name: t("USA.branches1"), href: "/about" },
+			{ name: t("USA.branches1"), href: "/about/locations" },
 		],
 	};
 
 	const mockRegionData3: RegionData = {
 		regionTitle: t("Germany.title"),
 		branches: [
-			{ name: t("Germany.branches1"), href: "/about" },
+			{ name: t("Germany.branches1"), href: "/about/locations" },
 		],
 	};
 	const mockRegionData4: RegionData = {
 		regionTitle: t("Singapore.title"),
 		branches: [
-			{ name: t("Singapore.branches1"), href: "/about" },
+			{ name: t("Singapore.branches1"), href: "/about/locations" },
 		],
 	};
 	const mockRegionData5: RegionData = {
 		regionTitle: t("Japan.title"),
 		branches: [
-			{ name: t("Japan.branches1"), href: "/about" },
+			{ name: t("Japan.branches1"), href: "/about/locations" },
 		],
 	};
 
