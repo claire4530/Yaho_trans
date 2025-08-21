@@ -46,15 +46,18 @@ const Timeline = () => {
                 {[1, 2, 3, 4, 5].map((i) => (
                 <div key={i} className="flex h-24 sm:h-32 md:h-35 xl:h-43">
                     <div>
-                    <h3 className="text-lg sm:text-2xl md:text-3xl xl:text-4xl font-bold text-white mb-1 sm:mb-2">
-                        {t(`introduction.history.year${i}`)}
-                    </h3>
-                    <p className="text-white text-sm sm:text-base md:text-xl leading-tight sm:leading-normal">
-                        {t(`introduction.history.year${i}_description1`)}
-                    </p>
-                    <p className="text-white text-sm sm:text-base md:text-xl leading-tight sm:leading-normal">
-                        {t(`introduction.history.year${i}_description2`)}
-                    </p>
+                        {/* 年份標題 */}
+                        <h3 className="text-lg sm:text-2xl md:text-3xl xl:text-4xl font-bold text-white mb-1 sm:mb-2">
+                            {t(`introduction.history.year${i}`)}
+                        </h3>
+                        {/* 描述文字 */}
+                        <p className="text-white text-sm sm:text-base md:text-xl leading-tight sm:leading-normal">
+                            {t(`introduction.history.year${i}_description1`)}
+                        </p>
+                        {/* 第二行描述文字（如果有的話） */}
+                        <p className="text-white text-sm sm:text-base md:text-xl leading-tight sm:leading-normal">
+                            {t(`introduction.history.year${i}_description2`)}
+                        </p>
                     </div>
                 </div>
                 ))}

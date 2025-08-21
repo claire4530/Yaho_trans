@@ -105,35 +105,35 @@ export default function IntroductionPage() {
                 layout="fill"
 				objectFit="cover"/>
         </div>
-        <Breadcrumb className="px-8 pt-8 w-full">
+        <Breadcrumb className="px-8 pt-5 sm:pt-8 w-full">
             <BreadcrumbList>
                 <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="text-base font-semibold">
+                    <BreadcrumbLink href="/" className="text-sm sm:text-base font-semibold">
                         {t("introduction.homepage")}
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/introduction" className="text-base font-semibold">{t("career.about")}</Link>
+                        <Link href="/about/introduction" className="text-sm sm:text-base font-semibold">{t("career.about")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/career" className="text-base font-semibold">{t("career.title")}</Link>
+                        <Link href="/about/career" className="text-sm sm:text-base font-semibold">{t("career.title")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
             </BreadcrumbList>
         </Breadcrumb>
-        <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-black my-4 mx-10"></span>
+        <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
         {/* 公司簡介 */}
-        <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+        <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
             {t("career.title")}
         </div>
         <SlideInFromLeft delay={0.2}>
-            <div className="font-normal text-base md:text-lg md:pt-2 xl:pt-8 m-2 md:m-4 leading-9 xl:my-10 xl:px-30 mb-10">
+            <div className="font-normal text-base lg:text-lg  xl:pt-8 m-2 md:m-4 leading-9 xl:my-10 xl:px-30 mb-10">
                 <p className="my-4 mx-8 md:mx-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("career.description")}</p>
                 <div className="flex md:gap-8">
                     <p className="my-4 mx-8 md:ml-20">{t("career.more")}</p>
@@ -141,7 +141,7 @@ export default function IntroductionPage() {
                         href="https://www.104.com.tw/company/1a2x6bjp2x?jobsource=google"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-[#f8af49] text-white px-8 py-2 rounded-xl inline-flex items-center justify-center
+                        className="bg-[#f8af49] text-white px-4 sm:px-8 py-2 rounded-xl inline-flex items-center justify-center
                         hover:bg-[#F3981B] transition-colors duration-300"
                         >
                         {t("career.104")}
@@ -192,7 +192,7 @@ export default function IntroductionPage() {
             </div>
             {/* 顯示xl以下 */}
             <div className="block xl:hidden">
-                <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+                <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
                     {t("career.training.title")}
                 </div>
                 <div className="flex">
@@ -245,7 +245,7 @@ export default function IntroductionPage() {
         </div>
         {/* 福利制度 */}
         <div >
-            <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+            <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
                 {t("career.benefits.title")}
             </div>
             {/* content */}
@@ -273,12 +273,12 @@ export default function IntroductionPage() {
                                     <div className="hidden md:flex ">
                                         {item.icon} 
                                     </div>
-                                    <span className="text-[#375978] text-lg md:text-xl">{item.subtitle}</span>
+                                    <span className="text-[#375978] text-base sm:text-lg md:text-xl">{item.subtitle}</span>
                                 </div>
                                 {/* <ChevronDown className="h-5 w-5 transition-transform duration-300 group-data-[state=open]:rotate-180" /> */}
                             </AccordionTrigger>
                             <AccordionContent className="text-gray-800">
-                                <ol className="list-decimal pl-5 space-y-4 pb-3 text-base md:text-lg">
+                                <ol className="list-decimal pl-5 space-y-4 pb-3 text-sm sm:text-base md:text-lg">
                                     {item.contents.map((content, idx) => (
                                         <li key={idx}>&nbsp;&nbsp;{content}</li>
                                     ))}

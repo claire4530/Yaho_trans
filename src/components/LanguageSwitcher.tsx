@@ -45,11 +45,11 @@ export default function LanguageSwitcher() {
   ];
 
   const switchLanguage = (locale: string) => {
-    setIsOpen(false);
-    if (locale === currentLocale) return;
-    startTransition(() => {
-      setLocale(locale);
-    });
+    // setIsOpen(false);
+    // if (locale === currentLocale) return;
+    // startTransition(() => {
+    //   setLocale(locale);
+    // });
   };
 
   // 點擊外部關閉選單
@@ -73,7 +73,7 @@ export default function LanguageSwitcher() {
       {/* 主按鈕 */}
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="px-8 py-2 bg-[#375978] text-white font-medium rounded-2xl hover:bg-[#F3981B] hover:text-white hover:scale-105 duration-300 transition-transform"
+        className="px-8 py-2 bg-[#375978] text-white font-medium rounded-2xl hover:bg-[#F3981B] hover:text-white hover:scale-105 duration-300 transition-transform cursor-pointer"
         disabled={isPending}
       >
         {isPending ? '...' : `${currentLangLabel}`}
@@ -86,7 +86,7 @@ export default function LanguageSwitcher() {
             <button
               key={code}
               onClick={() => switchLanguage(code)}
-              className={`w-full px-4 py-2 text-sm rounded-2xl hover:bg-[#F3981B] hover:text-white transition-colors ${
+              className={`w-full px-4 py-2 text-sm rounded-2xl hover:bg-[#F3981B] hover:text-white transition-colors cursor-pointer ${
                 currentLocale === code ? 'font-bold text-[#375978]' : 'text-gray-800'
               }`}
             >

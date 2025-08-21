@@ -90,31 +90,31 @@ export default function NewsPage() {
                     layout="fill"
                     objectFit="cover"/>
         </div>
-        <Breadcrumb className="px-8 pt-8">
+        <Breadcrumb className="px-8 pt-5 sm:pt-8 w-full">
             <BreadcrumbList>
                 <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="text-base font-semibold">
+                    <BreadcrumbLink href="/" className="text-sm sm:text-base font-semibold">
                         {t("introduction.homepage")}
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/introduction" className="text-base font-semibold">{t("news.about")}</Link>
+                        <Link href="/about/introduction" className="text-sm sm:text-base font-semibold">{t("news.about")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/news" className="text-base font-semibold">{t("news.title")}</Link>
+                        <Link href="/about/news" className="text-sm sm:text-base font-semibold">{t("news.title")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
             </BreadcrumbList>
         </Breadcrumb>
-        <span className="block md:w-[90%] lg:w-[95%] h-[1px] bg-black my-4 mx-10"></span>
+        <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
         {/* 公司簡介 */}
-        <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+        <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
             {t("news.title")}
         </div>
         <div className="my-6 md:my-10 lg:my-20 mx-8 md:mx-10 lg:mx-30 xl:mx-40 2xl:mx-60">

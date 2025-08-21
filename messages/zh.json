@@ -7,8 +7,8 @@
     "about_news": "最新消息",
     "about_career": "加入我們",
     "services": "產品服務",
-    "services_engineering": "廠務工程",
-    "services_system": "系統應用",
+    "services_project": "服務項目",
+    "services_result": "工程實績",
     "exhibition": "展覽活動",
     "exhibition_2025": "2025",
     "sustainability": "企業永續",
@@ -71,10 +71,10 @@
     }
   },
   "ProductsScroll": {
-    "title1": "廠務工程",
+    "title1": "服務項目",
     "description1": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案。",
-    "title2": "系統應用",
-    "description2": "我們的系統應用服務涵蓋了從需求分析到系統設計、實施和維護的全過程。我們的專業團隊能夠根據客戶的具體需求，確保系統的高效運行和穩定性。"
+    "title2": "工程實績",
+    "description2": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。"
   },
   "Exhibition": {
     "exhibition1": {
@@ -139,6 +139,11 @@
       "url": "/about/introduction",
       "descriptionDetail1": "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。",
       "descriptionDetail2": "自2015年成立以來，垚鋐始終秉持專業、創新與服務精神，從保溫加熱與廠務配管工程起步，逐步擴展至自動化設備整合與與國外原廠合作代理半導體和光電廠相關設備和耗材，打造一站式解決方案。我們擁有齊全的工程設計能力、技術團隊與完整售後服務，為客戶提供「從設計到安裝、從供應到維護」的全流程服務。  「負責、誠信、效率、專業、客戶滿意」是垚鋐的使命也是企業永續的基石。期許每位加入垚鋐的夥伴都能與公司一同成長、共創價值，我們的起點是台灣，我們的舞台是世界 !",
+      "descriptionDetail3": "專精廠務，安全高效： 垚鋐專注廠務系統設計與工程，助您打造安全高效的生產環境",
+      "descriptionDetail4": "十年經驗，技術領先： 逾十年產業經驗，提供專業廠務解決方案",
+      "descriptionDetail5": "誠實效率，客戶至上: 堅持誠實經營，追求效率卓越，以客戶滿意為首要目標",
+      "descriptionDetail6": "政臣助力，拓展服務： 子公司政臣擴大服務範疇，滿足多元客戶需求",
+      "descriptionDetail7": "STK配管，自動化整合： 精通氣體管路組裝與自動化系統，提供全方位廠務服務",
       "history": {
         "title": "公司沿革",
         "year1": "2024",
@@ -341,6 +346,64 @@
           "content6": "提供每季部門聚餐費用"
         }
       }
+    }
+  },
+  "services": {
+    "title": "產品服務",
+    "homepage": "首頁",
+    "project background": "專案背景",
+    "project scope": "主要範圍",
+    "project application": "應用領域",
+    "project features": "服務特色",
+    "project": {
+      "title": "服務項目",
+      "description": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案(範例)。",
+      "system design": "廠務系統設計",
+      "system design description": "高效率、安全、可擴充的產線基礎設施\n提供電力、氣體、化學品、排風、冷卻水等全方位廠務系統設計與整合。",
+      "system design Comments": "Comments清單：",
+      "system design Comments list": "22. Cable-tray\n23. Rack(support)\n24. PUMP\n25. Exhaust pipe\n26. PUMPING-LINE(EV)’s pipe to\n",
+      "system design Mainframe": "Mainframe: ",
+      "system design Mainframe list": "27. Local Scrubber\n28. Gas & PCW’s panel\n29. Pumping-exhaust pipe\n30. Main power distribution",
+      "Gas Chemical": "Gas & Chemical System",
+      "Gas Chemical description": "提供客戶端 Gas (氣體) 與 Chemical (化學品) 系統之整體設計與施工服務\n依據客戶二次配 (Secondary Distribution) 需求進行客製化設計與施工",
+      "Gas Chemical application": "光電產業, 半導體, 傳統產業, 電子產業, 醫療產業, 其他相關產業",
+      "AMHS": "AMHS自動倉儲搬運系統",
+      "AMHS description": "針對半導體、光電產業之 AMHS 系統，提供儲位櫃體管路解決方案",
+      "AMHS scope": "根據 AMHS 需求，進行儲位櫃體管路之整體設計，完成管路預置、組裝、現場施工與系統裝機",
+      "AMHS application": "光電產業、半導體製程，其他高潔淨、精密搬運場域",
+      "AMHS features": "Stocker服務範疇：從設計到裝機，一站式解決方案\n專業設計： 管路規劃、強度分析、CAD製圖、氣體需求評估\n精準組裝： 櫃體預置、焊接組裝、初步氣密測試\n嚴謹施工： 現場配置、結構固定、系統整合測試\n完善裝機： AMHS連接、通電上氣、客戶驗收",
+      "AMAT": "AMAT裝機服務",
+      "AMAT description": "提供 AMAT 裝機服務，確保設備的正確安裝與調試，並提供後續的技術支援(範例)。",
+      "SMIFPOD": "YAHO SMIF POD 清洗機",
+      "SMIFPOD description": "提供 YAHO SMIF POD 清洗機的安裝、調試與維護服務，確保設備的最佳運行狀態(範例)。",
+      "Parts": "Parts 耗材銷售",
+      "Parts description": "從工程設計、設備裝機至零件需求，垚鋐提供完整支援",
+      "Parts features": "✓ 廠務端全方位配套：從工程設計、設備裝機至零件需求，垚鋐提供完整支援\n ✓ 逆向工程實力： 針對現場設備零件需求，垚鋐具備逆向工程、分析、重建與複製之深厚經驗，現已開放客製化報價\n✓ 專業客製化 : \n",
+      "Parts features description": "壓克力件 - EMO COVER、RACK COVER、GANTRY POWER COVER、DPN COVER、防夾塊、機台壓克力牌等\n不鏽鋼件 - 零件置物箱、ISSG三角架、不鏽鋼腳踏板、手推台車、不鏽鋼IPA存放筒、不鏽鋼圓形垃圾桶及螺絲等",
+      "OneStop": "一條龍裝機服務",
+      "OneStop description": "告別繁瑣，迎接未來。我們整合專業團隊，提供從規劃到安裝的全方位裝機服務\n一條龍解決方案，省時省力更省心。",
+      "OneStop1": "工程服務",
+      "OneStop1 description": "氣體管路安裝、化學管路安裝、保溫加熱帶安裝",
+      "OneStop2": "設計服務",
+      "OneStop2 description": "二次配設計、5D設計、軟體開發",
+      "OneStop3": "設備組裝",
+      "OneStop3 description": "E-sensor設備/組裝、自動化裝機",
+      "OneStop4": "高效整合",
+      "OneStop4 description": "整合設計、二次配系統、裝機、維修、耗材",
+      "Asis": "As Is",
+      "Asis description1": "經專氣體、化學、訊號(5G)工程、打造卓越效能",
+      "Asis description2": "提供二次配設計、5D設計、軟體設計，全方位解決方案",
+      "Tobe": "To Be",
+      "Tobe description1": "專業整合設計、系統規劃",
+      "Tobe description2": "精準裝機、快速維修",
+      "Tobe description3": "原廠耗材、品質保證",
+      "OneStop ready": "準備好升級您的專案了嗎？",
+      "OneStop contact": "立即與我們聯繫"
+    },
+    "result": {
+      "title": "工程實績",
+      "description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。",
+      "partners": "合作夥伴"
     }
   }
 }

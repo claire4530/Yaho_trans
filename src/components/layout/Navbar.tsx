@@ -5,10 +5,12 @@ import { usePathname } from "next/navigation"; // 用來獲取當前路徑
 import Image from "next/image";
 import { AlignJustify, Search, Globe } from "lucide-react";
 import LanguageSwitcher from "@/src/components/LanguageSwitcher"; 
-import { i } from "framer-motion/client";
+import { i, p } from "framer-motion/client";
 import { useTranslations } from "next-intl";
 import LanguageSwitcherPhone from "@/src/components/LanguageSwitcherPhone";
 // import SearchComponent from "@/src/components/SearchComponent"; 
+import { useRouter } from "next/navigation";
+
 
 const logoUrl = [
 	{ label: "首頁", path: "/", imageUrl: "/YAHO_logo/logo.jpg" },
@@ -17,6 +19,7 @@ const logoUrl = [
 
 export default function Navbar() {
 	const t = useTranslations("Navigation");
+	const router = useRouter();
 
 	const navItems = [
 		// { label: "首頁", path: "/" ,imageUrl: "/YAHO_logo/logo.jpg"}, // 首頁
@@ -29,42 +32,47 @@ export default function Navbar() {
 				{ label: t('about_news'), path: "/about/news" },
 				{ label: t('about_career'), path: "/about/career" },
 			],
+			path: "/about/introduction",
 		}, // 關於垚鋐
 		{
 			label: t('services'),
 			submenu: [
-				{ label: t('services_engineering'), path: "/product/a" },
-				{ label: t('services_system'), path: "/contact" },
+				{ label: t('services_project'), path: "/services/project" },
+				{ label: t('services_result'), path: "/services/result" },
 			],
+			path: "/services",
 		}, // 產品服務
-		{ label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/product/a" }] }, // 展覽活動
-		{
-			label: t('sustainability'),
-			submenu: [
-				{ label: t('sustainability_social'), path: "/product/a" },
-				{ label: t('sustainability_operations'), path: "/contact" },
-				{ label: t('sustainability_report'), path: "/contact" },
-			],
-		}, // 企業永續
-		{
-			label: t('investors'),
-			submenu: [
-				{ label: t('investors_finance'), path: "/product/a" },
-				{ label: t('investors_shareholders'), path: "/contact" },
-			],
-		}, // 投資人專區
-		{
-			label: t('governance'),
-			submenu: [
-				{ label: t('governance_board'), path: "/product/a" },
-				{ label: t('governance_committees'), path: "/contact" },
-				{ label: t('governance_audit'), path: "/product/a" },
-				{ label: t('governance_regulations'), path: "/product/a" },
-				{ label: t('governance_ethics'), path: "/product/a" },
-				{ label: t('governance_communication'), path: "/product/a" },
-				{ label: t('governance_risk'), path: "/product/a" },
-			],
-		}, // 公司治理
+		// { label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/product/a" }] }, // 展覽活動
+		// {
+		// 	label: t('sustainability'),
+		// 	submenu: [
+		// 		{ label: t('sustainability_social'), path: "/product/a" },
+		// 		{ label: t('sustainability_operations'), path: "/contact" },
+		// 		{ label: t('sustainability_report'), path: "/contact" },
+		// 	],
+		// 	path: "/sustainability",
+		// }, // 企業永續
+		// {
+		// 	label: t('investors'),
+		// 	submenu: [
+		// 		{ label: t('investors_finance'), path: "/product/a" },
+		// 		{ label: t('investors_shareholders'), path: "/contact" },
+		// 	],
+		// 	path: "/investors",
+		// }, // 投資人專區
+		// {
+		// 	label: t('governance'),
+		// 	submenu: [
+		// 		{ label: t('governance_board'), path: "/product/a" },
+		// 		{ label: t('governance_committees'), path: "/contact" },
+		// 		{ label: t('governance_audit'), path: "/product/a" },
+		// 		{ label: t('governance_regulations'), path: "/product/a" },
+		// 		{ label: t('governance_ethics'), path: "/product/a" },
+		// 		{ label: t('governance_communication'), path: "/product/a" },
+		// 		{ label: t('governance_risk'), path: "/product/a" },
+		// 	],
+		// 	path: "/governance",
+		// }, // 公司治理
 		// { label: "search組件", path: "/contact" },
 	];
 
@@ -76,6 +84,10 @@ export default function Navbar() {
 	);
 	const [locked, setLocked] = useState(false);
 	const navRef = useRef<HTMLElement | null>(null);
+
+	const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+	const showTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+	const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
 	// 點外面收回下拉選單
 	useEffect(() => {
@@ -133,35 +145,38 @@ export default function Navbar() {
 				</div>
 				{/* 右邊選單 */}
 				<ul className="hidden xl:flex space-x-6 gap-6 items-center p-6">
-					{navItems.map(({ label, submenu }, index) => (
+					{navItems.map(({ label, submenu, path }, index) => (
 						<li
 							key={index}
-							onMouseEnter={() => !locked && setOpenDropdownIndex(index)}
-							onMouseLeave={() => !locked && setOpenDropdownIndex(null)}
-							onClick={() => {
-								if (openDropdownIndex === index && locked) {
-									setLocked(false);
-									setOpenDropdownIndex(null);
-								} else {
-									setOpenDropdownIndex(index);
-									setLocked(true);
-								}
+							onMouseEnter={() => {
+								if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+								showTimeoutRef.current = setTimeout(() => {
+								setHoverIndex(index);
+								}, 150);
+							}}
+							onMouseLeave={() => {
+								if (showTimeoutRef.current) clearTimeout(showTimeoutRef.current);
+								hideTimeoutRef.current = setTimeout(() => {
+								setHoverIndex(null);
+								}, 200);
 							}}
 						>
 							<button
-								className={`relative group font-bold text-base transition-colors duration-300 ${
-									openDropdownIndex === index ||
-									(submenu && submenu.some((item) => item.path === pathname))
-										? "text-[#F3981B]" // 被點選 or 子頁啟用
-										: "text-[#375978] hover:text-[#F3981B]"
-								}`}
-								title={label} // 為了在按鈕上顯示提示文字
+								className="relative group font-bold text-base transition-colors duration-300 cursor-pointer text-[#375978] hover:text-[#F3981B]"
+								title={label}
+								onClick={() => router.push(path || "#")}
 							>
 								<span>{label}</span>
 								<span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
 							</button>
-							{submenu && openDropdownIndex === index && (
-								<ul className="absolute top-full left-0 z-[40] bg-[#F5F5F5] shadow-lg rounded w-full h-26 space-x-6 flex justify-center gap-6 px-6 py-8">
+							{submenu && (
+								<ul className={`absolute top-full left-0 z-[40] bg-[#F5F5F5] shadow-lg rounded w-full h-26 space-x-6 min-w-[200px]
+												flex justify-center gap-6 px-6 py-8 transition-all duration-300 ease-out
+												${hoverIndex === index 
+												? "opacity-100 translate-y-0 pointer-events-auto"
+												: "opacity-0 translate-y-2 pointer-events-none"
+												}`}
+        							>
 									{submenu.map(({ label, path }, i) => (
 										<li key={i}>
 											<Link
@@ -177,20 +192,18 @@ export default function Navbar() {
 							)}
 						</li>
 					))}
-					{/* 翻譯組件 */}
 					<LanguageSwitcher />
-					{/* <SearchComponent /> */}
 				</ul>
 
 				{/* Right - Icons & Toggle */}
 				<div className="flex items-center gap-4 xl:hidden px-4">
 					{/* Icon 占位用 */}
-					<Search className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" />
-					{/* <Globe className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" /> */}
-					<LanguageSwitcherPhone />
+					<Search className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" />
+					<Globe className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" />
+					{/* <LanguageSwitcherPhone /> */}
 					{/* 手機選單按鈕 */}
 					<button onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
-						<AlignJustify className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" />
+						<AlignJustify className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" />
 					</button>
 				</div>
 			</nav>
@@ -208,7 +221,7 @@ export default function Navbar() {
 										<li key={i}>
 											<Link
 												href={path}
-												className="relative group block mt-2 text-base text-gray-600 font-bold rounded-lg p-2 hover:bg-[#375978]/20 hover:text-black transition-colors duration-300"
+												className="relative group block mt-2 text-sm sm:text-base text-gray-600 font-bold rounded-lg p-2 hover:bg-[#375978]/20 hover:text-black transition-colors duration-300"
 											>
 												<span>{label}</span>
 												{/* <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span> */}

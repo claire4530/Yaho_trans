@@ -27,33 +27,34 @@ export default function OrganizationPage() {
                     layout="fill"
                     objectFit="cover"/>
         </div>
-        <Breadcrumb className="px-8 pt-8">
+        <Breadcrumb className="px-8 pt-5 sm:pt-8 w-full">
             <BreadcrumbList>
                 <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="text-base font-semibold">
+                    <BreadcrumbLink href="/" className="text-sm sm:text-base font-semibold">
                         {t("introduction.homepage")}
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/introduction" className="text-base font-semibold">{t("organization.about")}</Link>
+                        <Link href="/about/introduction" className="text-sm sm:text-base font-semibold">{t("organization.about")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/organization" className="text-base font-semibold">{t("organization.title")}</Link>
+                        <Link href="/about/organization" className="text-sm sm:text-base font-semibold">{t("organization.title")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
             </BreadcrumbList>
         </Breadcrumb>
-        <span className="block w-[95%] h-[1px] bg-black sm:mx-10 my-4 xl:mx-10"></span>
+        <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
-        {/* 公司簡介 */}
-        <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+        {/* 公司組織標題 */}
+        <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
             {t("organization.title")}
         </div>
+        {/* 公司組織圖 */}
         <div className="font-normal text-lg pt-8 pb-18 m-4 leading-9">
             <Image src="/about/organization/OrganizationChart.png" 
                 alt="Example Image" 

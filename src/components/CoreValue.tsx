@@ -16,6 +16,7 @@ import FadeInUp from "@/src/components/animations/FadeInUp";
 export default function CoreValue() {
 	const t = useTranslations("CoreValue");
 
+	// 核心價值幻燈片
 	const slides = [
 		{
 			image: "/coreValue/1.png",
@@ -47,13 +48,13 @@ export default function CoreValue() {
 
 	return (
 		<div className="w-full px-4 pt-8 lg:px-24 max-w-screen-xl mx-auto">
+			{/* 卡片滑動功能 */}
 			<Carousel className="w-full">
 				<CarouselContent className="w-full">
 					{slides.map((slide, index) => (
-						<CarouselItem
-							key={index}
-						>
+						<CarouselItem key={index} >
 							<div className="relative h-[320px] md:h-[350px] lg:h-[400px] xl:h-[450px] overflow-hidden rounded-lg ml-2">
+								{/* 五個核心價值圖 */}
 								<Image
 									src={slide.image}
 									alt={`Slide ${index}`}
@@ -63,11 +64,15 @@ export default function CoreValue() {
 								<div className="absolute bottom-0 right-0 p-2 xl:p-8">
 									<FadeInUp delay={0.2}>
 										<div className="group bg-white/80 hover:bg-white/90 w-fit max-w-full xl:w-[400px] p-4 md:p-8 rounded-lg shadow-md hover:scale-95 xl:hover:scale-105 transition-transform duration-300">
+											{/* 核心價值標題 */}
 											<p className="text-lg md:text-xl xl:text-2xl font-bold text-[#375978] py-2 flex gap-2">
 												{slide.slogan}
 											</p>
+											{/* 核心價值說明 */}
 											<div className="relative inline-block">
+												{/* 觸碰下滑線 */}
 												<span className="absolute w-0 h-[2px] md:h-0.5 bg-[#375978] transition-all duration-300 group-hover:w-full xl:group-hover:w-[330px]"></span>
+												{/* 說明內容 */}
 												<p className="mt-6 text-sm sm:text-base md:text-base font-medium text-black leading-6 xl:leading-8">
 													{slide.details}
 												</p>

@@ -88,7 +88,7 @@ export default function LanguageSwitcherPhone() {
             <button
               key={code}
               onClick={() => switchLanguage(code)}
-              className={`w-full px-4 py-2 text-sm rounded-2xl hover:bg-[#F3981B] hover:text-white transition-colors ${
+              className={`w-full px-4 py-2 text-sm rounded-2xl hover:bg-[#F3981B] hover:text-white transition-colors cursor-pointer ${
                 currentLocale === code ? 'font-bold text-[#375978]' : 'text-gray-800'
               }`}
             >

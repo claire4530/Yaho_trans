@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2 } from "lucide-react";
-
+import { MapPinned, Phone, Mail, Clock } from 'lucide-react';
 type BranchData = {
   country: string;
   name: string;
@@ -172,22 +172,26 @@ export default function LocationSelector() {
 					{/* 詳細資訊卡 */}
 					<div className="p-0 border-0 ">
 						<div className="flex px-6 md:px-10 lg:pl-20 py-8 lg:py-10 gap-2 text-[#375978]">
-							<Building2 className="mt-1" />
-							<div className="text-2xl font-semibold ">{selectedBranch.name}</div>
+							<Building2 className="lg:mt-1 " />
+							<div className="text-lg lg:text-2xl font-semibold ">{selectedBranch.name}</div>
 						</div>
-						{selectedBranch.content && <p className="mx-6 md:mx-10 lg:mx-20 text-lg font-bold text-gray-600"> {selectedBranch.content}</p>}
+						{selectedBranch.content && <p className="mx-6 md:mx-10 lg:mx-20 text-base lg:text-lg font-bold text-gray-600"> {selectedBranch.content}</p>}
 						<div className="space-y-3 px-6 md:px-8 lg:px-20 my-6 lg:my-10">
-							<div className="space-y-2 hover:scale-105 transition-transform duration-600">
-								<p><strong>📞 {t("locations.Phone")} :</strong> {selectedBranch.phone}</p>
+							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+								<Phone className="w-5 h-5 lg:mt-0.5" />
+								<p className="text-sm lg:text-base"><strong>{t("locations.Phone")} :</strong> {selectedBranch.phone}</p>
 							</div>
-							<div className="space-y-2 hover:scale-105 transition-transform duration-600">
-								<p><strong>✉️ {t("locations.Email")} :</strong> {selectedBranch.mail}</p>
+							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+								<Mail className="w-5 h-5 lg:mt-0.5" />
+								<p className="text-sm lg:text-base"><strong>{t("locations.Email")} :</strong> {selectedBranch.mail}</p>
 							</div>
-							<div className="space-y-2 hover:scale-105 transition-transform duration-600">
-								<p><strong>📍 {t("locations.Address")} :</strong> {selectedBranch.address}</p>
+							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+								<MapPinned className="w-5 h-5 lg:mt-0.5" />
+								<p className="text-sm lg:text-base"><strong>{t("locations.Address")} :</strong> {selectedBranch.address}</p>
 							</div>
-							<div className="space-y-2 hover:scale-105 transition-transform duration-600">
-								<p><strong>🕒 {t("locations.BusinessHours")} :</strong> {t("locations.businessHours")}</p>
+							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+								<Clock className="w-5 h-5 lg:mt-0.5" />
+								<p className="text-sm lg:text-base"><strong>{t("locations.BusinessHours")} :</strong> {t("locations.businessHours")}</p>
 							</div>
 						</div>
 						<p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p>

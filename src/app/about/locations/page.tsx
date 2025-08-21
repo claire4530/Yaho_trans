@@ -20,48 +20,6 @@ import { Button } from "@/components/ui/button";
 import WorldMap from "@/src/components/WorldMap";
 import LocationSelector from "@/src/components/LocationSelector";
 
-// 假資料集 (可換成 API 回傳資料)
-export const newsDataset = [
-  {
-    year: "2025",
-    month: "MAY",
-    title: "董事會公告說明(舉例)",
-  },
-  {
-    year: "2025",
-    month: "APR",
-    title: "季度財報公告",
-  },
-  {
-    year: "2024",
-    month: "DEC",
-    title: "年度策略會議總結",
-  },
-  {
-    year: "2023",
-    month: "JUL",
-    title: "重大人事異動",
-  },
-{
-    year: "2025",
-    month: "APR",
-    title: "季度財報公告",
-  },
-  {
-    year: "2024",
-    month: "DEC",
-    title: "年度策略會議總結",
-  },
-  {
-    year: "2023",
-    month: "JUL",
-    title: "重大人事異動",
-  },
-  // ...請自行擴充假資料共 30-40 筆
-]
-
-
-
 export default function NewsPage() {
     const t = useTranslations("about");
 
@@ -73,31 +31,31 @@ export default function NewsPage() {
                     layout="fill"
                     objectFit="cover"/>
         </div>
-        <Breadcrumb className="px-8 pt-8">
+        <Breadcrumb className="px-8 pt-5 sm:pt-8 w-full">
             <BreadcrumbList>
                 <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="text-base font-semibold">
+                    <BreadcrumbLink href="/" className="text-sm sm:text-base font-semibold">
                         {t("introduction.homepage")}
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/introduction" className="text-base font-semibold">{t("locations.about")}</Link>
+                        <Link href="/about/introduction" className="text-sm sm:text-base font-semibold">{t("locations.about")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
                     <BreadcrumbLink asChild>
-                        <Link href="/about/locations" className="text-base font-semibold">{t("locations.title")}</Link>
+                        <Link href="/about/locations" className="text-sm sm:text-base font-semibold">{t("locations.title")}</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
             </BreadcrumbList>
         </Breadcrumb>
-        <span className="block md:w-[90%] lg:w-[95%] h-[1px] bg-black my-4 mx-10"></span>
+        <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
-        {/* 地圖據點 */}
-        <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+        {/* 地圖據點標題 */}
+        <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
             {t("locations.title")}
         </div>
         <div className="w-full">
