@@ -1,13 +1,10 @@
 import * as React from "react";
 import Image from "next/image";
-import { Dot } from 'lucide-react';
-import { Card, CardContent } from "@/components/ui/card";
+import Autoplay from "embla-carousel-autoplay";
 import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
-	CarouselNext,
-	CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -49,7 +46,14 @@ export default function CoreValue() {
 	return (
 		<div className="w-full px-4 pt-8 lg:px-24 max-w-screen-xl mx-auto">
 			{/* 卡片滑動功能 */}
-			<Carousel className="w-full">
+			<Carousel className="w-full"
+					plugins={[
+							Autoplay({
+								delay: 3000, // 每 4 秒自動切換
+								stopOnInteraction: false, // 使用者互動後是否停止
+							}),
+						]}
+				>
 				<CarouselContent className="w-full">
 					{slides.map((slide, index) => (
 						<CarouselItem key={index} >
