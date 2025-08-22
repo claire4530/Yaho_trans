@@ -159,7 +159,7 @@ export default function IntroductionPage() {
                     <div className="flex justify-center mb-10">
                     <input
                         type="text"
-                        placeholder="搜尋專案名稱、地區或客戶..."
+                        placeholder={t("result.search")}
                         value={search}
                         onChange={(e) => {
                         setSearch(e.target.value);
@@ -176,16 +176,16 @@ export default function IntroductionPage() {
                         currentProjects.map((p) => (
                             <div
                             key={p.name}
-                            className="bg-white rounded-md p-8 md:p-10 lg:p-8 shadow-[0_2px_10px_rgba(0,0,0,0.1),0_-2px_10px_rgba(0,0,0,0.1)] hover:scale-103 transition-transform duration-500"
+                            className="bg-white rounded-md p-8 md:p-10 lg:p-8 shadow-[0_2px_10px_rgba(0,0,0,0.1),0_-2px_10px_rgba(0,0,0,0.1)] "
                             >
-                            <h3 className="md:text-lg lg:text-xl font-semibold text-gray-800">{p.name}</h3>
-                            <p className="text-sm lg:text-base text-gray-600 mt-2"><strong>類別:</strong> {p.category}</p>
-                            <p className="text-sm lg:text-base text-gray-600 mt-2"><strong>地區:</strong> {p.region}</p>
-                            <p className="text-sm lg:text-base text-gray-600 mt-2"><strong>客戶:</strong> {p.customer}</p>
+                                <h3 className="md:text-lg lg:text-xl font-semibold text-gray-800">{p.name}</h3>
+                                <p className="text-sm lg:text-base text-gray-600 mt-2"><strong>{t("result.category")} :</strong> {p.category}</p>
+                                <p className="text-sm lg:text-base text-gray-600 mt-2"><strong>{t("result.region")} :</strong> {p.region}</p>
+                                <p className="text-sm lg:text-base text-gray-600 mt-2"><strong>{t("result.customer")} :</strong> {p.customer}</p>
                             </div>
                         ))
                         ) : (
-                        <p className="text-gray-500 text-center col-span-full">沒有找到符合的專案</p>
+                        <p className="text-gray-500 text-center col-span-full">{t("result.no projects")}</p>
                         )}
                     </div>
                     </ZoomIn>
@@ -200,15 +200,15 @@ export default function IntroductionPage() {
                                 {p.name}
                             </AccordionTrigger>
                             <AccordionContent className="text-gray-700 text-sm space-y-2 px-2 pb-3">
-                                <p><strong>類別:</strong> {p.category}</p>
-                                <p><strong>地區:</strong> {p.region}</p>
-                                <p><strong>客戶:</strong> {p.customer}</p>
+                                <p><strong>{t("result.category")} :</strong> {p.category}</p>
+                                <p><strong>{t("result.region")} :</strong> {p.region}</p>
+                                <p><strong>{t("result.customer")} :</strong> {p.customer}</p>
                             </AccordionContent>
                             </AccordionItem>
                         ))}
                         </Accordion>
                     ) : (
-                        <p className="text-gray-500 text-center">沒有找到符合的專案</p>
+                        <p className="text-gray-500 text-center">{t("result.no projects")}</p>
                     )}
                     </div>
 

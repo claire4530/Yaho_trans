@@ -95,6 +95,7 @@ export default function IntroductionPage() {
             <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
                 {t("project.title")}
             </div>
+            
             <div className="flex gap-10 justify-center items-center flex-wrap p-4 md:p-8">
                 <ZoomIn delay={0.2}>
                     <div className="flex gap-14 my-10 flex-wrap justify-center">

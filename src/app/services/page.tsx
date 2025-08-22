@@ -53,11 +53,11 @@ export default function IntroductionPage() {
             </div>
             <div className="flex px-6 sm:p-6 md:p-8 justify-center items-center"> 
                 {/* 服務項目 */}
-                <div className="hidden md:flex gap-14 my-10 flex-wrap justify-center items-center">
+                <div className="hidden md:flex gap-10 my-10 flex-wrap justify-center items-center">
                     {/* 卡片 */}
                     <SlideInFromLeft delay={0.3}>
                         <div
-                            className="relative md:w-[600px] md:h-[400px] 2xl:w-[750px] 2xl:h-[450px] rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] overflow-hidden
+                            className="relative md:w-[600px] md:h-[400px] 2xl:w-[700px] 2xl:h-[450px] rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] overflow-hidden
                                     group cursor-pointer"
                             onClick={() => router.push("/services/project")} // 點擊導向頁面
                         >
@@ -85,7 +85,7 @@ export default function IntroductionPage() {
                     {/* 工程實績 */}
                     <SlideInFromLeft delay={0.6}>
                         <div
-                            className="relative md:w-[600px] md:h-[400px] 2xl:w-[750px] 2xl:h-[450px] rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] overflow-hidden
+                            className="relative md:w-[600px] md:h-[400px] 2xl:w-[700px] 2xl:h-[450px] rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] overflow-hidden
                                         group cursor-pointer"
                             onClick={() => router.push("/services/result")} // 點擊導向頁面
                         >

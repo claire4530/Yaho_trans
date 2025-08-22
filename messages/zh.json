@@ -244,7 +244,7 @@
         "USA": {
           "USA": "美國",
           "title": "美國據點",
-          "branchesTotal": 2,
+          "branchesTotal": 1,
           "branches1": "亞歷桑那分公司",
           "mail1": "yaho.arizona@zcstcl.com",
           "phone1": "+1-213-123-4567",
@@ -397,6 +397,11 @@
     "result": {
       "title": "工程實績",
       "description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。",
+      "search": "搜尋專案名稱、地區或客戶...",
+      "category": "類別",
+      "region": "地區",
+      "customer": "客戶",
+      "no projects": "沒有找到符合的專案",
       "partners": "合作夥伴"
     }
   }
