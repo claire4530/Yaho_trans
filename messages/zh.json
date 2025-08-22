@@ -114,16 +114,15 @@
     },
     "USA": {
       "title": "美國據點",
-      "branches1": "舊金山分公司",
-      "branches2": "紐約分公司"
+      "branches1": "亞歷桑那分公司"
     },
     "Japan": {
       "title": "日本據點",
-      "branches1": "大阪分公司"
+      "branches1": "熊本分公司"
     },
     "Germany": {
       "title": "德國據點",
-      "branches1": "柏林分公司"
+      "branches1": "德勒斯登分公司"
     },
     "Singapore": {
       "title": "新加坡據點",

@@ -7,7 +7,6 @@ import {
 	CarouselItem,
 } from "@/components/ui/carousel";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import FadeInUp from "@/src/components/animations/FadeInUp";
 
 export default function CoreValue() {
@@ -41,8 +40,6 @@ export default function CoreValue() {
 			details: t("slide5.details"),
 		},
 	];
-	const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
 	return (
 		<div className="w-full px-4 pt-8 lg:px-24 max-w-screen-xl mx-auto">
 			{/* 卡片滑動功能 */}
