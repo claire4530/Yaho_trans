@@ -134,7 +134,7 @@ export default function IntroductionPage() {
             <div className="w-[full] px-6 py-10 shadow-[0_26px_35px_rgba(0,0,0,0.10)]">
                 <div className="md:w-[720px] lg:w-[800px] xl:w-[1100px] mx-auto">
                     
-                    {/* Tabs */}
+                    {/* Tabs 篩選設計化學氣體 */}
                     <div className="flex justify-center gap-4 sm:gap-8 mb-10">
                     {categories.map((cat) => (
                         <button

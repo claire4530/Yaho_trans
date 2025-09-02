@@ -16,7 +16,7 @@ import Image from "next/image";
 const serviceItems = [
   {
     key: "system design",
-    image: "/services/project/design/1.png",
+    image: "/services/project/design/7.png",
     link: "/services/project/SystemDesign",
   },
   {

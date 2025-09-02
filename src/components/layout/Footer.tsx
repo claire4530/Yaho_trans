@@ -10,9 +10,9 @@ export default function Footer() {
 				{/* 左側聯絡資訊 */}
 				<div className="space-y-3 text-sm sm:text-base font-bold leading-relaxed w-full">
 					<p>地址：台中市北屯區環中路一段485號</p>
-					<p>電話：04-25605129</p>
-					<p>傳真：04-25605129</p>
-					<p>信箱：yaho.taichung@zcstcl.com</p>
+					<p>電話：04-25601662</p>
+					<p>傳真：04-25601662</p>
+					<p>信箱：yaho-sales@zcstcl.com</p>
 				</div>
 
 				{/* 右側 Logo + 著作權 + 連結 */}
@@ -39,11 +39,11 @@ export default function Footer() {
 							隱私權政策與使用條款
 						</Link>
 						<span>|</span>
-						<Link href="/sitemap" className="hover:underline">
-							網站地圖
+						<Link href="/legal-trademark" className="hover:underline">
+							法律與商標
 						</Link>
 						<span>|</span>
-						<Link href="/global" className="hover:underline">
+						<Link href="/about/locations" className="hover:underline">
 							全球據點
 						</Link>
 					</div>

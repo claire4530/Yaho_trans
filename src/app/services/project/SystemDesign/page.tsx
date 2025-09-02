@@ -17,9 +17,14 @@ export default function IntroductionPage() {
     const t = useTranslations("services");
     const images = [
         "/services/project/design/1.png",
-        "/services/project/design/2.jpg",
-        "/services/project/design/3.png",
+        "/services/project/design/2.png",
+        "/services/project/design/3.jpg",
         "/services/project/design/4.png",
+        "/services/project/design/5.png",
+        "/services/project/design/6.png",
+        "/services/project/design/7.png",
+        "/services/project/design/8.jpg",
+        "/services/project/design/9.png"
     ]
 
     return (

@@ -5,12 +5,18 @@ import { usePathname } from "next/navigation"; // 用來獲取當前路徑
 import Image from "next/image";
 import { AlignJustify, Search, Globe } from "lucide-react";
 import LanguageSwitcher from "@/src/components/LanguageSwitcher"; 
-import { i, p } from "framer-motion/client";
+import { i, p, s } from "framer-motion/client";
 import { useTranslations } from "next-intl";
 import LanguageSwitcherPhone from "@/src/components/LanguageSwitcherPhone";
 // import SearchComponent from "@/src/components/SearchComponent"; 
 import { useRouter } from "next/navigation";
+import LinkWrapper from "@/src/components/LinkWrapper";
 
+interface NavItem {
+  label: string;
+  path: string;
+  submenu?: NavItem[]; // <-- 可選屬性
+}
 
 const logoUrl = [
 	{ label: "首頁", path: "/", imageUrl: "/YAHO_logo/logo.jpg" },
@@ -42,24 +48,41 @@ export default function Navbar() {
 			],
 			path: "/services",
 		}, // 產品服務
-		// { label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/product/a" }] }, // 展覽活動
-		// {
-		// 	label: t('sustainability'),
-		// 	submenu: [
-		// 		{ label: t('sustainability_social'), path: "/product/a" },
-		// 		{ label: t('sustainability_operations'), path: "/contact" },
-		// 		{ label: t('sustainability_report'), path: "/contact" },
-		// 	],
-		// 	path: "/sustainability",
-		// }, // 企業永續
-		// {
-		// 	label: t('investors'),
-		// 	submenu: [
-		// 		{ label: t('investors_finance'), path: "/product/a" },
-		// 		{ label: t('investors_shareholders'), path: "/contact" },
-		// 	],
-		// 	path: "/investors",
-		// }, // 投資人專區
+		{ label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/exhibition" }], path: "/exhibition", }, // 展覽活動
+		{
+			label: t('sustainability'),
+			submenu: [
+				{ label: t('sustainability_social'), path: "/sustainability/social-care" },
+				{ label: t('sustainability_operations'), path: "/sustainability/operations" },
+				{ label: t('sustainability_report'), path: "/sustainability/reports" },
+			],
+			path: "/sustainability",
+		}, // 企業永續
+		{
+			label: t('investors'),
+			submenu: [
+				{ 
+					label: t('investors_finance'),
+				  	submenu: [ 
+						{ label: t('investors_finance_month'), path: "/investors/month" },
+						{ label: t('investors_finance_year'), path: "/investors/year" },
+					], 
+				  	path: "/investors/month" },
+				{ 
+					label: t('investors_shareholders'),
+					submenu: [
+						{ label: t('investors_Important_information'), path: "/investors/message" },
+						{ label: t('investors_earnings_call'), path: "https://mops.twse.com.tw/mops/#/web/home" },
+						{ label: t('investors_shareholders_meeting'), path: "/investors/meeting" },
+						{ label: t('investors_shareholders_meeting_report'), path: "/investors/annual_report" },
+						{ label: t('investors_company_structure'), path: "/investors/structure" },
+						{ label: t('investors_dividend_information'), path:	"/investors/dividend" },
+						{ label: t('investors_service_window'), path: "/investors/windows" },
+					],
+					path: "/contact" },
+			],
+			path: "/investors",
+		}, // 投資人專區
 		// {
 		// 	label: t('governance'),
 		// 	submenu: [
@@ -170,26 +193,51 @@ export default function Navbar() {
 								<span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
 							</button>
 							{submenu && (
-								<ul className={`absolute top-full left-0 z-[40] bg-[#F5F5F5] shadow-lg rounded w-full h-26 space-x-6 min-w-[200px]
+								<ul
+									className={`absolute top-full left-0 z-[40] bg-[#F5F5F5] shadow-lg rounded w-full h-auto space-x-6 min-w-[200px]
 												flex justify-center gap-6 px-6 py-8 transition-all duration-300 ease-out
 												${hoverIndex === index 
 												? "opacity-100 translate-y-0 pointer-events-auto"
 												: "opacity-0 translate-y-2 pointer-events-none"
 												}`}
-        							>
-									{submenu.map(({ label, path }, i) => (
-										<li key={i}>
-											<Link
-												href={path}
-												className="relative group block mt-2 text-base text-gray-600 font-bold rounded-xl hover:text-black transition-colors duration-300"
-											>
-												<span>{label}</span>
-												<span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
-											</Link>
-										</li>
+								>
+									{submenu.map((item: NavItem, i: number) => (
+									<li key={i}>
+										{/* 如果有 C submenu，就顯示文字，否則用 Link */}
+										{item.submenu ? (
+										<span className="relative block mt-2 text-base text-gray-600 font-bold rounded-xl">
+											{item.label}
+										</span>
+										) : (
+										<Link
+											href={item.path}
+											className="relative group block mt-2 text-base text-gray-600 font-bold rounded-xl hover:text-black transition-colors duration-300"
+										>
+											<span>{item.label}</span>
+											<span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+										</Link>
+										)}
+
+										{/* 如果有子選單 (C 層)，就展開在 B 下方 */}
+										{item.submenu && (
+										<ul className="mt-2 border-t border-gray-300 pt-2 space-y-2">
+											{item.submenu.map((child: { label: string; path: string }, j: number) => (
+											<li key={j}>
+												<LinkWrapper
+												href={child.path}
+												className="block text-sm py-1 text-gray-500 hover:text-black transition-colors duration-300"
+												>
+												{child.label}
+												</LinkWrapper>
+											</li>
+											))}
+										</ul>
+										)}
+									</li>
 									))}
 								</ul>
 							)}
+
 						</li>
 					))}
 					<LanguageSwitcher />
@@ -210,30 +258,56 @@ export default function Navbar() {
 
 			{/* Mobile menu */}
 			{/* Mobile Menu */}
+			{/* Mobile menu */}
 			{isMobileMenuOpen && (
-				<div className="xl:hidden bg-white pt-24 pb-10 px-10 space-y-4 shadow-lg max-h-screen overflow-y-auto ">
+				<div className="xl:hidden bg-white pt-24 pb-10 px-10 space-y-4 shadow-lg max-h-screen overflow-y-auto">
 					{navItems.map(({ label, submenu }, index) => (
 						<div key={index}>
 							<span className="block font-bold text-[#375978]">{label}</span>
-							{submenu && (
-								<ul className="pl-4 mt-2">
-									{submenu.map(({ label, path }, i) => (
-										<li key={i}>
-											<Link
-												href={path}
-												className="relative group block mt-2 text-sm sm:text-base text-gray-600 font-bold rounded-lg p-2 hover:bg-[#375978]/20 hover:text-black transition-colors duration-300"
-											>
-												<span>{label}</span>
-												{/* <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span> */}
-											</Link>
-										</li>
-									))}
+								{submenu && (
+								<ul className="pl-4 mt-2 space-y-2">
+									{submenu.map((item, i) => {
+										if ("submenu" in item && Array.isArray(item.submenu)) {
+											return (
+												<li key={i}>
+													<span className="block text-sm sm:text-base text-gray-600 font-bold py-1">
+														{item.label}
+													</span>
+													{/* C 層 (第三層子選單) */}
+													<ul className="pl-4 mt-1 space-y-1 border-l border-gray-300">
+														{item.submenu.map(({ label: cLabel, path: cPath }, j) => (
+															<li key={j}>
+																<Link
+																	href={cPath}
+																	className="block text-xs sm:text-sm text-gray-500 rounded-lg p-2 hover:bg-[#375978]/10 hover:text-black transition-colors duration-300"
+																>
+																	{cLabel}
+																</Link>
+															</li>
+														))}
+													</ul>
+												</li>
+											);
+										} else {
+											return (
+												<li key={i}>
+													<Link
+														href={item.path}
+														className="block text-sm sm:text-base text-gray-600 font-bold rounded-lg p-2 hover:bg-[#375978]/20 hover:text-black transition-colors duration-300"
+													>
+														{item.label}
+													</Link>
+												</li>
+											);
+										}
+									})}
 								</ul>
-							)}
+								)}
 						</div>
 					))}
 				</div>
 			)}
+
 		</main>
 	);
 }
