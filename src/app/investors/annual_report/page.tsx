@@ -20,6 +20,8 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
+import ZoomIn from "@/src/components/animations/ZoomIn";
 
 export default function OrganizationPage() {
     const t = useTranslations("investors");
@@ -91,127 +93,132 @@ export default function OrganizationPage() {
 
             <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
-            {/* 標題區塊 */}
-            <div className="flex flex-col text-center py-6">
-                <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">
-                    Annual Reports
-                </h2>
-                <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
-                <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
-                    {t("shareholders_meeting_report")}
-                </h3>
-            </div>
+            <SlideInFromLeft delay={0.3}>
+                {/* 標題區塊 */}
+                <div className="flex flex-col text-center py-6">
+                    <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">
+                        Annual Reports
+                    </h2>
+                    <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
+                    <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
+                        {t("shareholders_meeting_report")}
+                    </h3>
+                </div>
+            </SlideInFromLeft>
 
+            <ZoomIn delay={0.3}>
             {/* 表格 + 左上角按鈕 */}
-            <div className="lg:mx-40 px-6 md:px-12 pb-16">
-                <div className="flex justify-between items-center mb-4">
-                    <div className="flex gap-3">
-                        <a
-                            href="https://mis.twse.com.tw/stock/index?lang=zhHant" // 這裡換成真實股價頁
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors"
-                        >
-                            垚鋐股價
-                        </a>
-                        <a
-                            href="https://mops.twse.com.tw/mops/#/web/home" // 公開資訊觀測站
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors"
-                        >
-                            公開資訊觀測站
-                        </a>
-                    </div>
-                </div>
-
-                {/* 表頭 */}
-                <div className="grid grid-cols-2 font-semibold text-gray-700 border-b-2 border-gray-400 pb-3 mb-8">
-                    <span className="mx-5">年度</span>
-                    <span className="mx-5 text-right">公告 / 連結</span>
-                </div>
-
-                {/* 表格內容 */}
-                <div className="divide-y divide-gray-200 rounded-xl overflow-hidden shadow-sm border border-gray-200">
-                    {paginatedReports.length > 0 ? ( paginatedReports.map((report, i) => (
-                        <div
-                            key={`${report.title}-${i}`}
-                            className={`items-center px-4 py-4 text-gray-700 text-sm md:text-base hover:bg-gray-50 transition-colors duration-200 ${
-                            i % 2 === 0 ? "bg-white" : "bg-gray-50"
-                            }`}
-                        >
-                            {/* 右邊：標題 + 按鈕 */}
-                            <div className="flex justify-between items-center gap-3 mx-1 md:mx-5">
-                                <span
-                                    className="truncate max-w-[70%] text-right"
-                                    title={report.title}
-                                >
-                                    {report.title}
-                                </span>
-                                <a
-                                    href={report.url || "#"}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-2 bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors duration-300"
-                                >
-                                    <CloudUpload size={18} />
-                                    PDF
-                                </a>
-                            </div>
+                <div className="lg:mx-40 px-6 md:px-12 pb-16">
+                    <div className="flex justify-between items-center mb-4">
+                        <div className="flex gap-3">
+                            <a
+                                href="https://mis.twse.com.tw/stock/index?lang=zhHant" // 這裡換成真實股價頁
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors"
+                            >
+                                垚鋐股價
+                            </a>
+                            <a
+                                href="https://mops.twse.com.tw/mops/#/web/home" // 公開資訊觀測站
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors"
+                            >
+                                公開資訊觀測站
+                            </a>
                         </div>
-                        ))
-                    ) : (
-                        <div className="text-center py-8 text-gray-500">查無資料</div>
+                    </div>
+
+                    {/* 表頭 */}
+                    <div className="grid grid-cols-2 font-semibold text-gray-700 border-b-2 border-gray-400 pb-3 mb-8">
+                        <span className="mx-5">年度</span>
+                        <span className="mx-5 text-right">公告 / 連結</span>
+                    </div>
+
+                    {/* 表格內容 */}
+                    <div className="divide-y divide-gray-200 rounded-xl overflow-hidden shadow-sm border border-gray-200">
+                        {paginatedReports.length > 0 ? ( paginatedReports.map((report, i) => (
+                            <div
+                                key={`${report.title}-${i}`}
+                                className={`items-center px-4 py-4 text-gray-700 text-sm md:text-base hover:bg-gray-50 transition-colors duration-200 ${
+                                i % 2 === 0 ? "bg-white" : "bg-gray-50"
+                                }`}
+                            >
+                                {/* 右邊：標題 + 按鈕 */}
+                                <div className="flex justify-between items-center gap-3 mx-1 md:mx-5">
+                                    <span
+                                        className="truncate max-w-[70%] text-right"
+                                        title={report.title}
+                                    >
+                                        {report.title}
+                                    </span>
+                                    <a
+                                        href={report.url || "#"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors duration-300"
+                                    >
+                                        <CloudUpload size={18} />
+                                        PDF
+                                    </a>
+                                </div>
+                            </div>
+                            ))
+                        ) : (
+                            <div className="text-center py-8 text-gray-500">查無資料</div>
+                        )}
+                    </div>
+
+                    {/* 分頁器 */}
+                    {totalPages > 1 && (
+                    <div className="flex justify-center mt-6">
+                        <Pagination>
+                            <PaginationContent>
+                                {/* 上一頁 */}
+                                <PaginationItem>
+                                    <PaginationPrevious
+                                        onClick={() => setPage((p) => Math.max(p - 1, 1))}
+                                        className={
+                                        page === 1
+                                            ? "pointer-events-none opacity-50"
+                                            : "cursor-pointer"
+                                        }
+                                    />
+                                </PaginationItem>
+
+                                {/* 動態頁碼 */}
+                                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                                    (p) => (
+                                        <PaginationItem key={p}>
+                                        <PaginationLink
+                                            isActive={p === page}
+                                            onClick={() => setPage(p)}
+                                        >
+                                            {p}
+                                        </PaginationLink>
+                                        </PaginationItem>
+                                    )
+                                )}
+
+                                {/* 下一頁 */}
+                                <PaginationItem>
+                                    <PaginationNext
+                                        onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
+                                        className={
+                                        page === totalPages
+                                            ? "pointer-events-none opacity-50"
+                                            : "cursor-pointer"
+                                        }
+                                    />
+                                </PaginationItem>
+                            </PaginationContent>
+                        </Pagination>
+                    </div>
                     )}
                 </div>
+            </ZoomIn>
 
-                {/* 分頁器 */}
-                {totalPages > 1 && (
-                <div className="flex justify-center mt-6">
-                    <Pagination>
-                        <PaginationContent>
-                            {/* 上一頁 */}
-                            <PaginationItem>
-                                <PaginationPrevious
-                                    onClick={() => setPage((p) => Math.max(p - 1, 1))}
-                                    className={
-                                    page === 1
-                                        ? "pointer-events-none opacity-50"
-                                        : "cursor-pointer"
-                                    }
-                                />
-                            </PaginationItem>
-
-                            {/* 動態頁碼 */}
-                            {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                                (p) => (
-                                    <PaginationItem key={p}>
-                                    <PaginationLink
-                                        isActive={p === page}
-                                        onClick={() => setPage(p)}
-                                    >
-                                        {p}
-                                    </PaginationLink>
-                                    </PaginationItem>
-                                )
-                            )}
-
-                            {/* 下一頁 */}
-                            <PaginationItem>
-                                <PaginationNext
-                                    onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
-                                    className={
-                                    page === totalPages
-                                        ? "pointer-events-none opacity-50"
-                                        : "cursor-pointer"
-                                    }
-                                />
-                            </PaginationItem>
-                        </PaginationContent>
-                    </Pagination>
-                </div>
-                )}
-            </div>
         </div>
     );
 }

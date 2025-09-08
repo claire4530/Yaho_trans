@@ -135,17 +135,17 @@ export default function IntroductionPage() {
                     {/* 分隔線 */}
                     <span className="block w-[80%] h-[1px] bg-[#375978] xl:mx-10 mt-5"></span>
                 </div>
-                <div className="flex justify-stretch space-x-10 xl:space-x-8 2xl:space-x-25 pb-20">
+                <div className="flex justify-center space-x-10 xl:space-x-8 2xl:space-x-25 pb-20">
                     {/* 核心圖片 */}
                     <ZoomIn delay={0.2}>
-                        <div className="h-[300px] xl:w-[600px] xl:h-[500px] 2xl:w-[650px] 2xl:h-[70vh] xl:ml-20 2xl:ml-30 mt-10 overflow-hidden hover:scale-110 transition-transform duration-500 ease-in-out">
+                        <div className="h-[300px] xl:w-[600px] xl:h-[500px] 2xl:w-[650px] 2xl:h-[70vh]  mt-10 overflow-hidden hover:scale-110 transition-transform duration-500 ease-in-out">
                             <img src="/coreValue/a.png" alt="Front Page" className="w-full h-full object-cover"/>
                         </div>
                     </ZoomIn>
                     {/* 核心五價值 */}
                     <SlideInFromLeft delay={0.4}>
                         {coreValues.map(({ key, descKey }, index) => (
-                            <div key={key} className="group p-6 m-2 bg-white rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.1),0_-2px_10px_rgba(0,0,0,0.1)] hover:bg-[#F0F4F8] hover:scale-105 transition-transform duration-300 max-w-[700px]">
+                            <div key={key} className="group p-6 m-2 bg-white rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.1),0_-2px_10px_rgba(0,0,0,0.1)] hover:bg-[#F0F4F8] hover:scale-105 transition-transform duration-300 max-w-[600px]">
                                 {/* 標題 */}
                                 <h2 className="font-extrabold text-2xl text-[#375978] mr-2 min-w-[200px] mb-2">
                                     {t(`introduction.coreValue.${key}`)}
@@ -344,59 +344,78 @@ export default function IntroductionPage() {
                 <span className="block w-[0%] md:w-[70%] h-[1px] bg-[#375978] xl:mx-10 mt-5"></span>
             </div>
             <div className="flex justify-center items-center gap-10 md:gap-20 xl:gap-30 flex-wrap">
-                {/* 台積電 */}
+                {/* 2024_GAS HOOK UP F21表揚獎狀 */}
                 <SlideInFromLeft delay={0.4}>
                     <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
-                        <p className="text-lg font-semibold mb-4 md:ml-16 ">{t("introduction.certificates.j construction")}</p>
+                        <p className="text-lg font-semibold my-8">{t("introduction.awards.award1")}</p>
                         {/* <span className="block w-[80%] h-[1px] bg-[#375978] xl:mx-10 mt-5"></span> */}
-                        <div className="w-[250px] sm:w-[360px] mr-18 md:mr-0">
-                            <img
-                                src="/about/award/4.png"
-                                alt="ISO Certification"
-                            />
-                        </div>
-                    </div>
-                </SlideInFromLeft>
-                {/* 日本施工證書 */}
-                <SlideInFromLeft delay={0.8}>
-                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
-                        <p className="text-lg font-semibold mb-4 md:ml-20">{t("introduction.certificates.j construction")}</p>
-                        <div className="w-[250px] sm:w-[360px] mr-18 md:mr-0">
-                            <img
-                                src="/about/award/2.png"
-                                alt="ISO Certification"
-                            />
-                        </div>
-                    </div>
-                </SlideInFromLeft>
-                <SlideInFromLeft delay={1.2}>
-                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
-                        <p className="text-lg font-semibold mb-4 md:ml-20">{t("introduction.certificates.j construction")}</p>
-                        <div className="w-[250px] sm:w-[360px] mr-18 md:mr-0">
-                            <img
-                                src="/about/award/3.png"
-                                alt="ISO Certification"
-                            />
-                        </div>
-                    </div>
-                </SlideInFromLeft>
-                <SlideInFromLeft delay={0.4}>
-                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
-                        <p className="text-lg font-semibold mb-4 md:mr-2">{t("introduction.awards.tw award4")}</p>
                         <div className="w-[250px] sm:w-[360px]">
                             <img
-                                src="/about/award/1.png"
+                                src="/about/award/1_GASHOOKUPF21.jpg"
+                                alt="ISO Certification"
+                                className="h-[540px]"
+                            />
+                        </div>
+                    </div>
+                </SlideInFromLeft>
+                {/* 2024_GAS HOOK UP台中廠區表揚獎狀 */}
+                <SlideInFromLeft delay={0.8}>
+                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
+                        <p className="text-lg font-semibold my-8">{t("introduction.awards.award2")}</p>
+                        <div className="w-[250px] sm:w-[360px]">
+                            <img
+                                src="/about/award/2_GASHOOKUP.jpg"
+                                alt="ISO Certification"
+                                className="h-[540px]"
+                            />
+                        </div>
+                    </div>
+                </SlideInFromLeft>
+                {/* 台積頒發榮譽F22優良監工 */}
+                <SlideInFromLeft delay={1.2}>
+                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
+                        <p className="text-lg font-semibold my-8">{t("introduction.awards.award3")}</p>
+                        <div className="w-[250px] sm:w-[360px]">
+                            <img
+                                src="/about/award/3_F22.jpg"
+                                alt="ISO Certification"
+                                className="h-[540px]"
+                            />
+                        </div>
+                    </div>
+                </SlideInFromLeft>
+                {/* 2024 TSMC年度優良廠商 */}
+                <SlideInFromLeft delay={0.4}>
+                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
+                        <p className="text-lg font-semibold my-8">{t("introduction.awards.award4")}</p>
+                        <div className="w-[250px] sm:w-[360px]">
+                            <img
+                                src="/about/award/4_TSMC.png"
                                 alt="ISO Certification"
                             />
                         </div>
                     </div>
                 </SlideInFromLeft>
+                {/* 2024 第十八屆金炬獎 */}
                 <SlideInFromLeft delay={0.8}>
                     <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
-                        <p className="text-lg font-semibold mb-4 md:ml-16">{t("introduction.certificates.j construction")}</p>
-                        <div className="w-[250px] sm:w-[360px] mr-10 md:mr-0">
+                        <p className="text-lg font-semibold my-8">{t("introduction.awards.award5")}</p>
+                        <div className="">
                             <img
-                                src="/about/award/5.png"
+                                src="/about/award/5_18.png"
+                                alt="ISO Certification"
+                                className="h-[540px]"
+                            />
+                        </div>
+                    </div>
+                </SlideInFromLeft>
+                {/* 2025 全國創新創業總會 熱心公益 */}
+                <SlideInFromLeft delay={0.8}>
+                    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
+                        <p className="text-lg font-semibold my-8">{t("introduction.awards.award6")}</p>
+                        <div className="w-[250px] sm:w-[400px] ">
+                            <img
+                                src="/about/award/6_2025.png"
                                 alt="ISO Certification"
                             />
                         </div>

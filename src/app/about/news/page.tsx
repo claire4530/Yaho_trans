@@ -163,7 +163,7 @@ export default function NewsPage() {
                     {paginatedNews.length === 0 ? (
                         <SlideInFromLeft delay={0.3}>
                             <div className="text-center text-[#375978] font-bold text-xl mt-10">
-                                無本年資料
+                                {t("news.noData")}
                             </div>
                         </SlideInFromLeft>
                     ) : (

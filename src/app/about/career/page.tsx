@@ -36,30 +36,12 @@ import LinkWrapper from "@/src/components/LinkWrapper";
 export default function IntroductionPage() {
     const t = useTranslations("about");
     const trainingList = [
-        {
-            title: t("career.training.tr1"),
-            href: "/about/career/training/tr1"
-        },
-        {
-            title: t("career.training.tr2"),
-            href: "/about/career/training/tr2"
-        },
-        {
-            title: t("career.training.tr3"),
-            href: "/about/career/training/tr3"
-        },
-        {
-            title: t("career.training.tr2"),
-            href: "/about/career/training/tr2"
-        },
-        {
-            title: t("career.training.tr3"),
-            href: "/about/career/training/tr3"
-        },
-        {
-            title: t("career.training.tr1"),
-            href: "/about/career/training/tr1"
-        },
+        { title: t("career.training.tr1") },
+        { title: t("career.training.tr2") },
+        { title: t("career.training.tr3") },
+        { title: t("career.training.tr4") },
+        { title: t("career.training.tr5") },
+        { title: t("career.training.tr6") },
     ];
 
     const benefitData = [
@@ -189,13 +171,13 @@ export default function IntroductionPage() {
                             <div className="space-y-11 p-4 ">
                                 {trainingList.map((item, index) => (
                                     <div key={index} className="ml-4 border-b border-[#375978] pb-5 hover:scale-105 transition-transform duration-300">
-                                        <LinkWrapper href={item.href} className="flex items-center justify-between">
+                                        <div className="flex items-center justify-between">
                                             <div className="flex items-center space-x-2">
                                                 <span className="text-xl">•</span>
                                                 <span className="text-lg text-gray-800">{item.title}</span>
                                             </div>
                                             <span className="text-[#375978] text-lg">{'>'}</span>
-                                        </LinkWrapper>
+                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -221,7 +203,7 @@ export default function IntroductionPage() {
                             <p className="text-base md:text-xl mx-6 md:p-4 md:ml-16 leading-9 ">{t("career.training.description")}</p>
                             <div className="flex flex-wrap md:p-12 lg:p-10">
                                 {trainingList.map((item, index) => (
-                                    <LinkWrapper href={item.href} key={index} className="mx-8 my-4 border-b border-[#375978]  hover:scale-105 transition-transform duration-300">
+                                    <div key={index} className="mx-8 my-4 border-b border-[#375978]  hover:scale-105 transition-transform duration-300">
                                         <div className="flex items-center justify-between w-[300px] md:w-[450px] lg:w-[300px]">
                                             <div className="flex items-center space-x-2">
                                                 <span className="text-xl">•</span>
@@ -229,7 +211,7 @@ export default function IntroductionPage() {
                                             </div>
                                             <span className="text-[#375978] text-lg">{'>'}</span>
                                         </div>
-                                    </LinkWrapper>
+                                    </div>
                                 ))}
                             </div>
                         </div>   
@@ -238,13 +220,13 @@ export default function IntroductionPage() {
                             <div className="flex flex-wrap md:p-12 lg:p-10">
                                 {trainingList.map((item, index) => (
                                     <div key={index} className="mx-8 my-4 border-b border-[#375978] basis-full md:basis-[45%] lg:basis-[30%] max-w-full hover:scale-105 transition-transform duration-300">
-                                        <LinkWrapper href={item.href} className="flex items-center justify-between">
+                                        <div className="flex items-center justify-between">
                                             <div className="flex items-center space-x-2">
                                                 <span className="text-xl">•</span>
                                                 <span className="text-lg text-gray-800 my-2">{item.title}</span>
                                             </div>
                                             <span className="text-[#375978] text-lg">{'>'}</span>
-                                        </LinkWrapper>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

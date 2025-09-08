@@ -25,6 +25,10 @@ export default function Home() {
 	  slogan: t("slidesSlogan.0"),
 	},
 	{
+	  image: "/frontPage/6.jpg",
+	  slogan: t("slidesSlogan.1"),
+	},
+	{
 	  image: "/frontPage/2.jpg",
 	  slogan: t("slidesSlogan.1"),
 	},

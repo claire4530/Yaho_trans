@@ -5,9 +5,7 @@ import { usePathname } from "next/navigation"; // 用來獲取當前路徑
 import Image from "next/image";
 import { AlignJustify, Search, Globe } from "lucide-react";
 import LanguageSwitcher from "@/src/components/LanguageSwitcher"; 
-import { i, p, s } from "framer-motion/client";
 import { useTranslations } from "next-intl";
-import LanguageSwitcherPhone from "@/src/components/LanguageSwitcherPhone";
 // import SearchComponent from "@/src/components/SearchComponent"; 
 import { useRouter } from "next/navigation";
 import LinkWrapper from "@/src/components/LinkWrapper";
@@ -35,7 +33,7 @@ export default function Navbar() {
 				{ label: t('about_company'), path: "/about/introduction" },
 				{ label: t('about_organization'), path: "/about/organization" },
 				{ label: t('about_locations'), path: "/about/locations" },
-				{ label: t('about_news'), path: "/about/news" },
+				// { label: t('about_news'), path: "/about/news" },
 				{ label: t('about_career'), path: "/about/career" },
 			],
 			path: "/about/introduction",
@@ -48,41 +46,41 @@ export default function Navbar() {
 			],
 			path: "/services",
 		}, // 產品服務
-		{ label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/exhibition" }], path: "/exhibition", }, // 展覽活動
-		{
-			label: t('sustainability'),
-			submenu: [
-				{ label: t('sustainability_social'), path: "/sustainability/social-care" },
-				{ label: t('sustainability_operations'), path: "/sustainability/operations" },
-				{ label: t('sustainability_report'), path: "/sustainability/reports" },
-			],
-			path: "/sustainability",
-		}, // 企業永續
-		{
-			label: t('investors'),
-			submenu: [
-				{ 
-					label: t('investors_finance'),
-				  	submenu: [ 
-						{ label: t('investors_finance_month'), path: "/investors/month" },
-						{ label: t('investors_finance_year'), path: "/investors/year" },
-					], 
-				  	path: "/investors/month" },
-				{ 
-					label: t('investors_shareholders'),
-					submenu: [
-						{ label: t('investors_Important_information'), path: "/investors/message" },
-						{ label: t('investors_earnings_call'), path: "https://mops.twse.com.tw/mops/#/web/home" },
-						{ label: t('investors_shareholders_meeting'), path: "/investors/meeting" },
-						{ label: t('investors_shareholders_meeting_report'), path: "/investors/annual_report" },
-						{ label: t('investors_company_structure'), path: "/investors/structure" },
-						{ label: t('investors_dividend_information'), path:	"/investors/dividend" },
-						{ label: t('investors_service_window'), path: "/investors/windows" },
-					],
-					path: "/contact" },
-			],
-			path: "/investors",
-		}, // 投資人專區
+		// { label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/exhibition" }], path: "/exhibition", }, // 展覽活動
+		// {
+		// 	label: t('sustainability'),
+		// 	submenu: [
+		// 		{ label: t('sustainability_social'), path: "/sustainability/social-care" },
+		// 		{ label: t('sustainability_operations'), path: "/sustainability/operations" },
+		// 		{ label: t('sustainability_report'), path: "/sustainability/reports" },
+		// 	],
+		// 	path: "/sustainability",
+		// }, // 企業永續
+		// {
+		// 	label: t('investors'),
+		// 	submenu: [
+		// 		{ 
+		// 			label: t('investors_finance'),
+		// 		  	submenu: [ 
+		// 				{ label: t('investors_finance_month'), path: "/investors/month" },
+		// 				{ label: t('investors_finance_year'), path: "/investors/year" },
+		// 			], 
+		// 		  	path: "/investors/month" },
+		// 		{ 
+		// 			label: t('investors_shareholders'),
+		// 			submenu: [
+		// 				{ label: t('investors_Important_information'), path: "/investors/message" },
+		// 				{ label: t('investors_earnings_call'), path: "https://mops.twse.com.tw/mops/#/web/home" },
+		// 				{ label: t('investors_shareholders_meeting'), path: "/investors/meeting" },
+		// 				{ label: t('investors_shareholders_meeting_report'), path: "/investors/annual_report" },
+		// 				{ label: t('investors_company_structure'), path: "/investors/structure" },
+		// 				{ label: t('investors_dividend_information'), path:	"/investors/dividend" },
+		// 				{ label: t('investors_service_window'), path: "/investors/windows" },
+		// 			],
+		// 			path: "/contact" },
+		// 	],
+		// 	path: "/investors",
+		// }, // 投資人專區
 		// {
 		// 	label: t('governance'),
 		// 	submenu: [

@@ -1,5 +1,4 @@
 "use client";
-import { useState, useMemo } from "react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,6 +9,8 @@ import {
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
+import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
+import ZoomIn from "@/src/components/animations/ZoomIn";
 
 export default function OrganizationPage() {
     const t = useTranslations("investors");
@@ -68,16 +69,20 @@ export default function OrganizationPage() {
 
             <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
-            {/* 標題區塊 */}
-            <div className="flex flex-col text-center py-6">
-                <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">
-                    Dividend Information
-                </h2>
-                <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
-                <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
-                    {t("dividend_information")}
-                </h3>
-            </div>
+            <SlideInFromLeft delay={0.3}>
+                {/* 標題區塊 */}
+                <div className="flex flex-col text-center py-6">
+                    <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">
+                        Dividend Information
+                    </h2>
+                    <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
+                    <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
+                        {t("dividend_information")}
+                    </h3>
+                </div>
+            </SlideInFromLeft>
+
+            <ZoomIn delay={0.3}>
             {/* 股利資訊表格 */}
             <div className="lg:mx-40 px-6 md:px-12 pb-16">
                 <div className="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
@@ -121,6 +126,8 @@ export default function OrganizationPage() {
                     * 上述資料僅供參考，詳細資訊請依公開資訊觀測站公告為準。
                 </p>            
             </div>
+            </ZoomIn>
+            
         </div>
     );
 }

@@ -131,10 +131,10 @@ export default function IntroductionPage() {
             </div>
 
             {/* 工程實績描述 */}
-            <div className="w-[full] px-6 py-10 shadow-[0_26px_35px_rgba(0,0,0,0.10)]">
+            {/* <div className="w-[full] px-6 py-10 shadow-[0_26px_35px_rgba(0,0,0,0.10)]">
                 <div className="md:w-[720px] lg:w-[800px] xl:w-[1100px] mx-auto">
                     
-                    {/* Tabs 篩選設計化學氣體 */}
+                    Tabs 篩選設計化學氣體
                     <div className="flex justify-center gap-4 sm:gap-8 mb-10">
                     {categories.map((cat) => (
                         <button
@@ -155,7 +155,7 @@ export default function IntroductionPage() {
                     ))}
                     </div>
 
-                    {/* 搜尋框 */}
+                    搜尋框
                     <div className="flex justify-center mb-10">
                     <input
                         type="text"
@@ -169,7 +169,7 @@ export default function IntroductionPage() {
                     />
                     </div>
 
-                    {/* 卡片列表 (md以上顯示) */}
+                    卡片列表 (md以上顯示)
                     <ZoomIn delay={0.2}>
                     <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 sm:mx-20 my-10 md:mx-10">
                         {currentProjects.length > 0 ? (
@@ -190,7 +190,7 @@ export default function IntroductionPage() {
                     </div>
                     </ZoomIn>
 
-                    {/* Accordion (md以下顯示) */}
+                    Accordion (md以下顯示)
                     <div className="md:hidden my-10">
                     {currentProjects.length > 0 ? (
                         <Accordion type="single" collapsible className="w-full px-4">
@@ -212,7 +212,7 @@ export default function IntroductionPage() {
                     )}
                     </div>
 
-                    {/* 頁碼 */}
+                    頁碼
                     {totalPages > 1 && (
                     <div className="flex justify-center my-10 gap-3">
                         {getPageNumbers(currentPage, totalPages).map((page, idx) =>
@@ -237,12 +237,12 @@ export default function IntroductionPage() {
                     </div>
                     )}
                 </div>
-            </div>
+            </div> */}
 
             {/* 合作夥伴標題 */}
-            <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 mt-10">
+            {/* <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 mt-10">
                 {t("result.partners")}
-            </div>      
+            </div>       */}
             {/* 合作夥伴圖片 */}
             <div className="flex justify-center items-center p-4 md:p-8">
                 <Image src="/services/result/p.png" alt={t("result.partners")} width={1300} height={600}  objectFit="contain" />

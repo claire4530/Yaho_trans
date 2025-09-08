@@ -11,14 +11,7 @@ BreadcrumbSeparator,
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
-import { CloudUpload, Search as SearchIcon, Calendar } from "lucide-react";
-import {
-Select,
-SelectContent,
-SelectItem,
-SelectTrigger,
-SelectValue,
-} from "@/components/ui/select";
+import { CloudUpload, Search } from "lucide-react";
 import {
 Pagination,
 PaginationContent,
@@ -27,6 +20,8 @@ PaginationLink,
 PaginationNext,
 PaginationPrevious,
 } from "@/components/ui/pagination";
+import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
+import ZoomIn from "@/src/components/animations/ZoomIn";
 
 export default function OrganizationPage() {
 const t = useTranslations("investors");
@@ -104,17 +99,20 @@ return (
 
 		<span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
-		{/* 標題區塊 */}
-		<div className="flex flex-col text-center py-6">
-			<h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">
-			Shareholders Meeting
-			</h2>
-			<span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
-			<h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
-			{t("shareholders_meeting")}
-			</h3>
-		</div>
+		<SlideInFromLeft delay={0.3}>
+			{/* 標題區塊 */}
+			<div className="flex flex-col text-center py-6">
+				<h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">
+				Shareholders Meeting
+				</h2>
+				<span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
+				<h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
+				{t("shareholders_meeting")}
+				</h3>
+			</div>
+		</SlideInFromLeft>
 
+		<ZoomIn delay={0.3}>
 		{/* 表格 + 左上角按鈕 */}
 		<div className="lg:mx-40 px-6 md:px-12 pb-16">
 			<div className="flex justify-between items-center mb-4">
@@ -226,6 +224,8 @@ return (
 			</div>
 			)}
 		</div>
+		</ZoomIn>
+		
 	</div>
 );
 }

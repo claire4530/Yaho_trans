@@ -112,131 +112,136 @@ export default function OrganizationPage() {
             </Breadcrumb>
             <span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
 
-            {/* 每月營收公告標題 */}
-            <div className="flex flex-col text-center py-6">
-                {/* 英文名稱 */}
-                <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">Monthly Revenue</h2>
-                {/* 下畫線 */}
-                <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
-                {/* 每月營收公告 */}
-                <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
-                    {t("month")}
-                </h3>
-            </div>
+            <SlideInFromLeft delay={0.3}>
+                {/* 每月營收公告標題 */}
+                <div className="flex flex-col text-center py-6">
+                    {/* 英文名稱 */}
+                    <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">Monthly Revenue</h2>
+                    {/* 下畫線 */}
+                    <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
+                    {/* 每月營收公告 */}
+                    <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
+                        {t("month")}
+                    </h3>
+                </div>
+            </SlideInFromLeft>
+
+            <ZoomIn delay={0.3}> 
             {/* 篩選工具列 */}
-            <div className="flex flex-row md:items-center justify-between gap-4 lg:mx-40 px-6 md:px-12 mb-6">
-                {/* 年份篩選 */}
-                <Select
-                    value={yearFilter}
-                    onValueChange={(val) => {
-                        setYearFilter(val);
-                        setPage(1);
-                    }}
-                    >
-                    <SelectTrigger className="w-[140px] sm:w-[160px] flex items-center gap-2">
-                        <Calendar className="h-4 w-4 hidden sm:flex text-gray-500" />
-                        <SelectValue placeholder="選擇年份" />
-                    </SelectTrigger>
-                    <SelectContent>
-                        <SelectItem value="all">全部年份</SelectItem>
-                        {years.map((y) => (
-                        <SelectItem key={y} value={y}>
-                            {y}
-                        </SelectItem>
-                        ))}
-                    </SelectContent>
-                </Select>
-                <div className="flex items-center gap-4 text-sm">
-                    <Search size={20} className="hidden sm:flex text-gray-500" />
-                    {/* 搜尋 */}
-                    <input
-                        type="text"
-                        placeholder="搜尋月份或關鍵字..."
-                        value={search}
-                        onChange={(e) => { setSearch(e.target.value); setPage(1); }}
-                        className="border rounded-lg px-4 py-2 w-full md:w-64"
-                    />
-                </div>
-            </div>
-
-            {/* 表格 */}
-            <div className="lg:mx-40 px-6 md:px-12 pb-16">
-                <div className="grid grid-cols-2 font-semibold text-gray-700 border-b-2 border-gray-400 pb-3 mb-8">
-                <span className="mx-5">年分 / 月份</span>
-                <span className="mx-5 text-right">營收報告</span>
-                </div>
-
-                <div className="divide-y divide-gray-200 rounded-xl overflow-hidden shadow-sm border border-gray-200">
-                {paginatedReports.length > 0 ? (
-                    paginatedReports.map((report, i) => (
-                    <div
-                        key={i}
-                        className={`grid grid-cols-2 items-center px-4 py-4 text-gray-700 text-sm md:text-base hover:bg-gray-50 transition-colors duration-200 ${
-                        i % 2 === 0 ? "bg-white" : "bg-gray-50"
-                        }`}
-                    >
-                        {/* 左邊：年份 + 標題 */}
-                        <span className="font-bold flex gap-2">
-                        {report.year}
-                        <span className="font-medium">{report.month}月營收報告</span>
-                        </span>
-
-                        {/* 右邊：PDF 按鈕 */}
-                        <div className="flex justify-end">
-                        <a
-                            href={report.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-2 bg-[#375978] text-white px-6 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors duration-300"
+                <div className="flex flex-row md:items-center justify-between gap-4 lg:mx-40 px-6 md:px-12 mb-6">
+                    {/* 年份篩選 */}
+                    <Select
+                        value={yearFilter}
+                        onValueChange={(val) => {
+                            setYearFilter(val);
+                            setPage(1);
+                        }}
                         >
-                            <CloudUpload size={18} />
-                            PDF
-                        </a>
-                        </div>
+                        <SelectTrigger className="w-[140px] sm:w-[160px] flex items-center gap-2">
+                            <Calendar className="h-4 w-4 hidden sm:flex text-gray-500" />
+                            <SelectValue placeholder="選擇年份" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="all">全部年份</SelectItem>
+                            {years.map((y) => (
+                            <SelectItem key={y} value={y}>
+                                {y}
+                            </SelectItem>
+                            ))}
+                        </SelectContent>
+                    </Select>
+                    <div className="flex items-center gap-4 text-sm">
+                        <Search size={20} className="hidden sm:flex text-gray-500" />
+                        {/* 搜尋 */}
+                        <input
+                            type="text"
+                            placeholder="搜尋月份或關鍵字..."
+                            value={search}
+                            onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+                            className="border rounded-lg px-4 py-2 w-full md:w-64"
+                        />
                     </div>
-                    ))
-                ) : (
-                    <div className="text-center py-8 text-gray-500">查無資料</div>
-                )}
                 </div>
 
-                {/* 分頁器 */}
-                {totalPages > 1 && (
-                <div className="flex justify-center mt-6">
-                    <Pagination>
-                    <PaginationContent>
-                        {/* 上一頁 */}
-                        <PaginationItem>
-                        <PaginationPrevious
-                            onClick={() => setPage(p => Math.max(p - 1, 1))}
-                            className={page === 1 ? "pointer-events-none opacity-50" : ""}
-                        />
-                        </PaginationItem>
+                {/* 表格 */}
+                <div className="lg:mx-40 px-6 md:px-12 pb-16">
+                    <div className="grid grid-cols-2 font-semibold text-gray-700 border-b-2 border-gray-400 pb-3 mb-8">
+                    <span className="mx-5">年分 / 月份</span>
+                    <span className="mx-5 text-right">營收報告</span>
+                    </div>
 
-                        {/* 動態頁碼 */}
-                        {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                        <PaginationItem key={p}>
-                            <PaginationLink
-                            isActive={p === page}
-                            onClick={() => setPage(p)}
+                    <div className="divide-y divide-gray-200 rounded-xl overflow-hidden shadow-sm border border-gray-200">
+                    {paginatedReports.length > 0 ? (
+                        paginatedReports.map((report, i) => (
+                        <div
+                            key={i}
+                            className={`grid grid-cols-2 items-center px-4 py-4 text-gray-700 text-sm md:text-base hover:bg-gray-50 transition-colors duration-200 ${
+                            i % 2 === 0 ? "bg-white" : "bg-gray-50"
+                            }`}
+                        >
+                            {/* 左邊：年份 + 標題 */}
+                            <span className="font-bold flex gap-2">
+                            {report.year}
+                            <span className="font-medium">{report.month}月營收報告</span>
+                            </span>
+
+                            {/* 右邊：PDF 按鈕 */}
+                            <div className="flex justify-end">
+                            <a
+                                href={report.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 bg-[#375978] text-white px-6 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors duration-300"
                             >
-                            {p}
-                            </PaginationLink>
-                        </PaginationItem>
-                        ))}
+                                <CloudUpload size={18} />
+                                PDF
+                            </a>
+                            </div>
+                        </div>
+                        ))
+                    ) : (
+                        <div className="text-center py-8 text-gray-500">查無資料</div>
+                    )}
+                    </div>
 
-                        {/* 下一頁 */}
-                        <PaginationItem>
-                        <PaginationNext
-                            onClick={() => setPage(p => Math.min(p + 1, totalPages))}
-                            className={page === totalPages ? "pointer-events-none opacity-50" : ""}
-                        />
-                        </PaginationItem>
-                    </PaginationContent>
-                    </Pagination>
+                    {/* 分頁器 */}
+                    {totalPages > 1 && (
+                    <div className="flex justify-center mt-6">
+                        <Pagination>
+                        <PaginationContent>
+                            {/* 上一頁 */}
+                            <PaginationItem>
+                            <PaginationPrevious
+                                onClick={() => setPage(p => Math.max(p - 1, 1))}
+                                className={page === 1 ? "pointer-events-none opacity-50" : ""}
+                            />
+                            </PaginationItem>
+
+                            {/* 動態頁碼 */}
+                            {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                            <PaginationItem key={p}>
+                                <PaginationLink
+                                isActive={p === page}
+                                onClick={() => setPage(p)}
+                                >
+                                {p}
+                                </PaginationLink>
+                            </PaginationItem>
+                            ))}
+
+                            {/* 下一頁 */}
+                            <PaginationItem>
+                            <PaginationNext
+                                onClick={() => setPage(p => Math.min(p + 1, totalPages))}
+                                className={page === totalPages ? "pointer-events-none opacity-50" : ""}
+                            />
+                            </PaginationItem>
+                        </PaginationContent>
+                        </Pagination>
+                    </div>
+                    )}
                 </div>
-                )}
-            </div>
+            </ZoomIn>
         </div>
     );            
 }

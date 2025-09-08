@@ -19,10 +19,9 @@ export default function IntroductionPage() {
         "/services/project/AMHS/1.png",
         "/services/project/AMHS/2.png",
         "/services/project/AMHS/3.png",
-        "/services/project/AMHS/4.png",
         "/services/project/AMHS/5.png",
         "/services/project/AMHS/6.png",
-        "/services/project/AMHS/7.png",
+        "/services/project/AMHS/7.png"
     ]
 
     return (

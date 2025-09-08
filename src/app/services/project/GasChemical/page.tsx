@@ -16,15 +16,9 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export default function IntroductionPage() {
     const t = useTranslations("services");
     const images = [
-        "/services/project/gasChemical/1.png",
-        "/services/project/gasChemical/2.png",
-        "/services/project/gasChemical/3.png",
-        "/services/project/gasChemical/4.png",
-        "/services/project/gasChemical/5.png",
-        "/services/project/gasChemical/6.png",
-        "/services/project/gasChemical/7.png",
-        "/services/project/gasChemical/8.png",
-        "/services/project/gasChemical/9.png",
+        "/services/project/gasChemical/1.jpg",
+        "/services/project/gasChemical/2.jpg",
+        "/services/project/gasChemical/3.jpg"
     ]
 
     return (

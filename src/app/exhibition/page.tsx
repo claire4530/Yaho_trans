@@ -130,7 +130,7 @@ export default function NewsPage() {
                     {paginatedNews.length === 0 ? (
                         <ZoomIn delay={0.3}>
                             <div className="text-center text-[#375978] font-bold text-xl mt-10">
-                                無本年資料
+                                {t("noNews")}
                             </div>
                         </ZoomIn>
                     ) : (

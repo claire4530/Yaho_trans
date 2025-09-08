@@ -27,6 +27,8 @@ import {
 	PaginationNext,
 	PaginationPrevious,
 } from "@/components/ui/pagination";
+import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
+import ZoomIn from "@/src/components/animations/ZoomIn";
 
 export default function OrganizationPage() {
 	const t = useTranslations("investors");
@@ -127,145 +129,149 @@ export default function OrganizationPage() {
 		</Breadcrumb>
 
 		<span className="block w-[80%] md:w-[90%] xl:w-[95%] h-[1px] bg-gray-700 my-3 sm:my-4 mx-10"></span>
-
+		<SlideInFromLeft delay={0.3}>
 		{/* 標題區塊 */}
-		<div className="flex flex-col text-center py-6">
-			<h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">Material Information</h2>
-			<span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
-			<h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
-			{t("Important_information")}
-			</h3>
-		</div>
-		{/* 說明段落（置中 + 合理寬度） */}
-		<div className="px-8 pb-4 leading-8 mx-auto max-w-3xl">
-			本公司為證券交易所掛牌上市公司，關於重大訊息之處理與公開，均依相關法令及主管機關規範辦理。 在資訊揭露上，我們秉持以下原則：
-			<br />
-			<br />
-			<strong>真實與正確</strong>：確保所揭露內容有憑有據，不失真。
-			<br />
-			<strong>即時與完整</strong>：於適當時點完整公告，以維護資訊透明。
-			<br />
-			<strong>公平揭露</strong>：提供所有投資人及利害關係人一致且公平的資訊取得管道。
-			<br />
-			<br />
-			公司相關之財務與營運資料、董事會重大決議、資金運用（如資金貸與及背書保證）、公司治理等資訊，均依規定透過主管機關指定資訊平台——「公開資訊觀測站」(http://mops.twse.com.tw) 對外揭露，供股東及社會大眾即時查詢與參考。(範例)
-		</div>
+			<div className="flex flex-col text-center py-6">
+				<h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">Material Information</h2>
+				<span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
+				<h3 className="text-xl md:text-2xl font-medium text-[#333] mb-10">
+				{t("Important_information")}
+				</h3>
+			</div>
+			{/* 說明段落（置中 + 合理寬度） */}
+			<div className="px-8 pb-4 leading-8 mx-auto max-w-3xl">
+				本公司為證券交易所掛牌上市公司，關於重大訊息之處理與公開，均依相關法令及主管機關規範辦理。 在資訊揭露上，我們秉持以下原則：
+				<br />
+				<br />
+				<strong>真實與正確</strong>：確保所揭露內容有憑有據，不失真。
+				<br />
+				<strong>即時與完整</strong>：於適當時點完整公告，以維護資訊透明。
+				<br />
+				<strong>公平揭露</strong>：提供所有投資人及利害關係人一致且公平的資訊取得管道。
+				<br />
+				<br />
+				公司相關之財務與營運資料、董事會重大決議、資金運用（如資金貸與及背書保證）、公司治理等資訊，均依規定透過主管機關指定資訊平台——「公開資訊觀測站」(http://mops.twse.com.tw) 對外揭露，供股東及社會大眾即時查詢與參考。(範例)
+			</div>
+		</SlideInFromLeft>
 
-		{/* 篩選工具列 */}
-		<div className="flex flex-col md:flex-row md:items-center justify-between gap-4 lg:mx-40 px-6 md:px-12 mb-6">
-			{/* 年份篩選 */}
-			<Select
-			value={yearFilter}
-			onValueChange={(val) => {
-				setYearFilter(val);
-				setPage(1);
-			}}
-			>
-			<SelectTrigger className="w-[140px] sm:w-[160px] flex items-center gap-2">
-				<Calendar className="h-4 w-4 hidden sm:flex text-gray-500" />
-				<SelectValue placeholder="選擇年份" />
-			</SelectTrigger>
-			<SelectContent>
-				<SelectItem value="all">全部年份</SelectItem>
-				{years.map((y) => (
-				<SelectItem key={y} value={y}>
-					{y}
-				</SelectItem>
-				))}
-			</SelectContent>
-			</Select>
-
-			{/* 搜尋 */}
-			<div className="flex items-center gap-3 text-sm w-full md:w-auto">
-			<SearchIcon size={20} className="hidden sm:flex text-gray-500" />
-			<input
-				type="text"
-				placeholder="搜尋標題或日期…"
-				value={search}
-				onChange={(e) => {
-				setSearch(e.target.value);
-				setPage(1);
+		<ZoomIn delay={0.3}>
+			{/* 篩選工具列 */}
+			<div className="flex flex-col md:flex-row md:items-center justify-between gap-4 lg:mx-40 px-6 md:px-12 mb-6">
+				{/* 年份篩選 */}
+				<Select
+				value={yearFilter}
+				onValueChange={(val) => {
+					setYearFilter(val);
+					setPage(1);
 				}}
-				className="border rounded-lg px-4 py-2 w-full md:w-64"
-			/>
-			</div>
-		</div>
-
-		{/* 表格 */}
-		<div className="lg:mx-40 px-6 md:px-12 pb-16">
-			<div className="grid grid-cols-2 font-semibold text-gray-700 border-b-2 border-gray-400 pb-3 mb-8">
-			<span className="mx-5">日期</span>
-			<span className="mx-5 text-right">公告 / 連結</span>
-			</div>
-
-			<div className="divide-y divide-gray-200 rounded-xl overflow-hidden shadow-sm border border-gray-200">
-			{paginatedReports.length > 0 ? (
-				paginatedReports.map((report, i) => (
-				<div
-					key={`${report.date}-${report.title}-${i}`}
-					className={`grid grid-cols-2 items-center px-4 py-4 text-gray-700 text-sm md:text-base hover:bg-gray-50 transition-colors duration-200 ${
-					i % 2 === 0 ? "bg-white" : "bg-gray-50"
-					}`}
 				>
-					{/* 左邊：日期 */}
-					<span className="font-semibold mx-1 md:mx-5">{report.date}</span>
-
-					{/* 右邊：標題 + 按鈕 */}
-					<div className="flex justify-end items-center gap-3 mx-1 md:mx-5">
-					<span className="truncate max-w-[70%] text-right" title={report.title}>
-						{report.title}
-					</span>
-					<a
-						href={report.url || "#"}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="flex items-center gap-2 bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors duration-300"
-					>
-						<CloudUpload size={18} />
-						PDF
-					</a>
-					</div>
-				</div>
-				))
-			) : (
-				<div className="text-center py-8 text-gray-500">查無資料</div>
-			)}
-			</div>
-
-			{/* 分頁器 */}
-			{totalPages > 1 && (
-			<div className="flex justify-center mt-6">
-				<Pagination>
-				<PaginationContent>
-					{/* 上一頁 */}
-					<PaginationItem>
-					<PaginationPrevious
-						onClick={() => setPage((p) => Math.max(p - 1, 1))}
-						className={page === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
-					/>
-					</PaginationItem>
-
-					{/* 動態頁碼 */}
-					{Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-					<PaginationItem key={p}>
-						<PaginationLink isActive={p === page} onClick={() => setPage(p)}>
-						{p}
-						</PaginationLink>
-					</PaginationItem>
+				<SelectTrigger className="w-[140px] sm:w-[160px] flex items-center gap-2">
+					<Calendar className="h-4 w-4 hidden sm:flex text-gray-500" />
+					<SelectValue placeholder="選擇年份" />
+				</SelectTrigger>
+				<SelectContent>
+					<SelectItem value="all">全部年份</SelectItem>
+					{years.map((y) => (
+					<SelectItem key={y} value={y}>
+						{y}
+					</SelectItem>
 					))}
+				</SelectContent>
+				</Select>
 
-					{/* 下一頁 */}
-					<PaginationItem>
-					<PaginationNext
-						onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
-						className={page === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
-					/>
-					</PaginationItem>
-				</PaginationContent>
-				</Pagination>
+				{/* 搜尋 */}
+				<div className="flex items-center gap-3 text-sm w-full md:w-auto">
+				<SearchIcon size={20} className="hidden sm:flex text-gray-500" />
+				<input
+					type="text"
+					placeholder="搜尋標題或日期…"
+					value={search}
+					onChange={(e) => {
+					setSearch(e.target.value);
+					setPage(1);
+					}}
+					className="border rounded-lg px-4 py-2 w-full md:w-64"
+				/>
+				</div>
 			</div>
-			)}
-		</div>
+
+			{/* 表格 */}
+			<div className="lg:mx-40 px-6 md:px-12 pb-16">
+				<div className="grid grid-cols-2 font-semibold text-gray-700 border-b-2 border-gray-400 pb-3 mb-8">
+				<span className="mx-5">日期</span>
+				<span className="mx-5 text-right">公告 / 連結</span>
+				</div>
+
+				<div className="divide-y divide-gray-200 rounded-xl overflow-hidden shadow-sm border border-gray-200">
+				{paginatedReports.length > 0 ? (
+					paginatedReports.map((report, i) => (
+					<div
+						key={`${report.date}-${report.title}-${i}`}
+						className={`grid grid-cols-2 items-center px-4 py-4 text-gray-700 text-sm md:text-base hover:bg-gray-50 transition-colors duration-200 ${
+						i % 2 === 0 ? "bg-white" : "bg-gray-50"
+						}`}
+					>
+						{/* 左邊：日期 */}
+						<span className="font-semibold mx-1 md:mx-5">{report.date}</span>
+
+						{/* 右邊：標題 + 按鈕 */}
+						<div className="flex justify-end items-center gap-3 mx-1 md:mx-5">
+						<span className="truncate max-w-[70%] text-right" title={report.title}>
+							{report.title}
+						</span>
+						<a
+							href={report.url || "#"}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex items-center gap-2 bg-[#375978] text-white px-4 py-2 rounded-lg text-sm hover:bg-[#F3981B] transition-colors duration-300"
+						>
+							<CloudUpload size={18} />
+							PDF
+						</a>
+						</div>
+					</div>
+					))
+				) : (
+					<div className="text-center py-8 text-gray-500">查無資料</div>
+				)}
+				</div>
+
+				{/* 分頁器 */}
+				{totalPages > 1 && (
+				<div className="flex justify-center mt-6">
+					<Pagination>
+					<PaginationContent>
+						{/* 上一頁 */}
+						<PaginationItem>
+						<PaginationPrevious
+							onClick={() => setPage((p) => Math.max(p - 1, 1))}
+							className={page === 1 ? "pointer-events-none opacity-50" : "cursor-pointer"}
+						/>
+						</PaginationItem>
+
+						{/* 動態頁碼 */}
+						{Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+						<PaginationItem key={p}>
+							<PaginationLink isActive={p === page} onClick={() => setPage(p)}>
+							{p}
+							</PaginationLink>
+						</PaginationItem>
+						))}
+
+						{/* 下一頁 */}
+						<PaginationItem>
+						<PaginationNext
+							onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
+							className={page === totalPages ? "pointer-events-none opacity-50" : "cursor-pointer"}
+						/>
+						</PaginationItem>
+					</PaginationContent>
+					</Pagination>
+				</div>
+				)}
+			</div>
+		</ZoomIn>
+
 		</div>
 	);
 }

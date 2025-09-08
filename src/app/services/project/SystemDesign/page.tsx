@@ -107,12 +107,12 @@ export default function IntroductionPage() {
                         <p className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line">
                             <strong>{t("project background")} :</strong>{"\n"}{t("project.system design description")}
                         </p>
-                        <p className="text-sm sm:text-base leading-8 text-gray-700 mt-4 whitespace-pre-line">
+                        {/* <p className="text-sm sm:text-base leading-8 text-gray-700 mt-4 whitespace-pre-line">
                             <strong>{t("project.system design Comments")}{"\n"}</strong>
                             {t("project.system design Comments list")}
                             <strong>{t("project.system design Mainframe")}{"\n"}</strong>
                             {t("project.system design Mainframe list")}
-                        </p>
+                        </p> */}
                     </div>
                 </ZoomIn>
             </div>

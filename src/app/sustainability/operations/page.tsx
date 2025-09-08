@@ -102,6 +102,7 @@ export default function OrganizationPage() {
                 <h2 className="text-2xl md:text-3xl text-gray-800 font-serif font-light">Sustainability Operations</h2>
                 {/* 下畫線 */}
                 <span className="block w-[100px] h-[1px] bg-gray-800 my-6 mx-auto"></span>
+                <span className=""></span>
                 {/* 永續經營 */}
                 <h3 className="text-xl md:text-2xl font-medium text-[#333] mb-4">
                     永續經營
@@ -129,10 +130,10 @@ export default function OrganizationPage() {
                 </div>
                 {/* 文字 + icon */}
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white px-3">
-                <div className="flex flex-col items-center gap-2">
-                    <span className="text-white">{section.icon}</span>
-                    <h3 className="text-base font-semibold">{section.title}</h3>
-                </div>
+                    <div className="flex flex-col items-center gap-2">
+                        <span className="text-white">{section.icon}</span>
+                        <h3 className="text-base font-semibold">{section.title}</h3>
+                    </div>
                 </div>
             </a>
             ))}
@@ -140,6 +141,7 @@ export default function OrganizationPage() {
 
         {/* 內文區塊 */}
         <div className="w-full">
+            <div className="rounded">fsfff</div>
             {sections.map((section, index) => (
             <div
                 id={section.id}

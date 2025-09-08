@@ -21,7 +21,7 @@ const serviceItems = [
   },
   {
     key: "Gas Chemical",
-    image: "/services/project/gasChemical/1.png",
+    image: "/services/project/gasChemical/1.jpg",
     link: "/services/project/GasChemical",
   },
   {
