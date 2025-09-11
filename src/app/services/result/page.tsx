@@ -104,7 +104,7 @@ export default function IntroductionPage() {
         <div className="overflow-x-hidden">
             {/* 關於垚鋐 簡介頁首圖片 */}
             <div className="relative w-full h-[40vh] md:h-[60vh] xl:h-[80vh] overflow-hidden">
-                <Image src="/services/project/1.jpg" 
+                <Image src="/services/result/1.jpg" 
                     alt="Front Page" 
                     layout="fill"
                     objectFit="cover"/>
