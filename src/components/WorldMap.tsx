@@ -267,7 +267,7 @@ export default function GlobalMap() {
 						<span className="font-extrabold ">Locations</span>
 					</div>
 					{/* 全球據點 */}
-					<span className="text-[#FFFFFF]">{t("title")}</span>
+					<span className="">{t("title")}</span>
 				</div>
 			</ZoomIn>
 
