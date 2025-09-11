@@ -61,7 +61,7 @@ export default function ProductsScroll() {
 			{/* 卡片下方的文字方塊 自動排序換行*/}
 			<div className="flex flex-wrap gap-4 justify-center sm:-mt-[120px] ">
 				{/* 卡片大小 */}
-				<div className="w-[400px] h-[240px] sm:w-[330px] sm:h-[300px] md:w-[350px] md:h-[400px] lg:h-[400px] relative rounded-lg shadow-xl bg-white transition-transform duration-500 ease-in-out hover:scale-103">
+				<div className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto relative rounded-lg shadow-xl bg-white transition-transform duration-500 ease-in-out hover:scale-103">
 					{/* 卡片內容 */}
 					<div className="group">
 						<FadeInUp delay={0.2}>
@@ -82,13 +82,13 @@ export default function ProductsScroll() {
 						</FadeInUp>
 					</div>
 					{/* 連結組件 */}
-					<div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 lg:bottom-8 lg:right-8">
+					<div className="px-6 pb-6 flex justify-end">
 						<AboutLink text="Read more" href="/services/project" />
 					</div>
 				</div>
 				{/* 第二張卡片 */}
 				{/* 卡片大小 */}
-				<div className="w-[400px] h-[240px] sm:w-[330px] sm:h-[300px] md:w-[350px] md:h-[400px] lg:h-[400px] relative rounded-lg shadow-xl bg-white transition-transform duration-500 ease-in-out hover:scale-103">
+				<div className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto relative rounded-lg shadow-xl bg-white transition-transform duration-500 ease-in-out hover:scale-103">
 					{/* 卡片內容 */}
 					<div className="group">
 						<FadeInUp delay={0.2}>
@@ -109,7 +109,7 @@ export default function ProductsScroll() {
 						</FadeInUp>
 					</div>
 					{/* 連結組件 */}
-					<div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 lg:bottom-8 lg:right-8">
+					<div className="px-6 pb-6 flex justify-end">
 						<AboutLink text="Read more" href="/services/result" />
 					</div>
 				</div>

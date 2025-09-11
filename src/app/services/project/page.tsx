@@ -31,7 +31,7 @@ const serviceItems = [
   },
   {
     key: "AMAT",
-    image: "/services/project/AMAT/1.png",
+    image: "/services/project/AMAT/1.jpg",
     link: "/services/project/AMAT",
   },
   {
@@ -41,7 +41,7 @@ const serviceItems = [
   },
   {
     key: "Parts",
-    image: "/services/project/Parts/1.png",
+    image: "/services/project/Parts/122.jpg",
     link: "/services/project/Parts",
   },
   {

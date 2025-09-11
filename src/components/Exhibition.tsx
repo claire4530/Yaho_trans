@@ -24,22 +24,7 @@ export default function Exhibition() {
 			dateRange: t('exhibition2.dateRange'),
 			title: t('exhibition2.title'),
 			href: "/about",
-		},
-		{
-			dateRange: t('exhibition3.dateRange'),
-			title: t('exhibition3.title'),
-			href: "/about",
-		},
-		{
-			dateRange: t('exhibition4.dateRange'),
-			title: t('exhibition4.title'),
-			href: "/about",
-		},
-		{
-			dateRange: t('exhibition5.dateRange'),
-			title: t('exhibition5.title'),
-			href: "/about",
-		},
+		}
 	];
 	return (
 		<div className="space-y-6">

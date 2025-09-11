@@ -56,19 +56,19 @@ export default function OrganizationPage() {
         </div>
         {/* 公司組織圖 */}
         <div className="font-normal text-lg pt-8 pb-18 m-4 leading-9">
-            <Image src="/about/organization/2.svg" 
+            <Image src="/about/organization/0909.svg" 
                 alt="Example Image" 
                 width={800} height={600} 
                 className="w-full h-auto" />
         </div>
-        <div className="p-4" style={{ overflow: "auto" }}>
+        {/* <div className="p-4" style={{ overflow: "auto" }}>
             <div style={{ transform: "scale(1.5)", transformOrigin: "top left" }}>
                 <img
                     src="/about/organization/2.svg"
                     alt="Organization Chart"
                 />
             </div>
-        </div>
+        </div> */}
     </div>
   );            
 }

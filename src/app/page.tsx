@@ -21,21 +21,18 @@ export default function Home() {
 //   最上方圖片跑馬燈
   const slides = [
 	{
-	  image: "/frontPage/1.jpg",
-	  slogan: t("slidesSlogan.0"),
-	},
-	{
-	  image: "/frontPage/6.jpg",
-	  slogan: t("slidesSlogan.1"),
-	},
-	{
 	  image: "/frontPage/2.jpg",
-	  slogan: t("slidesSlogan.1"),
+	  slogan: t("slidesSlogan.0"),
 	},
 	{
 	  image: "/frontPage/3.jpg",
 	  slogan: t("slidesSlogan.2"),
 	},
+	{
+	  image: "/frontPage/2.jpg",
+	  slogan: t("slidesSlogan.1"),
+	},
+
 	{
 	  image: "/frontPage/4.jpg",
 	  slogan: t("slidesSlogan.3"),
@@ -153,7 +150,7 @@ export default function Home() {
 						{t("title3")}
 					</h2>
 					{/* 副標題 */}
-					<p className="text-base p-9 md:text-2xl lg:text-3xl font-bold md:pt-10 md:pr-0 md:pl-14 lg:px-30 2xl:text-center text-[#535353]">
+					<p className="text-base p-9 md:text-2xl lg:text-3xl font-bold md:pt-10 md:pr-0 md:pl-14 lg:px-30 2xl:text-center text-[#535353] leading-10">
 						{t("description")}
 					</p>
 				</FadeIn>
@@ -212,9 +209,9 @@ export default function Home() {
 			</div>
 		</div>
 		{/* 展覽區域 */}
-		<div className="flex justify-center relative h-[510px] mx-4 my-20 sm:my-20 md:my-24 lg:mt-32">
+		<div className="flex justify-center relative h-[400px] mx-4 my-20 sm:my-20 md:my-24 lg:mt-32">
 			{/* 展覽區域背景-灰 */}
-			<div className="relative w-full max-w-[1000px] h-auto sm:h-[400px] md:h-[400px] mx-auto px-8 md:px-10 py-8 md:py-14 bg-gray-200 rounded-lg shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
+			<div className="relative w-full max-w-[1000px] h-auto sm:h-[400px] md:h-[250px] mx-auto px-8 md:px-10 py-8 md:py-14 bg-gray-200 rounded-lg shadow-lg transition-transform duration-500 ease-in-out hover:scale-105">
 				{/* 展覽標題 橘黑色穿插文字 */}
 				<h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-[Lato] absolute -top-4 md:-top-8 inset-0 text-center tracking-wide">
 					<ZoomIn delay={0.2}>
@@ -235,7 +232,7 @@ export default function Home() {
 		</div>
 		{/* 世界地圖 */}
 		<div className="w-full">
-			<div className="m-4 xl:m-16 bg-[#b3b3b3] rounded-lg">
+			<div className="m-4 xl:m-16 bg-[#ebebeb] rounded-lg">
 				<WorldMap />
 			</div>
 		</div>

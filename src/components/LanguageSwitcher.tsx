@@ -45,11 +45,11 @@ export default function LanguageSwitcher() {
   ];
 
   const switchLanguage = (locale: string) => {
-    // setIsOpen(false);
-    // if (locale === currentLocale) return;
-    // startTransition(() => {
-    //   setLocale(locale);
-    // });
+    setIsOpen(false);
+    if (locale === currentLocale) return;
+    startTransition(() => {
+      setLocale(locale);
+    });
   };
 
   // 點擊外部關閉選單

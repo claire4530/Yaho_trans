@@ -149,102 +149,123 @@ export default function IntroductionPage() {
                     </Link>
                 </div>
             </div>
-        </SlideInFromLeft>
-        {/* 教育訓練 */}
-        <div className="">
-            {/* 顯示xl */}
-            <div className="hidden xl:block">
-                <div className="flex mt-20 justify-between items-start ">
-                    {/* 左側圖片 */}
-                    <SlideInFromLeft delay={0.5}>
-                        <div className="xl:w-[50vw] xl:h-[700px] xl:mr-10 overflow-hidden ">
-                            <img src="/about/career/t.jpg" alt="Front Page" className="w-full h-full object-cover"/>
-                        </div>
-                    </SlideInFromLeft>
-                    {/* 文字區 */}
-                    <FadeInUp delay={0.5}>
-                        <div className="mb-16 flex flex-col mr-20">
-                            <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 ml-4 ">
-                                {t("career.training.title")}
-                            </div>
-                            <p className="text-xl p-4 ml-4 w-[500px]">{t("career.training.description")}</p>
-                            <div className="space-y-11 p-4 ">
-                                {trainingList.map((item, index) => (
-                                    <div key={index} className="ml-4 border-b border-[#375978] pb-5 hover:scale-105 transition-transform duration-300">
-                                        <div className="flex items-center justify-between">
-                                            <div className="flex items-center space-x-2">
-                                                <span className="text-xl">•</span>
-                                                <span className="text-lg text-gray-800">{item.title}</span>
-                                            </div>
-                                            <span className="text-[#375978] text-lg">{'>'}</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>                            
-                    </FadeInUp>
-                    {/* 右側圖片 */}
-                    <SlideInFromLeft delay={0.8}>
-                        <div className="w-[70px] overflow-hidden xl:mr-4 2xl:mr-15 ">
-                            <img src="/about/career/edu.png" alt="Front Page" className="w-full h-full object-cover" />
-                        </div>
-                    </SlideInFromLeft>
-                </div>
-            </div>
-            {/* 顯示xl以下 */}
-            <div className="block xl:hidden">
-                <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
-                    {t("career.training.title")}
-                </div>
-                <div className="flex">
-                    {/* 文字區 */}
-                    <FadeInUp delay={0.5}>
-                        <div className="hidden md:flex flex-col m-4 ">
-                            <p className="text-base md:text-xl mx-6 md:p-4 md:ml-16 leading-9 ">{t("career.training.description")}</p>
-                            <div className="flex flex-wrap md:p-12 lg:p-10">
-                                {trainingList.map((item, index) => (
-                                    <div key={index} className="mx-8 my-4 border-b border-[#375978]  hover:scale-105 transition-transform duration-300">
-                                        <div className="flex items-center justify-between w-[300px] md:w-[450px] lg:w-[300px]">
-                                            <div className="flex items-center space-x-2">
-                                                <span className="text-xl">•</span>
-                                                <span className="text-lg text-gray-800 my-2">{item.title}</span>
-                                            </div>
-                                            <span className="text-[#375978] text-lg">{'>'}</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>   
-                        <div className="flex md:hidden flex-col m-4">
-                            <p className="text-base md:text-xl mx-6 md:p-4 md:ml-16 leading-9 ">{t("career.training.description")}</p>
-                            <div className="flex flex-wrap md:p-12 lg:p-10">
-                                {trainingList.map((item, index) => (
-                                    <div key={index} className="mx-8 my-4 border-b border-[#375978] basis-full md:basis-[45%] lg:basis-[30%] max-w-full hover:scale-105 transition-transform duration-300">
-                                        <div className="flex items-center justify-between">
-                                            <div className="flex items-center space-x-2">
-                                                <span className="text-xl">•</span>
-                                                <span className="text-lg text-gray-800 my-2">{item.title}</span>
-                                            </div>
-                                            <span className="text-[#375978] text-lg">{'>'}</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>                               
-                    </FadeInUp>
-                    {/* 右側圖片 */}
-                    <SlideInFromLeft delay={0.8}>
-                        <div className="w-[60px] overflow-hidden hidden md:block xl:hidden
-                                        md:mt-36 md:mr-12 
-                                        lg:mt-0 lg:mr-20
-                                        xl:mr-4 2xl:mr-15">
-                            <img src="/about/career/edu.png" alt="Front Page" className="w-full h-full object-cover" />
-                        </div>
-                    </SlideInFromLeft>
-                </div>
-            </div>
+        </SlideInFromLeft> 
+
+
+        <div className="font-normal text-lg pt-8 pb-18 m-10 leading-9">
+            <Image 
+            src="/about/career/123.svg" 
+            alt="Example Image" 
+            width={600} height={300} 
+            className="w-full max-w-6xl h-auto mx-auto" 
+            />
         </div>
+        <div className="font-normal text-lg pt-8 pb-18 m-10 leading-9">
+            <Image 
+            src="/about/career/124.svg" 
+            alt="Example Image" 
+            width={600} height={300} 
+            className="w-full max-w-6xl h-auto mx-auto" 
+            />
+        </div>
+        {/* 教育訓練 */}
+        {false && (
+            <div className="">
+                {/* 顯示xl */}
+                <div className="hidden xl:block">
+                    <div className="flex mt-20 justify-between items-start ">
+                        {/* 左側圖片 */}
+                        <SlideInFromLeft delay={0.5}>
+                            <div className="xl:w-[50vw] xl:h-[700px] xl:mr-10 overflow-hidden ">
+                                <img src="/about/career/t.jpg" alt="Front Page" className="w-full h-full object-cover"/>
+                            </div>
+                        </SlideInFromLeft>
+                        {/* 文字區 */}
+                        <FadeInUp delay={0.5}>
+                            <div className="mb-16 flex flex-col mr-20">
+                                <div className="font-extrabold text-3xl md:text-4xl text-[#375978] p-4 ml-4 ">
+                                    {t("career.training.title")}
+                                </div>
+                                <p className="text-xl p-4 ml-4 w-[500px]">{t("career.training.description")}</p>
+                                <div className="space-y-11 p-4 ">
+                                    {trainingList.map((item, index) => (
+                                        <div key={index} className="ml-4 border-b border-[#375978] pb-5 hover:scale-105 transition-transform duration-300">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center space-x-2">
+                                                    <span className="text-xl">•</span>
+                                                    <span className="text-lg text-gray-800">{item.title}</span>
+                                                </div>
+                                                <span className="text-[#375978] text-lg">{'>'}</span>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>                            
+                        </FadeInUp>
+                        {/* 右側圖片 */}
+                        <SlideInFromLeft delay={0.8}>
+                            <div className="w-[70px] overflow-hidden xl:mr-4 2xl:mr-15 ">
+                                <img src="/about/career/edu.png" alt="Front Page" className="w-full h-full object-cover" />
+                            </div>
+                        </SlideInFromLeft>
+                    </div>
+                </div>
+                {/* 顯示xl以下 */}
+                <div className="block xl:hidden">
+                    <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
+                        {t("career.training.title")}
+                    </div>
+                    <div className="flex">
+                        {/* 文字區 */}
+                        <FadeInUp delay={0.5}>
+                            <div className="hidden md:flex flex-col m-4 ">
+                                <p className="text-base md:text-xl mx-6 md:p-4 md:ml-16 leading-9 ">{t("career.training.description")}</p>
+                                <div className="flex flex-wrap md:p-12 lg:p-10">
+                                    {trainingList.map((item, index) => (
+                                        <div key={index} className="mx-8 my-4 border-b border-[#375978]  hover:scale-105 transition-transform duration-300">
+                                            <div className="flex items-center justify-between w-[300px] md:w-[450px] lg:w-[300px]">
+                                                <div className="flex items-center space-x-2">
+                                                    <span className="text-xl">•</span>
+                                                    <span className="text-lg text-gray-800 my-2">{item.title}</span>
+                                                </div>
+                                                <span className="text-[#375978] text-lg">{'>'}</span>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>   
+                            <div className="flex md:hidden flex-col m-4">
+                                <p className="text-base md:text-xl mx-6 md:p-4 md:ml-16 leading-9 ">{t("career.training.description")}</p>
+                                <div className="flex flex-wrap md:p-12 lg:p-10">
+                                    {trainingList.map((item, index) => (
+                                        <div key={index} className="mx-8 my-4 border-b border-[#375978] basis-full md:basis-[45%] lg:basis-[30%] max-w-full hover:scale-105 transition-transform duration-300">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center space-x-2">
+                                                    <span className="text-xl">•</span>
+                                                    <span className="text-lg text-gray-800 my-2">{item.title}</span>
+                                                </div>
+                                                <span className="text-[#375978] text-lg">{'>'}</span>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>                               
+                        </FadeInUp>
+                        {/* 右側圖片 */}
+                        <SlideInFromLeft delay={0.8}>
+                            <div className="w-[60px] overflow-hidden hidden md:block xl:hidden
+                                            md:mt-36 md:mr-12 
+                                            lg:mt-0 lg:mr-20
+                                            xl:mr-4 2xl:mr-15">
+                                <img src="/about/career/edu.png" alt="Front Page" className="w-full h-full object-cover" />
+                            </div>
+                        </SlideInFromLeft>
+                    </div>
+                </div>
+            </div>
+        )}
         {/* 福利制度 */}
+        {false && (
         <div >
             <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
                 {t("career.benefits.title")}
@@ -291,6 +312,7 @@ export default function IntroductionPage() {
                 </Accordion>   
             </ZoomIn>         
         </div>
+        )}
     </div>
   );            
 }

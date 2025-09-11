@@ -94,7 +94,7 @@
     "title1": "服務項目",
     "description1": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案。",
     "title2": "工程實績",
-    "description2": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。"
+    "description2": "我們的工程實績展示了我們在各\n個領域的專業能力與成功案例，涵\n蓋了半導體、光電、醫療等產業的\n多項重要專案。"
   },
   "Exhibition": {
     "exhibition1": {
@@ -128,9 +128,10 @@
     "Taiwan": {
       "title": "台灣據點",
       "branches1": "台中總公司",
-      "branches2": "台北分公司",
-      "branches3": "高雄分公司",
-      "branches4": "新竹分公司"
+      "branches2": "新竹寶山分公司",
+      "branches3": "新竹科園分公司",
+      "branches4": "台南安定分公司",
+      "branches5": "高雄大社分公司"
     },
     "USA": {
       "title": "美國據點",
@@ -196,7 +197,7 @@
         "Customer Satisfaction description": "於YAHO，客戶居核心地位。我們堅信，客戶之成功等同於我方之成就，並同等重視其競爭力及成長。"
       },
       "certificates": {
-        "title": "公司相關證書",
+        "title": "Company Certifications",
         "Certification": "Certification",
         "tw company": "垚鋐系統科技股份有限公司",
         "tw iso": "ISO證書",
@@ -234,6 +235,7 @@
       "SelectCountry": "選擇一個國家",
       "country": {
         "Taiwan":{
+          "name": "Taiwan",
           "Taiwan": "台灣",
           "title": "台灣據點",
           "branchesTotal": 5,
@@ -274,17 +276,19 @@
           "imageUrl5": "/frontPage/1.jpg"
         },
         "USA": {
+          "name": "USA",
           "USA": "美國",
           "title": "美國據點",
           "branchesTotal": 1,
           "branches1": "亞歷桑那分公司",
-          "mail1": "yahou_service@zcstcl.com",
-          "phone1": "+1-213-123-4567",
-          "address1": "亞歷桑那州菲尼克斯市中心街123號",
+          "mail1": "serenaw@zcstcl.com",
+          "phone1": "480-350-7344",
+          "address1": "26339 N 20th ave, Phoenix, Arizona, 85085, USA",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
         },
         "Japan": {
+          "name": "Japan",
           "Japan": "日本",
           "title": "日本據點",
           "branchesTotal": 1,
@@ -296,6 +300,7 @@
           "imageUrl1": "/frontPage/1.jpg"
         },
         "Germany": {
+          "name": "Germany",
           "Germany": "德國",
           "title": "德國據點",
           "branchesTotal": 1,
@@ -307,6 +312,7 @@
           "imageUrl1": "/frontPage/1.jpg"
         },
         "Singapore": {
+          "name": "Singapore",
           "Singapore": "新加坡",
           "title": "新加坡據點",
           "branchesTotal": 1,
@@ -386,7 +392,7 @@
     "project features": "服務特色",
     "project": {
       "title": "服務項目",
-      "description": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案(範例)。",
+      "description": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案。",
       "system design": "廠務系統設計",
       "system design description": "高效率、安全、可擴充的產線基礎設施\n提供電力、氣體、化學品、排風、冷卻水等全方位廠務系統設計與整合。",
       "system design Comments": "Comments清單：",
@@ -402,15 +408,16 @@
       "AMHS application": "光電產業、半導體製程，其他高潔淨、精密搬運場域",
       "AMHS features": "Stocker服務範疇：從設計到裝機，一站式解決方案\n專業設計： 管路規劃、強度分析、CAD製圖、氣體需求評估\n精準組裝： 櫃體預置、焊接組裝、初步氣密測試\n嚴謹施工： 現場配置、結構固定、系統整合測試\n完善裝機： AMHS連接、通電上氣、客戶驗收",
       "AMAT": "AMAT裝機服務",
-      "AMAT description": "提供 AMAT 裝機服務，確保設備的正確安裝與調試，並提供後續的技術支援(範例)。",
+      "AMAT description": "致力裝機業務，從機台進入廠區後的Tier-0 組配機台Chamber作業到機台與Chamber之間溝通訊號及水電路相關組立服務，囊括CVD-DSM、PVD-MDP、ETCH等機型。",
+      "AMAT features": "我們專注於半導體設備的裝機業務，涵蓋從機台進入廠區後的 Tier-0 初始組裝作業，包含機台\n與 Chamber 的組配、訊號連線、水電氣管路安裝等全方位服務。我們的團隊具備專業技術與\n實務經驗，能確保設備安裝過程精準、安全且高效率，協助客戶快速完成產線導入並縮短設備\n驗證時程。服務範圍涵蓋多種機型，包括 CVD-DSM、PVD-MDP、ETCH 等，並持續依照業界\n標準及客戶需求，提供最佳化的施工與驗證流程。我們致力於在每一個環節中維持高品質水準，\n確保機台能在最短時間內進入穩定生產階段，協助客戶提升產能與競爭力。",
       "SMIFPOD": "YAHO SMIF POD 清洗機",
-      "SMIFPOD description": "提供 YAHO SMIF POD 清洗機的安裝、調試與維護服務，確保設備的最佳運行狀態(範例)。",
+      "SMIFPOD description": "提供 YAHO SMIF POD 清洗機的安裝、調試與維護服務，確保設備的最佳運行狀態。",
       "Parts": "Parts 耗材銷售",
       "Parts description": "從工程設計、設備裝機至零件需求，垚鋐提供完整支援",
       "Parts features": "✓ 廠務端全方位配套：從工程設計、設備裝機至零件需求，垚鋐提供完整支援\n ✓ 逆向工程實力： 針對現場設備零件需求，垚鋐具備逆向工程、分析、重建與複製之深厚經驗，現已開放客製化報價\n✓ 專業客製化 : \n",
       "Parts features description": "壓克力件 - EMO COVER、RACK COVER、GANTRY POWER COVER、DPN COVER、防夾塊、機台壓克力牌等\n不鏽鋼件 - 零件置物箱、ISSG三角架、不鏽鋼腳踏板、手推台車、不鏽鋼IPA存放筒、不鏽鋼圓形垃圾桶及螺絲等",
-      "OneStop": "一條龍裝機服務",
-      "OneStop description": "告別繁瑣，迎接未來。我們整合專業團隊，提供從規劃到安裝的全方位裝機服務\n一條龍解決方案，省時省力更省心。",
+      "OneStop": "全方位裝機服務",
+      "OneStop description": "告別繁瑣，迎接未來。我們整合專業團隊，提供從規劃到安裝的全方位裝機服務，省時省力更省心。",
       "OneStop1": "工程服務",
       "OneStop1 description": "氣體管路安裝、化學管路安裝、保溫加熱帶安裝",
       "OneStop2": "設計服務",

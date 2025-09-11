@@ -88,9 +88,9 @@ export default function IntroductionPage() {
                             height={300}
                             className="w-full h-[200px] object-cover rounded-t-xl"
                         />
-                        <CardContent className="px-4">
-                            <h3 className="text-lg font-semibold py-0 lg:py-2">{t("project.OneStop1")}</h3>
-                            <p className="text-sm text-gray-500 line-clamp-2 mt-2">{t("project.OneStop1 description")}</p>
+                        <CardContent className="px-6">
+                            <h3 className="text-xl font-semibold py-0 lg:py-2">{t("project.OneStop1")}</h3>
+                            <p className="text-base text-gray-700 line-clamp-2 mt-2">{t("project.OneStop1 description")}</p>
                         </CardContent>
                     </Card>
                     <Card className="w-[300px] pt-0 mx-2 my-5 lg:m-5 border-0 shadow-lg hover:scale-103 transition-transform duration-300">
@@ -101,9 +101,9 @@ export default function IntroductionPage() {
                             height={300}
                             className="w-full h-[200px] object-cover rounded-t-xl"
                         />
-                        <CardContent className="px-4">
-                            <h3 className="text-lg font-semibold py-0 lg:py-2">{t("project.OneStop2")}</h3>
-                            <p className="text-sm text-gray-500 line-clamp-2 mt-2">{t("project.OneStop2 description")}</p>
+                        <CardContent className="px-6">
+                            <h3 className="text-xl font-semibold py-0 lg:py-2">{t("project.OneStop2")}</h3>
+                            <p className="text-base text-gray-700 line-clamp-2 mt-2">{t("project.OneStop2 description")}</p>
                         </CardContent>
                     </Card>
                     <Card className="w-[300px] pt-0 mx-2 my-5 lg:m-5 border-0 shadow-lg hover:scale-103 transition-transform duration-300">
@@ -114,9 +114,9 @@ export default function IntroductionPage() {
                             height={300}
                             className="w-full h-[200px] object-cover rounded-t-xl"
                         />
-                        <CardContent className="px-4">
-                            <h3 className="text-lg font-semibold py-0 lg:py-2">{t("project.OneStop3")}</h3>
-                            <p className="text-sm text-gray-500 line-clamp-2 mt-2">{t("project.OneStop3 description")}</p>
+                        <CardContent className="px-6">
+                            <h3 className="text-xl font-semibold py-0 lg:py-2">{t("project.OneStop3")}</h3>
+                            <p className="text-base text-gray-700 line-clamp-2 mt-2">{t("project.OneStop3 description")}</p>
                         </CardContent>
                     </Card>
                     <Card className="w-[300px] pt-0 mx-2 my-5 lg:m-5 border-0 shadow-lg hover:scale-103 transition-transform duration-300">
@@ -127,14 +127,15 @@ export default function IntroductionPage() {
                             height={300}
                             className="w-full h-[200px] object-cover rounded-t-xl"
                         />
-                        <CardContent className="px-4">
-                            <h3 className="text-lg font-semibold py-0 lg:py-2">{t("project.OneStop4")}</h3>
-                            <p className="text-sm text-gray-500 line-clamp-2 mt-2">{t("project.OneStop4 description")}</p>
+                        <CardContent className="px-6">
+                            <h3 className="text-xl font-semibold py-0 lg:py-2">{t("project.OneStop4")}</h3>
+                            <p className="text-base text-gray-700 line-clamp-2 mt-2">{t("project.OneStop4 description")}</p>
                         </CardContent>
                     </Card>
                 </div>
             </ZoomIn>
             {/* As is / To Be */}
+            {false &&(
             <div className="flex flex-col justify-center items-center my-20">
                 {/* 卡片容器 */}
                 <div className="flex flex-col xl:flex-row gap-6 xl:gap-10 justify-center items-center w-full max-w-6xl">
@@ -198,7 +199,8 @@ export default function IntroductionPage() {
                         </Link>
                     </div>
                 </ZoomIn>
-            </div>            
+            </div>  
+            )}          
         </div>
     );            
 }

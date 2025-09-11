@@ -32,6 +32,18 @@ const projects = [
 
 ];
 
+const partners = [
+  "友達光電 AUO", "世界先進 Vanguard", "家碩科技 Gudeng Equipment",
+  "美時化學製藥 Lotus", "家登精密 Gudeng Precision", "勝高 SUMCO",
+  "雷泰光電 Lasertec", "台灣默克 Merck", "英特爾 Intel",
+  "應用材料 Applied Materials", "矽品精密 SPIL", "環球晶圓 GlobalWafers",
+  "僑力化工 SUNLIT", "辛耘 SCIENTECH", "帆宣 MIC", "鵬鼎控股 Avary",
+  "台灣矽科宏晟 Cica-Huntek", "華邦電子 Winbond", "華為 HUAWEI",
+  "台積電 TSMC", "華廣生技 Bionime", "美光 Micron", "英特格 Entegris",
+  "長春集團 CCP", "旺宏 Macronix"
+];
+
+
 export default function IntroductionPage() {
     const t = useTranslations("services");
 
@@ -244,8 +256,28 @@ export default function IntroductionPage() {
                 {t("result.partners")}
             </div>       */}
             {/* 合作夥伴圖片 */}
-            <div className="flex justify-center items-center p-4 md:p-8">
+            {/* <div className="flex justify-center items-center p-4 md:p-8">
                 <Image src="/services/result/p.png" alt={t("result.partners")} width={1300} height={600}  objectFit="contain" />
+            </div> */}
+            {/* 公司合作廠商列表 */}
+            <div className="p-6 max-w-6xl mx-auto">
+                {/* 文字牆 */}
+                <div className="flex flex-wrap justify-center gap-6">
+                    {partners.map((partner, i) => (
+                    <span
+                        key={i}
+                        className="
+                        text-[#375978] font-semibold text-lg sm:text-xl 
+                        transition- duration-300
+                        cursor-pointer
+                        hover:text-blue-400 hover:scale-110
+                        motion-safe:animate-float
+                        "
+                    >
+                        {partner}
+                    </span>
+                    ))}
+                </div>
             </div>
         </div>
     );            

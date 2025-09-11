@@ -353,7 +353,7 @@ export default function IntroductionPage() {
                             <img
                                 src="/about/award/1_GASHOOKUPF21.jpg"
                                 alt="ISO Certification"
-                                className="h-[540px]"
+                                className="md:h-[540px]"
                             />
                         </div>
                     </div>
@@ -366,7 +366,7 @@ export default function IntroductionPage() {
                             <img
                                 src="/about/award/2_GASHOOKUP.jpg"
                                 alt="ISO Certification"
-                                className="h-[540px]"
+                                className="md:h-[540px]"
                             />
                         </div>
                     </div>
@@ -379,7 +379,7 @@ export default function IntroductionPage() {
                             <img
                                 src="/about/award/3_F22.jpg"
                                 alt="ISO Certification"
-                                className="h-[540px]"
+                                className="md:h-[540px]"
                             />
                         </div>
                     </div>
@@ -388,7 +388,7 @@ export default function IntroductionPage() {
                 <SlideInFromLeft delay={0.4}>
                     <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
                         <p className="text-lg font-semibold my-8">{t("introduction.awards.award4")}</p>
-                        <div className="w-[250px] sm:w-[360px]">
+                        <div className="w-[250px] sm:w-[500px] md:h-[540px]">
                             <img
                                 src="/about/award/4_TSMC.png"
                                 alt="ISO Certification"
@@ -413,10 +413,11 @@ export default function IntroductionPage() {
                 <SlideInFromLeft delay={0.8}>
                     <div className="flex flex-col items-center hover:scale-105 transition-transform duration-600">
                         <p className="text-lg font-semibold my-8">{t("introduction.awards.award6")}</p>
-                        <div className="w-[250px] sm:w-[400px] ">
+                        <div className="w-[250px] sm:w-[500px] md:h-[540px]">
                             <img
                                 src="/about/award/6_2025.png"
                                 alt="ISO Certification"
+                                
                             />
                         </div>
                     </div>

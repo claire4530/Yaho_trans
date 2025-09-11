@@ -64,7 +64,7 @@ export default function CoreValue() {
 								/>
 								<div className="absolute bottom-0 right-0 p-2 xl:p-8">
 									<FadeInUp delay={0.2}>
-										<div className="group bg-white/80 hover:bg-white/90 w-fit max-w-full xl:w-[400px] p-4 md:p-8 rounded-lg shadow-md hover:scale-95 xl:hover:scale-105 transition-transform duration-300">
+										<div className="group bg-white/80 hover:bg-white/90 w-fit max-w-full xl:w-[430px] p-4 md:p-8 rounded-lg shadow-md hover:scale-95 xl:hover:scale-105 transition-transform duration-300">
 											{/* 核心價值標題 */}
 											<p className="text-lg md:text-xl xl:text-2xl font-bold text-[#375978] py-2 flex gap-2">
 												{slide.slogan}

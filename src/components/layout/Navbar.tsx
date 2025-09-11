@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 // import SearchComponent from "@/src/components/SearchComponent"; 
 import { useRouter } from "next/navigation";
 import LinkWrapper from "@/src/components/LinkWrapper";
+import LanguageSwitcherPhone from "@/src/components/LanguageSwitcherPhone";
 
 interface NavItem {
   label: string;
@@ -244,9 +245,9 @@ export default function Navbar() {
 				{/* Right - Icons & Toggle */}
 				<div className="flex items-center gap-4 xl:hidden px-4">
 					{/* Icon 占位用 */}
-					<Search className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" />
-					<Globe className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" />
-					{/* <LanguageSwitcherPhone /> */}
+					{/* <Search className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" /> */}
+					{/* <Globe className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" /> */}
+					<LanguageSwitcherPhone />
 					{/* 手機選單按鈕 */}
 					<button onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
 						<AlignJustify className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" />

@@ -16,7 +16,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export default function IntroductionPage() {
     const t = useTranslations("services");
     const images = [
-        "/services/project/AMAT/1.png",
+        "/services/project/AMAT/1.jpg",
+        "/services/project/AMAT/2.jpg"
     ]
 
     return (
@@ -70,7 +71,7 @@ export default function IntroductionPage() {
             {/* AMAT裝機服務 左邊 Carousel 圖片+右邊文字 */}
             <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start p-4 md:p-8">
                 {/* 左邊 Carousel */}
-                <div className="w-full lg:w-1/2 px-8 lg:px-2 xl:px-20 mx-10 xl:mx-4">
+                <div className="w-full lg:w-1/2 px-8 lg:px-2 xl:px-20 mx-10 xl:mx-4 flex-shrink-0">
                     <ZoomIn delay={0.2}>
                         <Carousel className="w-full">
                             <CarouselContent>
@@ -95,13 +96,22 @@ export default function IntroductionPage() {
 
                 {/* 右邊說明文字 */}
                 <ZoomIn delay={0.2}>
-                    <div className="w-full flex flex-col justify-center px-8 lg:px-0">
+                    <div className="w-full flex flex-col flex-1 justify-center px-8 lg:px-0">
                         {/* 標題 */}
                         <h2 className="hidden sm:flex text-2xl font-bold text-[#375978] mb-4">{t("project.AMAT")}</h2>
                         {/* 專案背景  */}
-                        <p className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line">
-                            <strong>{t("project background")} :</strong>{"\n"}{t("project.AMAT description")}
-                        </p>
+                        <div className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line ">
+                            {/* 專案背景 */}
+                            <p className="mb-4">
+                                <strong>{t("project background")} :</strong>{"\n"}
+                                {t("project.AMAT description")}
+                            </p>
+                            {/* 主要範圍 */}
+                            <p className="mb-4">
+                                <strong>{t("project features")} :</strong>{"\n"}
+                                {t("project.AMAT features")}
+                            </p>
+                        </div>
                     </div>
                 </ZoomIn>
             </div>

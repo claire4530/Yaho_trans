@@ -16,12 +16,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export default function IntroductionPage() {
     const t = useTranslations("services");
     const images = [
-        "/services/project/Parts/1.png",
-        "/services/project/Parts/2.png",
-        "/services/project/Parts/3.png",
-        "/services/project/Parts/4.png",
-        "/services/project/Parts/5.png",
-        "/services/project/Parts/6.png",
+        "/services/project/Parts/122.jpg",
+        "/services/project/Parts/123.png",
+        "/services/project/Parts/124.png",
+        "/services/project/Parts/125.png",
+        "/services/project/Parts/126.png",
+        "/services/project/Parts/127.png",
+        "/services/project/Parts/128.png"
     ]
 
     return (

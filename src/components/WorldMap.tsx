@@ -78,11 +78,11 @@ export default function GlobalMap() {
 	// 把每個點的tiltle對應到對應的地區資料
 	// 這樣點擊地圖的點時可以根據title找到對應的地區資料
 	const regionDataMap: Record<string, RegionData> = {
-		台灣據點: mockRegionData,
-		美國據點: mockRegionData2,
-		德國據點: mockRegionData3,
-		新加坡據點: mockRegionData4,
-		日本據點: mockRegionData5,
+		[t("Taiwan.title")]: mockRegionData,
+		[t("USA.title")]: mockRegionData2,
+		[t("Germany.title")]: mockRegionData3,
+		[t("Singapore.title")]: mockRegionData4,
+		[t("Japan.title")]: mockRegionData5,
 	};
 
 	// 初始化地圖
@@ -116,7 +116,7 @@ export default function GlobalMap() {
 		polygonSeries.mapPolygons.template.setAll({
 			//   tooltipText: "{name}",
 			interactive: true,
-			fill: am5.color(0x888888),
+			fill: am5.color(0xA3A3A3),
 			stroke: am5.color(0xcccccc),
 		});
 
@@ -131,14 +131,30 @@ export default function GlobalMap() {
 		// 定義每一個點的外觀與互動
 		pointSeries.bullets.push(function (root, series, dataItem) {
 			const container = am5.Container.new(root, {});
-
-			// 點的樣式 
-			const circle = am5.Circle.new(root, {
-				radius: 10,
+			const circle = am5.Graphics.new(root, {
+				svgPath: `
+				M12 17v5
+				M9 10.76
+					a2 2 0 0 1-1.11 1.79
+					l-1.78.9
+					A2 2 0 0 0 5 15.24V16
+					a1 1 0 0 0 1 1h12
+					a1 1 0 0 0 1-1v-.76
+					a2 2 0 0 0-1.11-1.79
+					l-1.78-.9
+					A2 2 0 0 1 15 10.76V7
+					a1 1 0 0 1 1-1
+					a2 2 0 0 0 0-4H8
+					a2 2 0 0 0 0 4
+					a1 1 0 0 1 1 1z
+				`,
+				scale: 1.2, // 可依需要調整
+				stroke: am5.color(0xFFCC5D),
+				strokeWidth: 2,
 				fill: am5.color(0xFFCC5D),
-				fillOpacity: 0.6,       
+				fillOpacity: 1,  // 內部填滿的透明度，可改成 1 為完全不透明
 				tooltipText: (dataItem.dataContext as { title: string }).title,
-				cursorOverStyle: "pointer",
+				cursorOverStyle: "pointer"
 			});
 
 			container.children.push(circle);
@@ -157,7 +173,7 @@ export default function GlobalMap() {
 			circle.events.on("pointerover", () => {
 				circle.animate({
 					key: "scale",
-					to: 1.5,
+					to: 1.8,
 					duration: 300,
 					easing: am5.ease.out(am5.ease.cubic)
 				});
@@ -166,7 +182,7 @@ export default function GlobalMap() {
 			circle.events.on("pointerout", () => {
 				circle.animate({
 					key: "scale",
-					to: 1,
+					to: 1.2,
 					duration: 300,
 					easing: am5.ease.out(am5.ease.cubic)
 				});
@@ -180,35 +196,35 @@ export default function GlobalMap() {
 		// 設定點的經緯度
 		pointSeries.data.setAll([
 		{
-			title: "台灣據點",
+			title: t("Taiwan.title"),
 			geometry: {
 			type: "Point",
 			coordinates: [121.5654, 25.033], // 台北
 			},
 		},
 		{
-			title: "美國據點",
+			title: t("USA.title"),
 			geometry: {
 			type: "Point",
 			coordinates: [-118.2437, 34.0522], // 洛杉磯
 			},
 		},
 		{
-			title: "德國據點",
+			title: t("Germany.title"),
 			geometry: {
 			type: "Point",
 			coordinates: [13.4050, 52.5200], // 柏林
 			},
 		},
 		{
-			title: "新加坡據點",
+			title: t("Singapore.title"),
 			geometry: {
 			type: "Point",
 			coordinates: [103.8198, 1.3521], // 新加坡
 			},
 		},
 		{
-			title: "日本據點",
+			title: t("Japan.title"),
 			geometry: {
 			type: "Point",
 			coordinates: [139.6917, 35.6895], // 東京
@@ -247,8 +263,8 @@ export default function GlobalMap() {
 				<div className="text-3xl lg:text-5xl xl:text-6xl flex flex-col gap-3 sm:gap-7 sm:px-24 font-[Lato] tracking-wider mt-2 mb-20 text-center items-center">
 					{/* global locations */}
 					<div className="flex gap-2 items-center justify-center">
-						<span className="font-extrabold text-[#FFCC5D]">Global&nbsp;</span>
-						<span className="font-extrabold text-[#FFFFFF]">Locations</span>
+						<span className="font-extrabold text-[#F3981B]">Global&nbsp;</span>
+						<span className="font-extrabold ">Locations</span>
 					</div>
 					{/* 全球據點 */}
 					<span className="text-[#FFFFFF]">{t("title")}</span>
