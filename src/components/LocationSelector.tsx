@@ -106,55 +106,59 @@ export default function LocationSelector() {
 
 	return (
 		<div className="p-6 space-y-8">
-			{/* 國家選單 + Carousel */}
-			<div className="space-y-8">
-				<Select onValueChange={(value) => {
+			<div className="flex space-y-8">
+				{/* 國家選單 */}
+				<Select
+					onValueChange={(value) => {
 					setSelectedCountry(value);
 
 					if (value === "All") {
 						const fallback = allBranches.find(
-						(b) => b.country === "Taiwan" && b.name.includes(t("locations.country.Taiwan.taichung"))
+						(b) =>
+							b.country === "Taiwan" &&
+							b.name.includes(t("locations.country.Taiwan.taichung"))
 						);
 						setSelectedBranch(fallback ?? null);
 					} else {
-						// 選擇特定國家 → 設定該國的第一個 branch
-						const firstBranchOfCountry = allBranches.find((b) => b.country === value);
+						const firstBranchOfCountry = allBranches.find(
+						(b) => b.country === value
+						);
 						setSelectedBranch(firstBranchOfCountry ?? null);
 					}
-				}}>
+					}}
+				>
 					<SelectTrigger className="w-[200px] mx-5">
-						<SelectValue placeholder="Select a country" />
+					<SelectValue placeholder="Select a country" />
 					</SelectTrigger>
 					<SelectContent>
-						<SelectItem value="All">All</SelectItem>
-						{countries.map((c) => (
-						<SelectItem key={c} value={c}>{c}</SelectItem>
-						))}
+					<SelectItem value="All">All</SelectItem>
+					{countries.map((c) => (
+						<SelectItem key={c} value={c}>
+						{c}
+						</SelectItem>
+					))}
 					</SelectContent>
 				</Select>
 
-				<Carousel className="w-full">
-					<CarouselContent>
-						{filteredBranches.map((branch, index) => (
-							<CarouselItem key={index} className=" md:basis-1/2 lg:basis-2/5">
-								<Card onClick={() => setSelectedBranch(branch)} className="pt-0 mx-2 my-5 lg:m-5 border-0 shadow-lg cursor-pointer 
-																							hover:scale-103 transition-transform duration-300">
-									<Image
-										src={branch.imageUrl}
-										alt={branch.name}
-										width={400}
-										height={300}
-										className="w-full h-[300px] object-cover rounded-t-xl"
-									/>
-									<CardContent className="px-4">
-										<h3 className="text-lg font-semibold py-0 lg:py-2">{branch.name}</h3>
-										<p className="text-sm text-gray-500 line-clamp-2">{branch.content}</p>
-									</CardContent>
-								</Card>
-							</CarouselItem>
+				{/* branch 選單（依照目前選到的國家過濾） */}
+				<Select value={selectedBranch?.name ?? ""}
+					onValueChange={(branchName) => {
+					const branch = allBranches.find((b) => b.name === branchName);
+					setSelectedBranch(branch ?? null);
+					}}
+				>
+					<SelectTrigger className="w-[300px] mx-5">
+						<SelectValue placeholder="Select a branch" />
+					</SelectTrigger>
+					<SelectContent>
+						{filteredBranches.map((branch) => (
+							<SelectItem key={branch.name} value={branch.name}>
+							{branch.name}
+							</SelectItem>
 						))}
-					</CarouselContent>
-				</Carousel>
+					</SelectContent>
+				</Select>
+				
 			</div>
 
 			{/* 詳細區塊 */}
@@ -208,5 +212,6 @@ export default function LocationSelector() {
 				</div>
 			)}
 		</div>
+
 	);
 }
