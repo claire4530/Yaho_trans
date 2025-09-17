@@ -98,29 +98,9 @@
   },
   "Exhibition": {
     "exhibition1": {
-      "dateRange": "06/13(五) - 06/14(六)",
-      "title": "2025 台灣半導體展 Semicon Taiwan",
-      "href": "/about"
-    },
-    "exhibition2": {
-      "dateRange": "06/13(五) - 06/14(六)",
-      "title": "2025 台灣國際智慧能源周",
-      "href": "/about"
-    },
-    "exhibition3": {
-      "dateRange": "06/13(五) - 06/14(六)",
-      "title": "2025 Semicon West",
-      "href": "/about"
-    },
-    "exhibition4": {
-      "dateRange": "06/13(五) - 06/14(六)",
-      "title": "2025 台灣國際智慧能源周",
-      "href": "/about"
-    },
-    "exhibition5": {
-      "dateRange": "06/13(五) - 06/14(六)",
-      "title": "2025 Semicon West",
-      "href": "/about"
+      "dateRange": "09/10(三) - 09/12(五)",
+      "title": "SEMICON Taiwan 2025",
+      "href": "/exhibition"
     }
   },
   "GlobalMap": {
@@ -446,6 +426,42 @@
       "no projects": "沒有找到符合的專案",
       "partners": "合作夥伴"
     }
+  },
+  "result": {
+    "homepage": "首頁",
+    "title": "產品服務",
+    "result": "工程實績",
+    "description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。",
+    "search": "搜尋專案名稱、地區或客戶...",
+    "category": "類別",
+    "region": "地區",
+    "customer": "客戶",
+    "no projects": "沒有找到符合的專案",
+    "partners": "合作夥伴",
+    "Cica-Huntek": "台灣矽科宏晟科技股份有限公司 Cica-Huntek Chemical Technology Taiwan Co., Ltd.",
+    "Micron": "美光科技 Micron",
+    "MIC": "帆宣 MIC",
+    "GudengPrecision": "家登精密 Gudeng Precision",
+    "GudengEquipment": "家碩科技 Gudeng Equipment",
+    "Winbond": "華邦電子 Winbond",
+    "AppliedMaterials": "應用材料 Applied Materials",
+    "VIS": "世界先進 Vanguard International Semiconductor Corporation",
+    "SPIL": "矽品精密 SPIL",
+    "SCIENTECH": "辛耘 SCIENTECH",
+    "AUO": "友達光電 AUO",
+    "Lotus": "美時化學製藥 Lotus Pharmaceutical",
+    "SUMCO": "勝高 SUMCO",
+    "Lasertec": "雷泰光電 Lasertec",
+    "Merck": "台灣默克 Merck",
+    "Intel": "英特爾 Intel",
+    "GlobalWafers": "環球晶圓股份有限公司 GlobalWafers Co., Ltd.",
+    "SUNLIT": "僑力化工股份有限公司 SUNLIT",
+    "Avary": "鵬鼎控股 Avary Holding",
+    "HUAWEI": "華為 HUAWEI",
+    "Bionime": "華廣生技 Bionime",
+    "ENTEGRIS": "英特格 ENTEGRIS",
+    "CCP": "長春集團 CCP",
+    "Macronix": "旺宏電子 Macronix"
   },
   "exhibition": {
     "title": "展覽活動",

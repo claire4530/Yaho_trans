@@ -32,7 +32,7 @@ const projects = [
 
 ];
 
-const partners = [
+const partners1 = [
   "友達光電 AUO", "世界先進 Vanguard", "家碩科技 Gudeng Equipment",
   "美時化學製藥 Lotus", "家登精密 Gudeng Precision", "勝高 SUMCO",
   "雷泰光電 Lasertec", "台灣默克 Merck", "英特爾 Intel",
@@ -45,8 +45,17 @@ const partners = [
 
 
 export default function IntroductionPage() {
-    const t = useTranslations("services");
-
+    const t = useTranslations("result");
+    const partners = [
+    t("AUO"), t("Vanguard"), t("GudengEquipment"),
+    t("Lotus"), t("GudengPrecision"), t("SUMCO"),
+    t("Lasertec"), t("Merck"), t("Intel"),
+    t("AppliedMaterials"), t("SPIL"), t("GlobalWafers"),
+    t("SUNLIT"), t("SCIENTECH"), t("MIC"), t("Avary"),
+    t("Cica-Huntek"), t("Winbond"), t("HUAWEI"),
+    t("TSMC"), t("Bionime"), t("Micron"), t("Entegris"),
+    t("CCP"), t("Macronix")
+    ];
     const [activeTab, setActiveTab] = useState("全部");
 
     const categories = ["全部", "設計", "化學", "氣體"];
@@ -129,7 +138,7 @@ export default function IntroductionPage() {
                     <BreadcrumbItem>
                         <BreadcrumbLink asChild>
                             {/* 工程實績 */}
-                            <Link href="/services/result" className="text-sm sm:text-base font-semibold">{t("result.title")}</Link>
+                            <Link href="/services/result" className="text-sm sm:text-base font-semibold">{t("result")}</Link>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                 </BreadcrumbList>
@@ -139,7 +148,7 @@ export default function IntroductionPage() {
 
             {/* 工程實績標題 */}
             <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
-                {t("result.title")}
+                {t("result")}
             </div>
 
             {/* 工程實績描述 */}

@@ -52,37 +52,37 @@ export default function GlobalMap() {
 	};
 
 	// 德國地區資料
-	const mockRegionData3: RegionData = {
-		regionTitle: t("Germany.title"),
-		branches: [
-			{ name: t("Germany.branches1"), href: "/about/locations" },
-		],
-	};
+	// const mockRegionData3: RegionData = {
+	// 	regionTitle: t("Germany.title"),
+	// 	branches: [
+	// 		{ name: t("Germany.branches1"), href: "/about/locations" },
+	// 	],
+	// };
 
 	// 新加坡地區資料
-	const mockRegionData4: RegionData = {
-		regionTitle: t("Singapore.title"),
-		branches: [
-			{ name: t("Singapore.branches1"), href: "/about/locations" },
-		],
-	};
+	// const mockRegionData4: RegionData = {
+	// 	regionTitle: t("Singapore.title"),
+	// 	branches: [
+	// 		{ name: t("Singapore.branches1"), href: "/about/locations" },
+	// 	],
+	// };
 
 	// 日本地區資料
-	const mockRegionData5: RegionData = {
-		regionTitle: t("Japan.title"),
-		branches: [
-			{ name: t("Japan.branches1"), href: "/about/locations" },
-		],
-	};
+	// const mockRegionData5: RegionData = {
+	// 	regionTitle: t("Japan.title"),
+	// 	branches: [
+	// 		{ name: t("Japan.branches1"), href: "/about/locations" },
+	// 	],
+	// };
 
 	// 把每個點的tiltle對應到對應的地區資料
 	// 這樣點擊地圖的點時可以根據title找到對應的地區資料
 	const regionDataMap: Record<string, RegionData> = {
 		[t("Taiwan.title")]: mockRegionData,
 		[t("USA.title")]: mockRegionData2,
-		[t("Germany.title")]: mockRegionData3,
-		[t("Singapore.title")]: mockRegionData4,
-		[t("Japan.title")]: mockRegionData5,
+		// [t("Germany.title")]: mockRegionData3,
+		// [t("Singapore.title")]: mockRegionData4,
+		// [t("Japan.title")]: mockRegionData5,
 	};
 
 	// 初始化地圖
@@ -209,27 +209,27 @@ export default function GlobalMap() {
 			coordinates: [-118.2437, 34.0522], // 洛杉磯
 			},
 		},
-		{
-			title: t("Germany.title"),
-			geometry: {
-			type: "Point",
-			coordinates: [13.4050, 52.5200], // 柏林
-			},
-		},
-		{
-			title: t("Singapore.title"),
-			geometry: {
-			type: "Point",
-			coordinates: [103.8198, 1.3521], // 新加坡
-			},
-		},
-		{
-			title: t("Japan.title"),
-			geometry: {
-			type: "Point",
-			coordinates: [139.6917, 35.6895], // 東京
-			},
-		},
+		// {
+		// 	title: t("Germany.title"),
+		// 	geometry: {
+		// 	type: "Point",
+		// 	coordinates: [13.4050, 52.5200], // 柏林
+		// 	},
+		// },
+		// {
+		// 	title: t("Singapore.title"),
+		// 	geometry: {
+		// 	type: "Point",
+		// 	coordinates: [103.8198, 1.3521], // 新加坡
+		// 	},
+		// },
+		// {
+		// 	title: t("Japan.title"),
+		// 	geometry: {
+		// 	type: "Point",
+		// 	coordinates: [139.6917, 35.6895], // 東京
+		// 	},
+		// },
 		]);
 
 		return () => {

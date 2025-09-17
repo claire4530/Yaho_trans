@@ -1,365 +1,360 @@
 {
-"Navigation": {
-	"about": "About YAHO",
-	"about_company": "Company Profile",
-	"about_organization": "Organization",
-	"about_locations": "Global Locations",
-	"about_news": "News",
-	"about_career": "Join Us",
-	"services": "Products & Services",
-	"services_project": "Project Services",
-	"services_result": "Engineering Achievements",
-	"exhibition": "Exhibitions",
-	"exhibition_2025": "2025",
-	"sustainability": "Sustainability",
-	"sustainability_social": "Social Engagement",
-	"sustainability_operations": "Sustainable Management",
-	"sustainability_report": "Sustainability Report Download",
-	"investors": "Investor Relations",
-	"investors_finance": "Financial Information",
-	"investors_shareholders": "Shareholders",
-	"governance": "Corporate Governance",
-	"governance_board": "Board of Directors",
-	"governance_committees": "Committees",
-	"governance_audit": "Internal Audit",
-	"governance_regulations": "Regulations",
-	"governance_ethics": "Ethical Practices",
-	"governance_communication": "Communication Mechanism",
-	"governance_risk": "Risk Management"
-},
-"Footer": {
-	"contact": "Contact Us",
-	"address": "Address: No. 485, Section 1, Huanzhong Road, Beitun District, Taichung City",
-	"phone": "Phone: +886-4-25601662",
-	"fax": "Fax: +886-4-25601662",
-	"email": "Email: yaho-sales@zcstcl.com",
-	"rights": "Copyright © 2024 ZCSTCL All Rights Reserved.",
-	"privacy": "Privacy Policy & Terms of Use",
-	"legal": "Legal & Trademarks",
-	"global": "Global Locations"
-},
-"Language": {
-	"zh": "Chinese",
-	"en": "English"
-},
-"HomePage": {
-	"title1": "YAHO : ",
-	"titleOrange1": "Professional ",
-	"title2": "Connecting the world, ",
-	"titleOrange2": "Technology ",
-	"title3": "Creates Value",
-	"description": "From Design to Operation, We Provide Comprehensive Engineering Solutions for the High-Tech Industry.",
-	"descriptionDetail1": "Let us be rid of complexity and embrace the future. As an integrated professional team, we provide end-to-end installation services—from planning to execution—saving you time, effort, and worry. Yaho System Technology is built on responsibility, integrity, efficiency, professionalism, and customer satisfaction. Together with our partners, rooted in Taiwan, we create value and expand worldwide.",
-	"slidesSlogan": [
-	"Facility Expertise, Safe and Efficient",
-	"A Decade of Experience, Technology Leadership",
-	"STK Piping, Automation Integration",
-	"Integrity and Efficiency, Customer First",
-	"United in Effort, Expanding Our Services"
-	],
-	"productsAndServices": ""
-},
-"CoreValue": {
-	"slide1": {
-	"slogan": "Integrity",
-	"details": "Integrity is the fundamental core value. We are committed to uphold the principles of honesty and trustworthiness, striving to prove our value through tangible results."
+	"Navigation": {
+		"about": "About YAHO",
+		"about_company": "Company Profile",
+		"about_organization": "Organization",
+		"about_locations": "Global Locations",
+		"about_news": "News",
+		"about_career": "Join Us",
+		"services": "Products & Services",
+		"services_project": "Project Services",
+		"services_result": "Engineering Achievements",
+		"exhibition": "Exhibitions",
+		"exhibition_2025": "2025",
+		"sustainability": "Sustainability",
+		"sustainability_social": "Social Engagement",
+		"sustainability_operations": "Sustainable Management",
+		"sustainability_report": "Sustainability Report Download",
+		"investors": "Investor Relations",
+		"investors_finance": "Financial Information",
+		"investors_shareholders": "Shareholders",
+		"governance": "Corporate Governance",
+		"governance_board": "Board of Directors",
+		"governance_committees": "Committees",
+		"governance_audit": "Internal Audit",
+		"governance_regulations": "Regulations",
+		"governance_ethics": "Ethical Practices",
+		"governance_communication": "Communication Mechanism",
+		"governance_risk": "Risk Management"
 	},
-	"slide2": { 
-	"slogan": "Responsibility and Sustainability",
-	"details": "We value the well-being of our customers, employees, suppliers, shareholders, and society, and are committed to fulfilling our social responsibilities, creating shared value, and promoting sustainable development."
+	"Footer": {
+		"contact": "Contact Us",
+		"address": "Address: No. 485, Section 1, Huanzhong Road, Beitun District, Taichung City",
+		"phone": "Phone: +886-4-25601662",
+		"fax": "Fax: +886-4-25601662",
+		"email": "Email: yaho-sales@zcstcl.com",
+		"rights": "Copyright © 2024 ZCSTCL All Rights Reserved.",
+		"privacy": "Privacy Policy & Terms of Use",
+		"legal": "Legal & Trademarks",
+		"global": "Global Locations"
 	},
-	"slide3": {
-	"slogan": "Professionalism and Quality",
-	"details": "We pay close attention to detail, demonstrating professionalism and excellence in quality. Our goal is to deliver precise and reliable services that maximize professional value and consistently exceed customer expectations."
+	"Language": {
+		"zh": "Chinese",
+		"en": "English"
 	},
-	"slide4": {
-	"slogan": "Efficiency",
-	"details": "We value efficiency—delivering smart, fast, and dependable solutions that save time and create lasting value."
+	"HomePage": {
+		"title1": "YAHO : ",
+		"titleOrange1": "Professional ",
+		"title2": "Connecting the world, ",
+		"titleOrange2": "Technology ",
+		"title3": "Creates Value",
+		"description": "From Design to Operation, We Provide Comprehensive Engineering Solutions for the High-Tech Industry.",
+		"descriptionDetail1": "Let us be rid of complexity and embrace the future. As an integrated professional team, we provide end-to-end installation services—from planning to execution—saving you time, effort, and worry. Yaho System Technology is built on responsibility, integrity, efficiency, professionalism, and customer satisfaction. Together with our partners, rooted in Taiwan, we create value and expand worldwide.",
+		"slidesSlogan": [
+		"Facility Expertise, Safe and Efficient",
+		"A Decade of Experience, Technology Leadership",
+		"STK Piping, Automation Integration",
+		"Integrity and Efficiency, Customer First",
+		"United in Effort, Expanding Our Services"
+		],
+		"productsAndServices": ""
 	},
-	"slide5": {
-	"slogan": "Customer Satisfaction",
-	"details": "For YAHO, our customers are at the heart of everything we do. We believe that our success is defined by the feedback of our clients, and we are equally committed to enhancing their competitiveness and growth."
-	}
-},
-"ProductsScroll": {
-	"title1": "Service Offerings",
-	"description1": "We provide a wide range of products and services, focusing on customer needs while pursuing innovation and quality. Whether in software development, system integration, or technical support, we deliver professional solutions tailored to our clients.",
-	"title2": "Engineering Achievements",
-	"description2": "Our engineering portfolio highlights our expertise and successful projects across diverse industries, including semiconductors, optoelectronics, and healthcare. These achievements demonstrate our technical capabilities and our ability to deliver value in mission-critical projects."
-},
-"Exhibition": {
-	"exhibition1": {
-	"dateRange": "June.13(Fri) – June.14(Sat)",
-	"title": "Semicon Taiwan 2025",
-	"href": "/about"
+	"CoreValue": {
+		"slide1": {
+		"slogan": "Integrity",
+		"details": "Integrity is the fundamental core value. We are committed to uphold the principles of honesty and trustworthiness, striving to prove our value through tangible results."
+		},
+		"slide2": { 
+		"slogan": "Responsibility and Sustainability",
+		"details": "We value the well-being of our customers, employees, suppliers, shareholders, and society, and are committed to fulfilling our social responsibilities, creating shared value, and promoting sustainable development."
+		},
+		"slide3": {
+		"slogan": "Professionalism and Quality",
+		"details": "We pay close attention to detail, demonstrating professionalism and excellence in quality. Our goal is to deliver precise and reliable services that maximize professional value and consistently exceed customer expectations."
+		},
+		"slide4": {
+		"slogan": "Efficiency",
+		"details": "We value efficiency—delivering smart, fast, and dependable solutions that save time and create lasting value."
+		},
+		"slide5": {
+		"slogan": "Customer Satisfaction",
+		"details": "For YAHO, our customers are at the heart of everything we do. We believe that our success is defined by the feedback of our clients, and we are equally committed to enhancing their competitiveness and growth."
+		}
 	},
-	"exhibition2": {
-	"dateRange": "June.13(Fri) – June.14(Sat)",
-	"title": "Energy Taiwan & Net-Zero Taiwan 2025",
-	"href": "/about"
-	}
-},
-"GlobalMap": {
-	"title": "",
-	"Taiwan": {
-	"title": "Taiwan",
-	"branches1": "Headquarters (Taichung)",
-	"branches2": "Hsinchu Baoshan Office",
-	"branches3": "Hsinchu Science Park Office",
-	"branches4": "Tainan Anding Office",
-	"branches5": "Kaohsiung Dashe Branch"
+	"ProductsScroll": {
+		"title1": "Service Offerings",
+		"description1": "We provide a wide range of products and services, focusing on customer needs while pursuing innovation and quality. Whether in software development, system integration, or technical support, we deliver professional solutions tailored to our clients.",
+		"title2": "Engineering Achievements",
+		"description2": "Our engineering portfolio highlights our expertise and successful projects across diverse industries, including semiconductors, optoelectronics, and healthcare. These achievements demonstrate our technical capabilities and our ability to deliver value in mission-critical projects."
 	},
-	"USA": {
-	"title": "USA",
-	"branches1": "Arizona Office"
+	"Exhibition": {
+		"exhibition1": {
+		"dateRange": "SEP.10(Wed) – SEP.12(Fri)",
+		"title": "Semicon Taiwan 2025",
+		"href": "/exhibition"
+		}
 	},
-	"Japan": {
-	"title": "Japan",
-	"branches1": "Kumamoto Office"
-	},
-	"Germany": {
-	"title": "Germany",
-	"branches1": "Dresden Office"
-	},
-	"Singapore": {
-	"title": "Singapore",
-	"branches1": "Singapore Office"
-	},
-	"url": "https://www.zcstcl.com/official_web/"
-},
-"about": {
-	"introduction": {
-	"title": "Introduction",
-	"homepage": "Homepage",
-	"about": "About Yaho",
-	"url": "/about/introduction",
-	"descriptionDetail1": "Yaho System Technology is a technology-driven company specializing in high-tech facility construction, system integration, and maintenance. Our expertise covers hook-up design, tool design, equipment installation, maintenance, and consumables. Backed by a core team with over 20 years of industry experience, we are trusted for our efficiency, professionalism, and customer-focused service.",
-	"descriptionDetail2": "Since our founding in 2015, we have grown from insulation, heating, and piping projects into automation integration and global partnerships, offering one-stop engineering solutions for the semiconductor, optoelectronics, and healthcare industries. With complete design capabilities, a skilled technical team, and full after-sales service, we deliver end-to-end solutions—from design to installation, from supply to maintenance. Guided by responsibility, integrity, efficiency, professionalism, and customer satisfaction, Yaho continues to grow with our partners, creating value together. Rooted in Taiwan, we are expanding to the world.",
-	"descriptionDetail3": "Facility Expertise, Safe and Efficient",
-	"descriptionDetail4": "A Decade of Experience, Technology Leadership",
-	"descriptionDetail5": "Integrity and Efficiency, Customer First",
-	"descriptionDetail6": "United in Effort, Expanding Our Services",
-	"descriptionDetail7": "STK Piping, Automation Integration",
-	"history": {
-		"title": "Company History",
-		"year1": "2024",
-		"year1_description1": "U.S. subsidiary obtained local construction license",
-		"year1_description2": "Japan subsidiary obtained local construction license",
-		"year1_description3": "Certified supplier for AMAT Taiwan",
-		"year2": "2023",
-		"year2_description1": "Established U.S. subsidiary",
-		"year2_description2": "Established Japan subsidiary",
-		"year3": "2022",
-		"year3_description1": "Certified supplier for TSMC Taiwan",
-		"year3_description2": "",
-		"year4": "2020",
-		"year4_description1": "Developed hook-up UM table signing and flow calculation software for semiconductor projects",
-		"year4_description2": "",
-		"year5": "2015",
-		"year5_description1": "Obtained distributorship of Thermon heat tracing products",
-		"year5_description2": ""
-	},
-	"coreValue": {
-		"title": "Core Value",
-		"Integrity": "Integrity",
-		"Responsibility": "Responsibility",
-		"Professionalism": "Professionalism",
-		"Efficiency": "Efficiency",
-		"Customer Satisfaction": "Customer Satisfaction",
-		"Integrity description": "Integrity is the fundamental core value. We are committed to uphold the principles of honesty and trustworthiness, striving to prove our value through tangible results.",
-		"Responsibility description": "We recognize sincerely that the well-being of our customers, suppliers, employees, shareholders, and society at large is essential to our success. In response to the trust of our stakeholders, we are committed to actively fulfilling our corporate social responsibilities, creating shared value, and striving for sustainable development.",
-		"Professionalism description": "We pay close attention to detail, demonstrating professionalism and excellence in quality. Our goal is to deliver precise and reliable services that maximize professional value and consistently exceed customer expectations.",
-		"Efficiency description": "We value efficiency—delivering smart, fast, and dependable solutions that save time and create lasting value.",
-		"Customer Satisfaction description": "For YAHO, our customers are at the heart of everything we do. We believe that our success is defined by the feedback of our clients, and we are equally committed to enhancing their competitiveness and growth."
-	},
-	"certificates": {
-		"title": "Company Certifications",
-		"Certification": "Certification",
-		"tw company": "Yaho System Technology co. ltd.",
-		"tw iso": "ISO Certificates",
-		"tw professional": "Professional Committee Certificate",
-		"A company": "YAHO Systems Technology Inc.",
-		"A construction": "USA construction license",
-		"j company": "YAHO Systems Technology Japan",
-		"j construction": "Japan construction license"
-	},
-	"awards": {
-		"title": "Awards and Honors",
-		"award1": "TSMC F21 Gas Hook-Up Commendation",
-		"award2": "TSMC Taichung Fab Gas Hook-Up Commendation",
-		"award3": "TSMC F22 Outstanding Supervisor Award",
-		"award4": "TSMC Annual Excellent Supplier Award",
-		"award5": "18th Golden Torch Award",
-		"award6": "National Innovation and Entrepreneurship Association – Social Contribution Award"
-	}
-	},
-	"organization": {
-	"about": "About Yaho",
-	"title": "Organization"
-	},
-	"locations": {
-	"about": "About Yaho",
-	"title": "Global Locations",
-	"Phone": "Contact Number",
-	"Email": "Email",
-	"Address": "Address",
-	"BusinessHours": "Business Hours",
-	"businessHours": "Mon-Fri 8:30-17:30 (GMT+8)",
-	"ContactUs": "For business or technical inquiries, please feel free to contact us via phone or email!",
-	"Content": "Business Content",
-	"Check": "View Map",
-	"SelectCountry": "Select a Country",
-	"country": {
-		"Taiwan":{
-		"name": "Taiwan",
-		"Taiwan": "Taiwan",
+	"GlobalMap": {
+		"title": "",
+		"Taiwan": {
 		"title": "Taiwan",
-		"branchesTotal": 5,
 		"branches1": "Headquarters (Taichung)",
-		"taichung": "Taichung",
-		"mail1": "yaho-sales@zcstcl.com",
-		"phone1": "+886-4-25601662 #1212",
-		"address1": "No. 485, Section 1, Huanzhong Rd, Beitun District, Taichung, Taiwan",
-		"content1": "Corporate Headquarters, Engineering Practices",
-		"imageUrl1": "/frontPage/1.jpg",
-
 		"branches2": "Hsinchu Baoshan Office",
-		"mail2": "yaho-sales@zcstcl.com",
-		"phone2": "+886-4-25601662 #1212",
-		"address2": "No. 58-8, Lane 103, Songcui Rd., Baoshan Township, Hsinchu County, Taiwan",
-		"content2": "Business Development, Customer Service",
-		"imageUrl2": "/frontPage/1.jpg",
-
 		"branches3": "Hsinchu Science Park Office",
-		"mail3": "yaho-sales@zcstcl.com",
-		"phone3": "+886-4-25601662 #1212",
-		"address3": "No. 2, Alley 3, Lane 162, Science Park Rd., East District, Hsinchu City, Taiwan",
-		"content3": "Southern Business, Technical Support",
-		"imageUrl3": "/frontPage/1.jpg",
-
 		"branches4": "Tainan Anding Office",
-		"mail4": "yaho-sales@zcstcl.com",
-		"phone4": "+886-4-25601662 #1212",
-		"address4": "No. 2-14, Suchuo, Anding District, Tainan City, Taiwan",
-		"content4": "Northern Business, Technical Support",
-		"imageUrl4": "/frontPage/1.jpg",
-
-		"branches5": "Kaohsiung Dashe Office",
-		"mail5": "yaho-sales@zcstcl.com",
-		"phone5": "+886-4-25601662 #1212",
-		"address5": "No. 329-3, Zhongzheng Rd., Dashe District, Kaohsiung City, Taiwan",
-		"content5": "Southern Business, Technical Support",
-		"imageUrl5": "/frontPage/1.jpg"
+		"branches5": "Kaohsiung Dashe Branch"
 		},
 		"USA": {
-		"name": "USA",
-		"USA": "United States",
 		"title": "USA",
-		"branchesTotal": 1,
-		"branches1": "Arizona Office",
-		"mail1": "serenaw@zcstcl.com",
-		"phone1": "480-350-7344",
-		"address1": "26339 N 20th ave, Phoenix, Arizona, 85085, USA",
-		"content1": "Business Development, Customer Service",
-		"imageUrl1": "/frontPage/1.jpg"
+		"branches1": "Arizona Office"
 		},
 		"Japan": {
-		"name": "Japan",
-		"Japan": "日本",
-		"title": "日本據點",
-		"branchesTotal": 1,
-		"branches1": "熊本分公司",
-		"mail1": "yaho.kumamoto@zcstcl.com",
-		"phone1": "+81-6-1234-5678",
-		"address1": "熊本市北區梅田1丁目",
-		"content1": "業務拓展、客戶服務",
-		"imageUrl1": "/frontPage/1.jpg"
+		"title": "Japan",
+		"branches1": "Kumamoto Office"
 		},
 		"Germany": {
-		"name": "Germany",
-		"Germany": "Germany",
 		"title": "Germany",
-		"branchesTotal": 1,
-		"branches1": "Dresden Office",
-		"mail1": "yaho.taichung@zcstcl.com",
-		"phone1": "+4930 30366 3776",
-		"address1": "Pappelallee 78/79 10437 Berlin",
-		"content1": "Business Development, Customer Service",
-		"imageUrl1": "/frontPage/1.jpg"
+		"branches1": "Dresden Office"
 		},
 		"Singapore": {
-		"name": "Singapore",
-		"Singapore": "Singapore",
-		"title": "Singapore Office",
-		"branchesTotal": 1,
-		"branches1": "Singapore Office",
-		"mail1": "yaho.taichung@zcstcl.com",
-		"phone1": "886 4 25601662 #1400",
-		"address1": "8 KAKI BUKIT AVENUE 4, #08-32, PREMIER @ KAKI BUKIT, SINGAPORE 415875",
-		"content1": "Business Development, Customer Service",
-		"imageUrl1": "/frontPage/1.jpg"
+		"title": "Singapore",
+		"branches1": "Singapore Office"
+		},
+		"url": "https://www.zcstcl.com/official_web/"
+	},
+	"about": {
+		"introduction": {
+		"title": "Introduction",
+		"homepage": "Homepage",
+		"about": "About Yaho",
+		"url": "/about/introduction",
+		"descriptionDetail1": "Yaho System Technology is a technology-driven company specializing in high-tech facility construction, system integration, and maintenance. Our expertise covers hook-up design, tool design, equipment installation, maintenance, and consumables. Backed by a core team with over 20 years of industry experience, we are trusted for our efficiency, professionalism, and customer-focused service.",
+		"descriptionDetail2": "Since our founding in 2015, we have grown from insulation, heating, and piping projects into automation integration and global partnerships, offering one-stop engineering solutions for the semiconductor, optoelectronics, and healthcare industries. With complete design capabilities, a skilled technical team, and full after-sales service, we deliver end-to-end solutions—from design to installation, from supply to maintenance. Guided by responsibility, integrity, efficiency, professionalism, and customer satisfaction, Yaho continues to grow with our partners, creating value together. Rooted in Taiwan, we are expanding to the world.",
+		"descriptionDetail3": "Facility Expertise, Safe and Efficient",
+		"descriptionDetail4": "A Decade of Experience, Technology Leadership",
+		"descriptionDetail5": "Integrity and Efficiency, Customer First",
+		"descriptionDetail6": "United in Effort, Expanding Our Services",
+		"descriptionDetail7": "STK Piping, Automation Integration",
+		"history": {
+			"title": "Company History",
+			"year1": "2024",
+			"year1_description1": "U.S. subsidiary obtained local construction license",
+			"year1_description2": "Japan subsidiary obtained local construction license",
+			"year1_description3": "Certified supplier for AMAT Taiwan",
+			"year2": "2023",
+			"year2_description1": "Established U.S. subsidiary",
+			"year2_description2": "Established Japan subsidiary",
+			"year3": "2022",
+			"year3_description1": "Certified supplier for TSMC Taiwan",
+			"year3_description2": "",
+			"year4": "2020",
+			"year4_description1": "Developed hook-up UM table signing and flow calculation software for semiconductor projects",
+			"year4_description2": "",
+			"year5": "2015",
+			"year5_description1": "Obtained distributorship of Thermon heat tracing products",
+			"year5_description2": ""
+		},
+		"coreValue": {
+			"title": "Core Value",
+			"Integrity": "Integrity",
+			"Responsibility": "Responsibility",
+			"Professionalism": "Professionalism",
+			"Efficiency": "Efficiency",
+			"Customer Satisfaction": "Customer Satisfaction",
+			"Integrity description": "Integrity is the fundamental core value. We are committed to uphold the principles of honesty and trustworthiness, striving to prove our value through tangible results.",
+			"Responsibility description": "We recognize sincerely that the well-being of our customers, suppliers, employees, shareholders, and society at large is essential to our success. In response to the trust of our stakeholders, we are committed to actively fulfilling our corporate social responsibilities, creating shared value, and striving for sustainable development.",
+			"Professionalism description": "We pay close attention to detail, demonstrating professionalism and excellence in quality. Our goal is to deliver precise and reliable services that maximize professional value and consistently exceed customer expectations.",
+			"Efficiency description": "We value efficiency—delivering smart, fast, and dependable solutions that save time and create lasting value.",
+			"Customer Satisfaction description": "For YAHO, our customers are at the heart of everything we do. We believe that our success is defined by the feedback of our clients, and we are equally committed to enhancing their competitiveness and growth."
+		},
+		"certificates": {
+			"title": "Company Certifications",
+			"Certification": "Certification",
+			"tw company": "Yaho System Technology co. ltd.",
+			"tw iso": "ISO Certificates",
+			"tw professional": "Professional Committee Certificate",
+			"A company": "YAHO Systems Technology Inc.",
+			"A construction": "USA construction license",
+			"j company": "YAHO Systems Technology Japan",
+			"j construction": "Japan construction license"
+		},
+		"awards": {
+			"title": "Awards and Honors",
+			"award1": "TSMC F21 Gas Hook-Up Commendation",
+			"award2": "TSMC Taichung Fab Gas Hook-Up Commendation",
+			"award3": "TSMC F22 Outstanding Supervisor Award",
+			"award4": "TSMC Annual Excellent Supplier Award",
+			"award5": "18th Golden Torch Award",
+			"award6": "National Innovation and Entrepreneurship Association – Social Contribution Award"
 		}
-	} 
-	},
-	"news": {
-	"about": "About Yaho",
-	"title": "Latest News",
-	"noData": "No data available for this year"
-	},
-	"career": {
-	"about": "About Yaho",
-	"title": "Yaho Featured Jobs",
-	"description": 
-	"Yaho System Technology is a technology-driven company specializing in high-tech facility construction, system integration, and maintenance. Our expertise covers hook-up design, tool design, equipment installation, maintenance, and consumables. Backed by a core team with over 20 years of industry experience, we are trusted for our efficiency, professionalism, and customer-focused service.",
-	"more": "more searched over jobs: ",
-	"104": "104 Job Bank",
-	"training":{
-		"title": "Training and Development",
-		"description": "We value comprehensive skill-building and provide professional training programs.",
-		"tr1": "Company Orientation (Vision & Market)",
-		"tr2": "HR Policies & Regulations",
-		"tr3": "General Safety & Health Training",
-		"tr4": "ERP System Training",
-		"tr5": "On-the-Job Safety Training",
-		"tr6": "Fire Safety Training"
-	},
-	"benefits": {
-		"title": "福利制度",
-		"subtitle1": "入職第一天起，已為你未來的薪酬進行規劃",
-		"subtitle2": "我們有明確的績效評核制度，獎金依個人貢獻發放，讓努力更有方向、回饋更有價值",
-		"subtitle3": "節日的溫度，由我們傳遞",
-		"subtitle4": "公司投保計畫",
-		"subtitle5": "延伸福利-額外的配套措施幫你解決",
-		"subtitle6": "請/休假制度與保險一切符合勞動法規",
-		"description1": {
-		"content1": "年資滿3個月、1年、3年、5年設有調薪節點 (依據個人績效表現)",
-		"content2": "每年8月會依據個人績效表現調薪",
-		"content3": "提供專業需求的教育訓練補助",
-		"content4": "享有伙食津貼"
 		},
-		"description2": {
-		"content1": "年終獎金-- 依據當年度營運與個人績效，基數平均為2個月。",
-		"content2": "年中分紅-- 依據上年度營運獲利狀況提撥"
+		"organization": {
+		"about": "About Yaho",
+		"title": "Organization"
 		},
-		"description3": {
-		"content1": "三節禮金 (五一、端午、中秋)",
-		"content2": "生日禮金"
+		"locations": {
+		"about": "About Yaho",
+		"title": "Global Locations",
+		"Phone": "Contact Number",
+		"Email": "Email",
+		"Address": "Address",
+		"BusinessHours": "Business Hours",
+		"businessHours": "Mon-Fri 8:30-17:30 (GMT+8)",
+		"ContactUs": "For business or technical inquiries, please feel free to contact us via phone or email!",
+		"Content": "Business Content",
+		"Check": "View Map",
+		"SelectCountry": "Select a Country",
+		"country": {
+			"Taiwan":{
+			"name": "Taiwan",
+			"Taiwan": "Taiwan",
+			"title": "Taiwan",
+			"branchesTotal": 5,
+			"branches1": "Headquarters (Taichung)",
+			"taichung": "Taichung",
+			"mail1": "yaho-sales@zcstcl.com",
+			"phone1": "+886-4-25601662 #1212",
+			"address1": "No. 485, Section 1, Huanzhong Rd, Beitun District, Taichung, Taiwan",
+			"content1": "Corporate Headquarters, Engineering Practices",
+			"imageUrl1": "/frontPage/1.jpg",
+
+			"branches2": "Hsinchu Baoshan Office",
+			"mail2": "yaho-sales@zcstcl.com",
+			"phone2": "+886-4-25601662 #1212",
+			"address2": "No. 58-8, Lane 103, Songcui Rd., Baoshan Township, Hsinchu County, Taiwan",
+			"content2": "Business Development, Customer Service",
+			"imageUrl2": "/frontPage/1.jpg",
+
+			"branches3": "Hsinchu Science Park Office",
+			"mail3": "yaho-sales@zcstcl.com",
+			"phone3": "+886-4-25601662 #1212",
+			"address3": "No. 2, Alley 3, Lane 162, Science Park Rd., East District, Hsinchu City, Taiwan",
+			"content3": "Southern Business, Technical Support",
+			"imageUrl3": "/frontPage/1.jpg",
+
+			"branches4": "Tainan Anding Office",
+			"mail4": "yaho-sales@zcstcl.com",
+			"phone4": "+886-4-25601662 #1212",
+			"address4": "No. 2-14, Suchuo, Anding District, Tainan City, Taiwan",
+			"content4": "Northern Business, Technical Support",
+			"imageUrl4": "/frontPage/1.jpg",
+
+			"branches5": "Kaohsiung Dashe Office",
+			"mail5": "yaho-sales@zcstcl.com",
+			"phone5": "+886-4-25601662 #1212",
+			"address5": "No. 329-3, Zhongzheng Rd., Dashe District, Kaohsiung City, Taiwan",
+			"content5": "Southern Business, Technical Support",
+			"imageUrl5": "/frontPage/1.jpg"
+			},
+			"USA": {
+			"name": "USA",
+			"USA": "United States",
+			"title": "USA",
+			"branchesTotal": 1,
+			"branches1": "Arizona Office",
+			"mail1": "serenaw@zcstcl.com",
+			"phone1": "480-350-7344",
+			"address1": "26339 N 20th ave, Phoenix, Arizona, 85085, USA",
+			"content1": "Business Development, Customer Service",
+			"imageUrl1": "/frontPage/1.jpg"
+			},
+			"Japan": {
+			"name": "Japan",
+			"Japan": "日本",
+			"title": "日本據點",
+			"branchesTotal": 1,
+			"branches1": "熊本分公司",
+			"mail1": "yaho.kumamoto@zcstcl.com",
+			"phone1": "+81-6-1234-5678",
+			"address1": "熊本市北區梅田1丁目",
+			"content1": "業務拓展、客戶服務",
+			"imageUrl1": "/frontPage/1.jpg"
+			},
+			"Germany": {
+			"name": "Germany",
+			"Germany": "Germany",
+			"title": "Germany",
+			"branchesTotal": 1,
+			"branches1": "Dresden Office",
+			"mail1": "yaho.taichung@zcstcl.com",
+			"phone1": "+4930 30366 3776",
+			"address1": "Pappelallee 78/79 10437 Berlin",
+			"content1": "Business Development, Customer Service",
+			"imageUrl1": "/frontPage/1.jpg"
+			},
+			"Singapore": {
+			"name": "Singapore",
+			"Singapore": "Singapore",
+			"title": "Singapore Office",
+			"branchesTotal": 1,
+			"branches1": "Singapore Office",
+			"mail1": "yaho.taichung@zcstcl.com",
+			"phone1": "886 4 25601662 #1400",
+			"address1": "8 KAKI BUKIT AVENUE 4, #08-32, PREMIER @ KAKI BUKIT, SINGAPORE 415875",
+			"content1": "Business Development, Customer Service",
+			"imageUrl1": "/frontPage/1.jpg"
+			}
+		} 
 		},
-		"description4": {
-		"content1": "除了法規保險，入職第一天即享團險保障"
+		"news": {
+		"about": "About Yaho",
+		"title": "Latest News",
+		"noData": "No data available for this year"
 		},
-		"description5": {
-		"content1": "出差油資補貼",
-		"content2": "調派油資補貼",
-		"content3": "租屋補助",
-		"content4": "調派津貼",
-		"content5": "配發公務機+公務機通話費補助",
-		"content6": "提供每季部門聚餐費用"
+		"career": {
+		"about": "About Yaho",
+		"title": "Yaho Featured Jobs",
+		"description": 
+		"Yaho System Technology is a technology-driven company specializing in high-tech facility construction, system integration, and maintenance. Our expertise covers hook-up design, tool design, equipment installation, maintenance, and consumables. Backed by a core team with over 20 years of industry experience, we are trusted for our efficiency, professionalism, and customer-focused service.",
+		"more": "more searched over jobs: ",
+		"104": "104 Job Bank",
+		"training":{
+			"title": "Training and Development",
+			"description": "We value comprehensive skill-building and provide professional training programs.",
+			"tr1": "Company Orientation (Vision & Market)",
+			"tr2": "HR Policies & Regulations",
+			"tr3": "General Safety & Health Training",
+			"tr4": "ERP System Training",
+			"tr5": "On-the-Job Safety Training",
+			"tr6": "Fire Safety Training"
+		},
+		"benefits": {
+			"title": "福利制度",
+			"subtitle1": "入職第一天起，已為你未來的薪酬進行規劃",
+			"subtitle2": "我們有明確的績效評核制度，獎金依個人貢獻發放，讓努力更有方向、回饋更有價值",
+			"subtitle3": "節日的溫度，由我們傳遞",
+			"subtitle4": "公司投保計畫",
+			"subtitle5": "延伸福利-額外的配套措施幫你解決",
+			"subtitle6": "請/休假制度與保險一切符合勞動法規",
+			"description1": {
+			"content1": "年資滿3個月、1年、3年、5年設有調薪節點 (依據個人績效表現)",
+			"content2": "每年8月會依據個人績效表現調薪",
+			"content3": "提供專業需求的教育訓練補助",
+			"content4": "享有伙食津貼"
+			},
+			"description2": {
+			"content1": "年終獎金-- 依據當年度營運與個人績效，基數平均為2個月。",
+			"content2": "年中分紅-- 依據上年度營運獲利狀況提撥"
+			},
+			"description3": {
+			"content1": "三節禮金 (五一、端午、中秋)",
+			"content2": "生日禮金"
+			},
+			"description4": {
+			"content1": "除了法規保險，入職第一天即享團險保障"
+			},
+			"description5": {
+			"content1": "出差油資補貼",
+			"content2": "調派油資補貼",
+			"content3": "租屋補助",
+			"content4": "調派津貼",
+			"content5": "配發公務機+公務機通話費補助",
+			"content6": "提供每季部門聚餐費用"
+			}
 		}
-	}
-	}
-},
-"services": {
+		}
+	},
+	"services": {
 	"title": "Products & Services",
 	"homepage": "Home",
 	"project background": "Project Background",
@@ -422,6 +417,43 @@
 			"no projects": "No matching projects found",
 			"partners": "Partners"
 		}
+	},
+	"result": {
+		"homepage": "首頁",
+		"title": "產品服務",
+		"result": "工程實績",
+		"description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。",
+		"search": "搜尋專案名稱、地區或客戶...",
+		"category": "類別",
+		"region": "地區",
+		"customer": "客戶",
+		"no projects": "沒有找到符合的專案",
+		"partners": "合作夥伴",
+		"AUO": "AUO",
+		"Vanguard": "Vanguard",
+		"GudengEquipment": "Gudeng Equipment",
+		"Lotus": "Lotus",
+		"GudengPrecision": "Gudeng Precision",
+		"SUMCO": "SUMCO",
+		"Lasertec": "Lasertec",
+		"Merck": "Merck",
+		"Intel": "Intel",
+		"AppliedMaterials": "Applied Materials",
+		"SPIL": "SPIL",
+		"GlobalWafers": "GlobalWafers",
+		"SUNLIT": "SUNLIT",
+		"SCIENTECH": "SCIENTECH",
+		"MIC": "MIC",
+		"Avary": "Avary",
+		"Cica-Huntek": "Cica-Huntek",
+		"Winbond": "Winbond",
+		"HUAWEI": "HUAWEI",
+		"TSMC": "TSMC",
+		"Bionime": "Bionime",
+		"Micron": "Micron",
+		"Entegris": "Entegris",
+		"CCP": "CCP",
+		"Macronix": "Macronix"
 	},
 	"exhibition": {
 		"title": "Exhibitions & Events",

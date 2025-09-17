@@ -14,22 +14,35 @@ import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
 import ZoomIn from "@/src/components/animations/ZoomIn";
 import Image from "next/image";
 import { useState, useMemo } from "react"
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 // 假資料集 (可換成 API 回傳資料)
 const newsDataset = [
-  { year: "2025",month: "MAY",title: "台灣國際半導體展 Semicon Taiwan" },
-  { year: "2025", month: "APR", title: "Semicon West" },
-  { year: "2025", month: "DEC", title: "台灣國際智慧能源周" },
-  { year: "2025", month: "NOV", title: "台北國際自動化工業大展" },
-  { year: "2024", month: "OCT", title: "SEMICON Europa (Munich)" },
-  { year: "2024", month: "SEP", title: "台灣國際半導體展 SEMICON Taiwan" },
-  { year: "2024", month: "JUL", title: "SEMICON West (San Francisco)" },
-  { year: "2024", month: "JUN", title: "COMPUTEX Taipei" },
+  { year: "2025",
+    month: "SEP",
+    title: "SEMICON Taiwan 2025",
+    date: "9/10-9/12",
+    location: "南港展覽館2館",
+    booth: "P6212",
+    description: "全球最大半導體盛會，聚焦AI與前沿技術，引領產業創新未來。",
+    image: "/images/expo1.jpg" },
   // ...請自行擴充假資料共 30-40 筆
 ]
-
-
-
+const slides = [
+    { image: "/exhibition/p1.jpg" },
+    { image: "/exhibition/p2.jpg" },
+    { image: "/exhibition/p3.jpg" },
+    { image: "/exhibition/p4.jpg" },
+    { image: "/exhibition/p5.jpg" },
+    { image: "/exhibition/p6.jpg" },
+    { image: "/exhibition/p7.jpg" },
+    { image: "/exhibition/p8.jpg" }
+];
 export default function NewsPage() {
     const t = useTranslations("exhibition");
     const YEARS = ["2025", "2024", "2023", "2022", "2021"]
@@ -56,9 +69,10 @@ export default function NewsPage() {
     <div className="overflow-x-hidden">
         <div className="relative w-full h-[40vh] md:h-[60vh] xl:h-[80vh] overflow-hidden">
             <Image src="/exhibition/1.jpg" 
-                    alt="Example Image" 
+                    alt="Example Image"
                     layout="fill"
                     objectFit="cover"/>
+                    div 
         </div>
         <Breadcrumb className="px-8 pt-5 sm:pt-8 w-full">
             <BreadcrumbList>
@@ -136,7 +150,7 @@ export default function NewsPage() {
                     ) : (
                         paginatedNews.map((item, idx) => (
                             <ZoomIn delay={0.3} key={idx}>
-                                <div
+                                {/* <div
                                     className="border-b border-[#375978] pb-6 hover:scale-105 transition-transform duration-300"
                                 >
                                     <div className="px-4 md:px-6 xl:px-10 font-bold xl:text-lg text-[#375978]">
@@ -144,6 +158,39 @@ export default function NewsPage() {
                                     </div>
                                     <div className="px-4 md:px-6 xl:px-10 font-bold text-base xl:text-xl text-[#375978] mt-2">
                                         {item.title}
+                                    </div>
+                                </div> */}
+                                <div className="flex gap-2 bg-white border border-[#375978]/30 rounded-xl shadow-sm overflow-hidden hover:scale-105 transition-transform duration-300">
+                                    <Carousel className="md:w-1/2 w-full overflow-hidden"
+                                            plugins={[
+                                                    Autoplay({
+                                                        delay: 3000, // 每 4 秒自動切換
+                                                        stopOnInteraction: false, // 使用者互動後是否停止
+                                                    }),
+                                                ]}
+                                        >
+                                        <CarouselContent className="flex w-full gap-2">
+                                            {slides.map((slide, index) => (
+                                                <CarouselItem key={index} className="w-full flex-shrink-0">
+                                                    <div className="relative h-[320px] md:h-[350px] lg:h-[400px] xl:h-[450px] overflow-hidden rounded-lg">
+                                                        <Image
+                                                            src={slide.image}
+                                                            alt={`Slide ${index}`}
+                                                            fill
+                                                            className="object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+                                                        />
+                                                    </div>
+                                                </CarouselItem>
+                                            ))}
+                                        </CarouselContent>
+                                    </Carousel>
+                                    <div className="flex-1 py-4 px-8 text-[#375978]">
+                                        <div className="font-bold text-2xl py-3">{item.year} / {item.month}</div>
+                                        <div className="font-bold text-2xl pb-8">{item.title}</div>
+                                        <div className="text-xl py-3"><strong>日期:</strong> {item.date}</div>
+                                        <div className="text-xl py-3"><strong>地點:</strong> {item.location}</div>
+                                        <div className="text-xl py-3"><strong>攤位編號:</strong> {item.booth}</div>
+                                        <div className="text-xl font-bold mt-4">{item.description}</div>
                                     </div>
                                 </div>
                             </ZoomIn>

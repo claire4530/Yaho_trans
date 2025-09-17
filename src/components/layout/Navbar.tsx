@@ -47,7 +47,7 @@ export default function Navbar() {
 			],
 			path: "/services",
 		}, // 產品服務
-		// { label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/exhibition" }], path: "/exhibition", }, // 展覽活動
+		{ label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/exhibition" }], path: "/exhibition", }, // 展覽活動
 		// {
 		// 	label: t('sustainability'),
 		// 	submenu: [

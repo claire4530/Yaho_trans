@@ -56,8 +56,8 @@ export default function OrganizationPage() {
         </div>
         {/* 公司組織圖 */}
         <div className="font-normal text-lg pt-8 pb-18 m-4 leading-9">
-            <Image src="/about/organization/0909.svg" 
-                alt="Example Image" 
+            <Image src="/about/organization/912.jpg" 
+                alt="Example Image"
                 width={800} height={600} 
                 className="w-full h-auto" />
         </div>
