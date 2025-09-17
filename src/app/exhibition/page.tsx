@@ -21,18 +21,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-// 假資料集 (可換成 API 回傳資料)
-const newsDataset = [
-  { year: "2025",
-    month: "SEP",
-    title: "SEMICON Taiwan 2025",
-    date: "9/10-9/12",
-    location: "南港展覽館2館",
-    booth: "P6212",
-    description: "全球最大半導體盛會，聚焦AI與前沿技術，引領產業創新未來。",
-    image: "/images/expo1.jpg" },
-  // ...請自行擴充假資料共 30-40 筆
-]
+
 const slides = [
     { image: "/exhibition/p1.jpg" },
     { image: "/exhibition/p2.jpg" },
@@ -49,6 +38,16 @@ export default function NewsPage() {
     const PAGE_SIZE = 5
     const [yearFilter, setYearFilter] = useState("All")
     const [currentPage, setCurrentPage] = useState(1)
+
+    const newsDataset = [
+    { year: "2025",
+        month: "SEP",
+        title: "SEMICON Taiwan 2025",
+        date: "9/10-9/12",
+        location: (t("location1")),
+        booth: "P6212",
+        description: (t("description"))}
+    ]
 
     // 篩選資料
     const filteredNews = useMemo(() => {
@@ -187,9 +186,9 @@ export default function NewsPage() {
                                     <div className="flex-1 py-4 px-8 text-[#375978]">
                                         <div className="font-bold text-2xl py-3">{item.year} / {item.month}</div>
                                         <div className="font-bold text-2xl pb-8">{item.title}</div>
-                                        <div className="text-xl py-3"><strong>日期:</strong> {item.date}</div>
-                                        <div className="text-xl py-3"><strong>地點:</strong> {item.location}</div>
-                                        <div className="text-xl py-3"><strong>攤位編號:</strong> {item.booth}</div>
+                                        <div className="text-xl py-3"><strong>{t("date")}: </strong> {item.date}</div>
+                                        <div className="text-xl py-3"><strong>{t("location")}: </strong> {item.location}</div>
+                                        <div className="text-xl py-3"><strong>{t("booth")} </strong> {item.booth}</div>
                                         <div className="text-xl font-bold mt-4">{item.description}</div>
                                     </div>
                                 </div>

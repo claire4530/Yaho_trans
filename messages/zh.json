@@ -466,8 +466,12 @@
   "exhibition": {
     "title": "展覽活動",
     "homepage": "首頁",
-    "description": "我們積極參與國內外各大展覽活動，展示最新技術與產品，並與業界專家交流合作，共同推動產業發展。",
-    "noNews": "無本年資料"
+    "noNews": "無本年資料",
+    "date": "日期",
+    "location": "地點",
+    "booth": "攤位編號: ",
+    "location1": "南港展覽館2館",
+    "description": "全球最大半導體盛會，聚焦AI與前沿技術，引領產業創新未來。"
   },
   "investors": {
     "title": "投資人專區",
