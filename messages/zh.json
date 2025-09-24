@@ -6,6 +6,8 @@
     "about_locations": "全球據點",
     "about_news": "最新消息",
     "about_career": "人力資源",
+    "about_jobs": "徵才資訊",
+    "about_benefits": "員工福利",
     "services": "產品服務",
     "services_project": "服務項目",
     "services_result": "工程實績",
@@ -64,7 +66,7 @@
       "十年經驗 技術領先",
       "STK配管 自動化整合",
       "誠實效率 客戶至上",
-      "政臣助力 拓展服務"
+      "技術助力 拓展服務"
     ],
     "productsAndServices": "產品服務"
   },
@@ -108,26 +110,26 @@
     "Taiwan": {
       "title": "台灣據點",
       "branches1": "台中總公司",
-      "branches2": "新竹寶山分公司",
-      "branches3": "新竹科園分公司",
-      "branches4": "台南安定分公司",
-      "branches5": "高雄大社分公司"
+      "branches2": "新竹寶山服務中心",
+      "branches3": "新竹科園服務中心",
+      "branches4": "台南安定服務中心",
+      "branches5": "高雄大社服務中心"
     },
     "USA": {
       "title": "美國據點",
-      "branches1": "亞歷桑那分公司"
+      "branches1": "亞歷桑那子公司"
     },
     "Japan": {
       "title": "日本據點",
-      "branches1": "熊本分公司"
+      "branches1": "熊本服務中心"
     },
     "Germany": {
       "title": "德國據點",
-      "branches1": "德勒斯登分公司"
+      "branches1": "德勒斯登服務中心"
     },
     "Singapore": {
       "title": "新加坡據點",
-      "branches1": "新加坡分公司"
+      "branches1": "新加坡服務中心"
     },
     "url": "https://www.zcstcl.com/official_web/"
   },
@@ -142,7 +144,7 @@
       "descriptionDetail3": "專精廠務，安全高效： 垚鋐專注廠務系統設計與工程，助您打造安全高效的生產環境",
       "descriptionDetail4": "十年經驗，技術領先： 逾十年產業經驗，提供專業廠務解決方案",
       "descriptionDetail5": "誠實效率，客戶至上: 堅持誠實經營，追求效率卓越，以客戶滿意為首要目標",
-      "descriptionDetail6": "政臣助力，拓展服務： 子公司政臣擴大服務範疇，滿足多元客戶需求",
+      "descriptionDetail6": "技術助力，拓展服務： 擴大服務範疇，滿足多元客戶需求",
       "descriptionDetail7": "STK配管，自動化整合： 精通氣體管路組裝與自動化系統，提供全方位廠務服務",
       "history": {
         "title": "公司沿革",
@@ -227,28 +229,28 @@
           "content1": "企業總部、工程實務",
           "imageUrl1": "/frontPage/1.jpg",
 
-          "branches2": "新竹寶山分公司",
+          "branches2": "新竹寶山服務中心",
           "mail2": "yaho-sales@zcstcl.com",
           "phone2": "+886-4-25601662 #1212",
           "address2": "新竹縣寶山鄉嵩翠路103巷58-8號",
           "content2": "業務拓展、客戶服務",
           "imageUrl2": "/frontPage/1.jpg",
 
-          "branches3": "新竹科園分公司",
+          "branches3": "新竹科園服務中心",
           "mail3": "yaho-sales@zcstcl.com",
           "phone3": "+886-4-25601662 #1212",
           "address3": "新竹市東區科學園路162巷3弄2號",
           "content3": "南部業務、技術支援",
           "imageUrl3": "/frontPage/1.jpg",
 
-          "branches4": "台南安定分公司",
+          "branches4": "台南安定服務中心",
           "mail4": "yaho-sales@zcstcl.com",
           "phone4": "+886-4-25601662 #1212",
           "address4": "台南市安定區蘇厝2-14號",
           "content4": "北部業務、技術支援",
           "imageUrl4": "/frontPage/1.jpg",
 
-          "branches5": "高雄大社分公司",
+          "branches5": "高雄大社服務中心",
           "mail5": "yaho-sales@zcstcl.com",
           "phone5": "+886-4-25601662 #1212",
           "address5": "高雄市大社區中正路329-3號",
@@ -260,10 +262,10 @@
           "USA": "美國",
           "title": "美國據點",
           "branchesTotal": 1,
-          "branches1": "亞歷桑那分公司",
+          "branches1": "亞歷桑那子公司",
           "mail1": "serenaw@zcstcl.com",
           "phone1": "480-350-7344",
-          "address1": "26339 N 20th ave, Phoenix, Arizona, 85085, USA",
+          "address1": "5260 W Phelps Rd, Glendale, AZ 85306",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
         },
@@ -272,10 +274,10 @@
           "Japan": "日本",
           "title": "日本據點",
           "branchesTotal": 1,
-          "branches1": "熊本分公司",
-          "mail1": "yaho.kumamoto@zcstcl.com",
-          "phone1": "+81-6-1234-5678",
-          "address1": "熊本市北區梅田1丁目",
+          "branches1": "熊本服務中心",
+          "mail1": "yaho-sales@zcstcl.com",
+          "phone1": "+886-4-25601662 #1212",
+          "address1": "",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
         },
@@ -284,10 +286,10 @@
           "Germany": "德國",
           "title": "德國據點",
           "branchesTotal": 1,
-          "branches1": "德勒斯登分公司",
-          "mail1": "yaho.taichung@zcstcl.com",
-          "phone1": "+4930 30366 3776",
-          "address1": "Pappelallee 78/79 10437 Berlin",
+          "branches1": "德勒斯登服務中心",
+          "mail1": "yaho-sales@zcstcl.com",
+          "phone1": "+886-4-25601662 #1212",
+          "address1": "",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
         },
@@ -296,9 +298,9 @@
           "Singapore": "新加坡",
           "title": "新加坡據點",
           "branchesTotal": 1,
-          "branches1": "新加坡分公司",
-          "mail1": "yaho.taichung@zcstcl.com",
-          "phone1": "886 4 25601662 #1400",
+          "branches1": "新加坡服務中心",
+          "mail1": "yaho-sales@zcstcl.com",
+          "phone1": "+886-4-25601662 #1212",
           "address1": "8 KAKI BUKIT AVENUE 4, #08-32, PREMIER @ KAKI BUKIT, SINGAPORE 415875",
           "content1": "業務拓展、客戶服務",
           "imageUrl1": "/frontPage/1.jpg"
@@ -309,59 +311,27 @@
       "about": "關於垚鋐",
       "title": "最新消息",
       "noData": "無本年資料"
-    },
-    "career": {
-      "about": "關於垚鋐",
-      "title": "垚鋐熱門工作",
-      "description": 
-      "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。",
-      "more": "更多熱門職缺:",
-      "104": "104人力銀行",
-      "training":{
-        "title": "教育訓練",
-        "description": "我們重視員工完整、深入的職能培養，並提供提供專業的教育訓練。",
-        "tr1": "認識企業（願景與市場）",
-        "tr2": "人資規章制度",
-        "tr3": "一般安全衛生教育訓練",
-        "tr4": "ERP 訓練",
-        "tr5": "職業安全衛生在職教育訓練",
-        "tr6": "消防安全講習訓練"
-      },
-      "benefits": {
-        "title": "福利制度",
-        "subtitle1": "入職第一天起，已為你未來的薪酬進行規劃",
-        "subtitle2": "我們有明確的績效評核制度，獎金依個人貢獻發放，讓努力更有方向、回饋更有價值",
-        "subtitle3": "節日的溫度，由我們傳遞",
-        "subtitle4": "公司投保計畫",
-        "subtitle5": "延伸福利-額外的配套措施幫你解決",
-        "subtitle6": "請/休假制度與保險一切符合勞動法規",
-        "description1": {
-          "content1": "年資滿3個月、1年、3年、5年設有調薪節點 (依據個人績效表現)",
-          "content2": "每年8月會依據個人績效表現調薪",
-          "content3": "提供專業需求的教育訓練補助",
-          "content4": "享有伙食津貼"
-        },
-        "description2": {
-          "content1": "年終獎金-- 依據當年度營運與個人績效，基數平均為2個月。",
-          "content2": "年中分紅-- 依據上年度營運獲利狀況提撥"
-        },
-        "description3": {
-          "content1": "三節禮金 (五一、端午、中秋)",
-          "content2": "生日禮金"
-        },
-        "description4": {
-          "content1": "除了法規保險，入職第一天即享團險保障"
-        },
-        "description5": {
-          "content1": "出差油資補貼",
-          "content2": "調派油資補貼",
-          "content3": "租屋補助",
-          "content4": "調派津貼",
-          "content5": "配發公務機+公務機通話費補助",
-          "content6": "提供每季部門聚餐費用"
-        }
-      }
     }
+  },
+  "career": {
+    "homepage": "首頁",
+    "title": "人力資源",
+    "benefits": "員工福利",
+    "jobs": "徵才資訊",
+    "benefits-description": "我們重視員工專業、深入的職能培養，並提供完善的員工福利。",
+    "jobs-description": "加入垚鋐，與我們一同成長、共創價值！",
+    "jobs-description2": 
+    "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過20年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電與醫療等產業提供完整、高品質的工程解決方案。",
+    "jobs-more": "更多熱門職缺:",
+    "jobs-104": "104人力銀行",
+    "benefits1": "我們提供員工旅遊補助，鼓勵同仁走出辦公室，放鬆心情、增進交流，讓身心都能充電再出發。",
+    "benefits2": "公司定期補助部門聚餐，讓團隊在輕鬆氛圍中加深情誼，培養默契，共創更有凝聚力的合作關係。",
+    "benefits3": "每年歲末舉辦尾牙盛宴與摸彩活動，感謝同仁一年的辛勤付出，讓大家共享喜悅與驚喜。",
+    "benefits4": "同仁每滿五年年資，公司將特別表揚並致贈紀念禮品，感謝一路相伴與付出，見證彼此的成長與榮耀。",
+    "benefits5": "優於法令的有薪生日假，並可獲得生日禮金，讓員工在生日當月可以享受一日專屬休息與歡慶時光。",
+    "benefits6": "公司提供節慶、結婚、生育及慰問金，透過實際支持表達對員工的關懷與祝福，在員工重要人生時刻獲得適切的支持與肯定。",
+    "benefits7": "我們重視每位同仁的成長，透過完善的專業訓練，陪伴員工持續學習與成長，讓每一步職涯都與公司一同前進。",
+    "benefits8": "公開透明定期調薪制度，支持員工一整年努力付出，共享營運成果。"
   },
   "services": {
     "title": "產品服務",
@@ -387,7 +357,7 @@
       "AMHS scope": "根據 AMHS 需求，進行儲位櫃體管路之整體設計，完成管路預置、組裝、現場施工與系統裝機",
       "AMHS application": "光電產業、半導體製程，其他高潔淨、精密搬運場域",
       "AMHS features": "Stocker服務範疇：從設計到裝機，一站式解決方案\n專業設計： 管路規劃、強度分析、CAD製圖、氣體需求評估\n精準組裝： 櫃體預置、焊接組裝、初步氣密測試\n嚴謹施工： 現場配置、結構固定、系統整合測試\n完善裝機： AMHS連接、通電上氣、客戶驗收",
-      "AMAT": "AMAT裝機服務",
+      "AMAT": "裝機服務",
       "AMAT description": "致力裝機業務，從機台進入廠區後的Tier-0 組配機台Chamber作業到機台與Chamber之間溝通訊號及水電路相關組立服務，囊括CVD-DSM、PVD-MDP、ETCH等機型。",
       "AMAT features": "我們專注於半導體設備的裝機業務，涵蓋從機台進入廠區後的 Tier-0 初始組裝作業，包含機台\n與 Chamber 的組配、訊號連線、水電氣管路安裝等全方位服務。我們的團隊具備專業技術與\n實務經驗，能確保設備安裝過程精準、安全且高效率，協助客戶快速完成產線導入並縮短設備\n驗證時程。服務範圍涵蓋多種機型，包括 CVD-DSM、PVD-MDP、ETCH 等，並持續依照業界\n標準及客戶需求，提供最佳化的施工與驗證流程。我們致力於在每一個環節中維持高品質水準，\n確保機台能在最短時間內進入穩定生產階段，協助客戶提升產能與競爭力。",
       "SMIFPOD": "YAHO SMIF POD 清洗機",
@@ -438,6 +408,7 @@
     "customer": "客戶",
     "no projects": "沒有找到符合的專案",
     "partners": "合作夥伴",
+    "TSMC": "TSMC",
     "Cica-Huntek": "台灣矽科宏晟科技股份有限公司 Cica-Huntek Chemical Technology Taiwan Co., Ltd.",
     "Micron": "美光科技 Micron",
     "MIC": "帆宣 MIC",

@@ -23,30 +23,47 @@ import Autoplay from "embla-carousel-autoplay";
 
 
 const slides = [
-    { image: "/exhibition/p1.jpg" },
-    { image: "/exhibition/p2.jpg" },
-    { image: "/exhibition/p3.jpg" },
-    { image: "/exhibition/p4.jpg" },
-    { image: "/exhibition/p5.jpg" },
-    { image: "/exhibition/p6.jpg" },
-    { image: "/exhibition/p7.jpg" },
-    { image: "/exhibition/p8.jpg" }
+    { image: "/exhibition/2025/202509-01.jpg" },
+    { image: "/exhibition/2025/202509-02.jpg" },
+    { image: "/exhibition/2025/202509-03.jpg" },
+    { image: "/exhibition/2025/202509-04.jpg" },
+    { image: "/exhibition/2025/202509-05.jpg" },
+    { image: "/exhibition/2025/202509-06.jpg" },
+    { image: "/exhibition/2025/202509-07.jpg" },
+    { image: "/exhibition/2025/202509-08.jpg" }
+];
+
+const slides1 = [
+    { image: "/exhibition/2024/1.jpg" },
+    { image: "/exhibition/2024/2.jpg" },
+    { image: "/exhibition/2024/3.jpg" }
 ];
 export default function NewsPage() {
     const t = useTranslations("exhibition");
-    const YEARS = ["2025", "2024", "2023", "2022", "2021"]
+    const YEARS = ["2025", "2024"]
     const PAGE_SIZE = 5
     const [yearFilter, setYearFilter] = useState("All")
     const [currentPage, setCurrentPage] = useState(1)
 
     const newsDataset = [
-    { year: "2025",
-        month: "SEP",
-        title: "SEMICON Taiwan 2025",
-        date: "9/10-9/12",
-        location: (t("location1")),
-        booth: "P6212",
-        description: (t("description"))}
+        {   year: "2025",
+            month: "SEP",
+            title: "SEMICON Taiwan 2025",
+            date: "9/10-9/12",
+            location: (t("location1")),
+            booth: "P6212",
+            description: (t("description")),
+            slides: slides
+        },
+        {   year: "2024",
+            month: "SEP",
+            title: "SEMICON Taiwan 2024",
+            date: "9/4-9/6",
+            location: (t("location1")),
+            booth: "S7730",
+            description: (t("description")),
+            slides: slides1
+        }
     ]
 
     // 篩選資料
@@ -136,7 +153,7 @@ export default function NewsPage() {
                 </ZoomIn>
 
                 {/* 展覽列表 */}
-                <div className="flex-1 space-y-4 md:space-y-6 lg:space-y-8 h-[500px] md:h-[550px] lg:h-[600px] xl:h-[700px] justify-center">
+                <div className="flex-1 space-y-4 md:space-y-6 lg:space-y-8 h-full justify-center">
                     <ZoomIn delay={0.3}>
                         <span className="block w-full h-[1px] bg-[#375978] "></span>
                     </ZoomIn>
@@ -159,19 +176,20 @@ export default function NewsPage() {
                                         {item.title}
                                     </div>
                                 </div> */}
-                                <div className="flex gap-2 bg-white border border-[#375978]/30 rounded-xl shadow-sm overflow-hidden hover:scale-105 transition-transform duration-300">
+                                <div className="flex flex-col md:flex-row gap-2 bg-white border border-[#375978]/30 rounded-xl shadow-sm overflow-hidden hover:scale-105 transition-transform duration-300">
                                     <Carousel className="md:w-1/2 w-full overflow-hidden"
-                                            plugins={[
-                                                    Autoplay({
-                                                        delay: 3000, // 每 4 秒自動切換
-                                                        stopOnInteraction: false, // 使用者互動後是否停止
-                                                    }),
-                                                ]}
+                                        //     plugins={[
+                                        //             Autoplay({
+                                        //                 delay: 3000, // 每 4 秒自動切換
+                                        //                 stopOnInteraction: false, // 使用者互動後是否停止
+                                        //             }),
+                                        //         ]}
+                                        // 
                                         >
-                                        <CarouselContent className="flex w-full gap-2">
-                                            {slides.map((slide, index) => (
-                                                <CarouselItem key={index} className="w-full flex-shrink-0">
-                                                    <div className="relative h-[320px] md:h-[350px] lg:h-[400px] xl:h-[450px] overflow-hidden rounded-lg">
+                                        <CarouselContent className="flex w-full space-x-2 ml-0">
+                                            {item.slides.map((slide, index) => (
+                                                <CarouselItem key={index} className="w-full flex-shrink-0 pl-0 ">
+                                                    <div className="relative h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] overflow-hidden rounded-t-lg md:rounded-l-lg">
                                                         <Image
                                                             src={slide.image}
                                                             alt={`Slide ${index}`}
@@ -184,12 +202,12 @@ export default function NewsPage() {
                                         </CarouselContent>
                                     </Carousel>
                                     <div className="flex-1 py-4 px-8 text-[#375978]">
-                                        <div className="font-bold text-2xl py-3">{item.year} / {item.month}</div>
-                                        <div className="font-bold text-2xl pb-8">{item.title}</div>
-                                        <div className="text-xl py-3"><strong>{t("date")}: </strong> {item.date}</div>
-                                        <div className="text-xl py-3"><strong>{t("location")}: </strong> {item.location}</div>
-                                        <div className="text-xl py-3"><strong>{t("booth")} </strong> {item.booth}</div>
-                                        <div className="text-xl font-bold mt-4">{item.description}</div>
+                                        <div className="font-bold text-xl lg:text-2xl py-3">{item.year} / {item.month}</div>
+                                        <div className="font-bold text-xl lg:text-2xl pb-8">{item.title}</div>
+                                        <div className="pb-1 xl:py-3 md:text-base lg:text-lg xl:text-xl"><strong>{t("date")}: </strong> {item.date}</div>
+                                        <div className="pb-1 xl:py-3 md:text-base lg:text-lg xl:text-xl"><strong>{t("location")}: </strong> {item.location}</div>
+                                        <div className="pb-1 xl:py-3 md:text-base lg:text-lg xl:text-xl"><strong>{t("booth")} </strong> {item.booth}</div>
+                                        <div className="font-bold mt-4 md:text-base xl:text-xl">{item.description}</div>
                                     </div>
                                 </div>
                             </ZoomIn>
@@ -199,6 +217,7 @@ export default function NewsPage() {
             </div>
 
             {/* 分頁 */}
+            {false &&
             <SlideInFromLeft delay={0.3}>
                 <div className="flex justify-end my-10 md:my-0 space-x-2 text-[#375978]">
                     {totalPages === 0 && (
@@ -226,6 +245,7 @@ export default function NewsPage() {
                     ))}
                 </div>
             </SlideInFromLeft>
+            }
         </div>
     </div>
   );            

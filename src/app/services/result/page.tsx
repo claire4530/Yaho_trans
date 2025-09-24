@@ -47,14 +47,11 @@ const partners1 = [
 export default function IntroductionPage() {
     const t = useTranslations("result");
     const partners = [
-    t("AUO"), t("Vanguard"), t("GudengEquipment"),
-    t("Lotus"), t("GudengPrecision"), t("SUMCO"),
-    t("Lasertec"), t("Merck"), t("Intel"),
-    t("AppliedMaterials"), t("SPIL"), t("GlobalWafers"),
-    t("SUNLIT"), t("SCIENTECH"), t("MIC"), t("Avary"),
-    t("Cica-Huntek"), t("Winbond"), t("HUAWEI"),
-    t("TSMC"), t("Bionime"), t("Micron"), t("Entegris"),
-    t("CCP"), t("Macronix")
+        t("TSMC"),t("Cica-Huntek"),t("Micron"),t("MIC"),t("GudengPrecision"),
+        t("GudengEquipment"),t("Winbond"),t("AppliedMaterials"),t("VIS"),t("SPIL"),
+        t("SCIENTECH"),t("AUO"),t("Lotus"),t("SUMCO"),t("Lasertec"),t("Merck"),
+        t("Intel"),t("GlobalWafers"),t("SUNLIT"),t("Avary"),t("HUAWEI"),t("Bionime"),
+        t("ENTEGRIS"),t("CCP"),t("Macronix")
     ];
     const [activeTab, setActiveTab] = useState("全部");
 
@@ -269,9 +266,9 @@ export default function IntroductionPage() {
                 <Image src="/services/result/p.png" alt={t("result.partners")} width={1300} height={600}  objectFit="contain" />
             </div> */}
             {/* 公司合作廠商列表 */}
-            <div className="p-6 max-w-6xl mx-auto">
+            <div className="p-6 max-w-7xl mx-auto">
                 {/* 文字牆 */}
-                <div className="flex flex-wrap justify-center gap-6">
+                <div className="flex flex-wrap justify-center gap-10">
                     {partners.map((partner, i) => (
                     <span
                         key={i}

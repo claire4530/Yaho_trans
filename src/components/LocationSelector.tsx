@@ -28,7 +28,7 @@ type BranchData = {
 };
 
 // const countries = ["Taiwan", "Japan", "USA", "Germany", "Singapore"];
-const countries = ["Taiwan", "USA"];
+const countries = ["Taiwan", "Japan", "USA", "Germany", "Singapore"];
 
 // const embedMap: Record<string, string> = {
 //   	"Taiwan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.1751899851147!2d120.68961027512995!3d24.20064317836592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469179eff25048b%3A0xca382336ec6075f!2zNDA25Y-w54Gj5Y-w5Lit5biC5YyX5bGv5Y2A55Kw5Lit6Lev5LiA5q61NDg16Jmf!5e0!3m2!1szh-TW!2sus!4v1754533882444!5m2!1szh-TW!2sus",
@@ -52,9 +52,13 @@ const embedMap: Record<string, string> = {
   	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.162144848472!2d120.25546997601018!3d23.127747812393693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7be4916c95d5%3A0x8a6064d625f7f8a0!2zNzQ15Y-w5Y2X5biC5a6J5a6a5Y2AMi0xNA!5e0!3m2!1szh-TW!2stw!4v1756276526789!5m2!1szh-TW!2stw",
 	"Taiwan-5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.589153458087!2d120.34677797600233!3d22.743507126683394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e11d0cd5027bb%3A0x819994a86922584e!2zODE16auY6ZuE5biC5aSn56S-5Y2A5Lit5q2j6LevMzI5LTPomZ8!5e0!3m2!1szh-TW!2stw!4v1756276632022!5m2!1szh-TW!2stw",
 
-  	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7590289179345!2d-118.24368468478408!3d34.05223548060667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7bce472b0fb%3A0x5562a441bdd2bb1f!2zTG9zIEFuZ2VsZXMsIENBLCBVU0E!5e0!3m2!1sen!2sus!4v1690000000004"
-};
+  	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.7577681133057!2d-112.17437058846818!3d33.63752223940325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b691e113e26cf%3A0x6dc093d35b00a833!2zNTI2MCBXIFBoZWxwcyBSZCwgR2xlbmRhbGUsIEFaIDg1MzA2576O5ZyL!5e0!3m2!1szh-TW!2stw!4v1758244988429!5m2!1szh-TW!2stw",
+  	"Japan-1": "",
 
+  	"Germany-1": "",
+
+  	"Singapore-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.728322921548!2d103.90377581100428!3d1.3393179616030164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1710c9e9eb27%3A0xd123a4b273817971!2sPremier%20%40%20Kaki%20Bukit!5e0!3m2!1szh-TW!2stw!4v1758528429646!5m2!1szh-TW!2stw"
+};
 
 export function useBranchData(): BranchData[] {
 	const t = useTranslations("about");
@@ -166,21 +170,19 @@ export default function LocationSelector() {
 				<div className="grid md:grid-cols-2 rounded-lg items-stretch shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] m-2 lg:m-5">
 
 					{/* Google Map */}
-					<div className="w-full h-[200px] md:h-[400px] rounded-l-lg overflow-hidden">
-						<iframe
-						src={
-							selectedBranch.mapEmbed
-							? selectedBranch.mapEmbed
-							: `https://maps.google.com/maps?q=${encodeURIComponent(
-								selectedBranch.address
-								)}&output=embed`
-						}
-						width="100%"
-						height="100%"
-						style={{ border: 0 }}
-						allowFullScreen
-						loading="lazy"
-						></iframe>
+					<div className="w-full h-[200px] md:h-[400px] rounded-l-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+						{selectedBranch.mapEmbed ? (
+							<iframe
+							src={selectedBranch.mapEmbed}
+							width="100%"
+							height="100%"
+							style={{ border: 0 }}
+							allowFullScreen
+							loading="lazy"
+							></iframe>
+						) : (
+							<span className="text-gray-500">暫無地圖資訊</span>
+						)}
 					</div>
 					{/* 詳細資訊卡 */}
 					<div className="p-0 border-0 ">

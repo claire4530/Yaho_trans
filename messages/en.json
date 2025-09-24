@@ -6,6 +6,8 @@
 		"about_locations": "Global Locations",
 		"about_news": "News",
 		"about_career": "Join Us",
+		"about_jobs": "Career Opportunities",
+		"about_benefits": "Employee Benefits",
 		"services": "Products & Services",
 		"services_project": "Project Services",
 		"services_result": "Engineering Achievements",
@@ -300,59 +302,26 @@
 		"about": "About Yaho",
 		"title": "Latest News",
 		"noData": "No data available for this year"
-		},
-		"career": {
-		"about": "About Yaho",
-		"title": "Yaho Featured Jobs",
-		"description": 
-		"Yaho System Technology is a technology-driven company specializing in high-tech facility construction, system integration, and maintenance. Our expertise covers hook-up design, tool design, equipment installation, maintenance, and consumables. Backed by a core team with over 20 years of industry experience, we are trusted for our efficiency, professionalism, and customer-focused service.",
-		"more": "more searched over jobs: ",
-		"104": "104 Job Bank",
-		"training":{
-			"title": "Training and Development",
-			"description": "We value comprehensive skill-building and provide professional training programs.",
-			"tr1": "Company Orientation (Vision & Market)",
-			"tr2": "HR Policies & Regulations",
-			"tr3": "General Safety & Health Training",
-			"tr4": "ERP System Training",
-			"tr5": "On-the-Job Safety Training",
-			"tr6": "Fire Safety Training"
-		},
-		"benefits": {
-			"title": "福利制度",
-			"subtitle1": "入職第一天起，已為你未來的薪酬進行規劃",
-			"subtitle2": "我們有明確的績效評核制度，獎金依個人貢獻發放，讓努力更有方向、回饋更有價值",
-			"subtitle3": "節日的溫度，由我們傳遞",
-			"subtitle4": "公司投保計畫",
-			"subtitle5": "延伸福利-額外的配套措施幫你解決",
-			"subtitle6": "請/休假制度與保險一切符合勞動法規",
-			"description1": {
-			"content1": "年資滿3個月、1年、3年、5年設有調薪節點 (依據個人績效表現)",
-			"content2": "每年8月會依據個人績效表現調薪",
-			"content3": "提供專業需求的教育訓練補助",
-			"content4": "享有伙食津貼"
-			},
-			"description2": {
-			"content1": "年終獎金-- 依據當年度營運與個人績效，基數平均為2個月。",
-			"content2": "年中分紅-- 依據上年度營運獲利狀況提撥"
-			},
-			"description3": {
-			"content1": "三節禮金 (五一、端午、中秋)",
-			"content2": "生日禮金"
-			},
-			"description4": {
-			"content1": "除了法規保險，入職第一天即享團險保障"
-			},
-			"description5": {
-			"content1": "出差油資補貼",
-			"content2": "調派油資補貼",
-			"content3": "租屋補助",
-			"content4": "調派津貼",
-			"content5": "配發公務機+公務機通話費補助",
-			"content6": "提供每季部門聚餐費用"
-			}
 		}
-		}
+	},
+	"career": {
+		"homepage": "Home",
+		"title": "Human Resources",
+		"benefits": "Employee Benefits",
+		"jobs": "Job Opportunities",
+		"benefits-description": "We value employees’ professionalism and in-depth skill development, and we provide comprehensive benefits.",
+		"jobs-description": "Join YaoHong to grow with us and create value together!",
+		"jobs-description2": "YaoHong is a technology-driven enterprise focused on high-tech factory construction and maintenance, as well as system and equipment integration. Our services cover hook-up design, tool design, installation, maintenance, and consumable supply. Our core team has over 20 years of industry experience and has earned customer trust with efficiency and professional service. We not only cultivate the Taiwan market but also actively expand global service locations and technical partnerships, continuously delivering complete, high-quality engineering solutions for industries such as semiconductors, optoelectronics, and healthcare.",
+		"jobs-more": "More Popular Openings:",
+		"jobs-104": "104 Job Bank",
+		"benefits1": "We provide travel subsidies to encourage employees to step out of the office, relax, and enhance connections, allowing both body and mind to recharge.",
+		"benefits2": "The company regularly subsidizes team gatherings, creating a relaxed atmosphere to deepen bonds, build teamwork, and strengthen collaboration.",
+		"benefits3": "At the end of each year, we host a banquet and raffle to thank employees for their hard work, sharing joy and surprises together.",
+		"benefits4": "For every five years of service, employees receive special recognition and commemorative gifts, appreciating their dedication and celebrating mutual growth and achievements.",
+		"benefits5": "We offer paid birthday leave that exceeds legal requirements, along with a birthday bonus, so employees can enjoy a day of rest and celebration in their birthday month.",
+		"benefits6": "The company provides bonuses for festivals, weddings, childbirth, and condolences, expressing care and support during employees’ important life moments.",
+		"benefits7": "We value each employee’s growth, offering comprehensive professional training to support continuous learning and development, advancing together with the company at every step.",
+		"benefits8": "We implement a transparent, regular salary adjustment system, ensuring employees share in the company’s achievements for their year-round dedication."
 	},
 	"services": {
 	"title": "Products & Services",
@@ -378,7 +347,7 @@
 	"AMHS scope": "According to AMHS requirements, we perform comprehensive pipeline design for storage stockers, completing pipeline pre-fit, assembly, onsite installation, and system commissioning.",
 	"AMHS application": "Applicable to optoelectronics, semiconductor processes, and other high-clean, precision handling environments.",
 	"AMHS features": "Stocker Services Scope: from design to commissioning, providing a one-stop solution\nProfessional Design: pipeline layout, stress analysis, CAD drawings, gas demand evaluation\nPrecise Assembly: cabinet pre-fit, welding assembly, initial leak testing\nRigorous Installation: onsite placement, structural fixing, system integration testing\nComplete Commissioning: AMHS connection, utilities activation, client acceptance.",
-	"AMAT": "AMAT Tool Installation Services",
+	"AMAT": "Tool Installation Services",
 	"AMAT description": "We focus on tool installation, covering Tier-0 assembly after tools enter the fab, including chamber assembly, signal wiring, and utility (power, water, gas) connections, for tool types such as CVD-DSM, PVD-MDP, ETCH, and more.",
 	"AMAT features": "We specialize in the installation of semiconductor equipment, covering Tier-0 initial assembly after tools enter the fab, including tool and chamber assembly, signal connection, and installation of power, water, and gas pipelines, providing comprehensive services. Our team possesses both professional expertise and practical experience, ensuring that the installation process is accurate, safe, and efficient. We help clients accelerate production line ramp-up and shorten equipment validation timelines. Our service scope covers a wide range of tool types, including CVD-DSM, PVD-MDP, ETCH, and more. We continuously follow industry standards and customer requirements to deliver optimized installation and validation processes. We are committed to maintaining the highest quality standards at every stage, ensuring that tools achieve stable production in the shortest possible time, thereby helping our clients enhance productivity and competitiveness.",
 	"SMIFPOD": "YAHO SMIF POD Cleaning Machine",

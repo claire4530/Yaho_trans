@@ -18,8 +18,8 @@ interface NavItem {
 }
 
 const logoUrl = [
-	{ label: "首頁", path: "/", imageUrl: "/YAHO_logo/logo.jpg" },
-	{ label: "手機版", path: "/", imageUrl: "/YAHO_logo/logo_cut.jpg" },
+	{ label: "首頁", path: "/", imageUrl: "/YAHO_logo/logo_v2.svg" },
+	{ label: "手機版", path: "/", imageUrl: "/YAHO_logo/logo_s_v1.svg" },
 ]; // 替換為你的 logo 路徑
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
 				{ label: t('about_organization'), path: "/about/organization" },
 				{ label: t('about_locations'), path: "/about/locations" },
 				// { label: t('about_news'), path: "/about/news" },
-				{ label: t('about_career'), path: "/about/career" },
+				// { label: t('about_career'), path: "/about/career" },
 			],
 			path: "/about/introduction",
 		}, // 關於垚鋐
@@ -48,6 +48,12 @@ export default function Navbar() {
 			path: "/services",
 		}, // 產品服務
 		{ label: t('exhibition'), submenu: [{ label: t('exhibition_2025'), path: "/exhibition" }], path: "/exhibition", }, // 展覽活動
+		{ 
+			label: t('about_career'), 
+			submenu: [
+				{ label: t('about_benefits'), path: "/career/benefits" }, //員工福利
+				{ label: t('about_jobs'), path: "/career/jobs" } //徵才資訊
+			], path: "/career", }, // 人力資源
 		// {
 		// 	label: t('sustainability'),
 		// 	submenu: [
@@ -81,7 +87,8 @@ export default function Navbar() {
 		// 			path: "/contact" },
 		// 	],
 		// 	path: "/investors",
-		// }, // 投資人專區
+		// },
+		 // 投資人專區
 		// {
 		// 	label: t('governance'),
 		// 	submenu: [
@@ -134,7 +141,7 @@ export default function Navbar() {
 				className="bg-white w-full fixed top-0 left-0 shadow z-40 flex justify-between items-center "
 			>
 				{/* 左邊 Logo 桌面 */}
-				<div className="hidden xl:flex px-6 py-4">
+				<div className="hidden xl:flex py-4">
 					<Link
 						href={logoUrl[0].path}
 						className={`relative group text-[#375978] font-bold text-base hover:text-[#F3981B] transition-colors duration-300`}
@@ -143,14 +150,14 @@ export default function Navbar() {
 						<Image
 							src={logoUrl[0].imageUrl}
 							alt={logoUrl[0].label}
-							width={300}
+							width={400}
 							height={40}
 							className="inline-block hover:scale-105 transition-transform duration-300"
 						/>
 					</Link>
 				</div>
 				{/* 左邊 Logo 手機 */}
-				<div className="block xl:hidden py-2">
+				<div className="block xl:hidden p-4">
 					<Link
 						href={logoUrl[1].path}
 						className={`relative group text-[#375978] font-bold text-base hover:text-[#F3981B] transition-colors duration-300`}
@@ -166,7 +173,8 @@ export default function Navbar() {
 					</Link>
 				</div>
 				{/* 右邊選單 */}
-				<ul className="hidden xl:flex space-x-6 gap-6 items-center p-6">
+				
+				<ul className="hidden xl:flex space-x-6 gap-6 items-center p-10">
 					{navItems.map(({ label, submenu, path }, index) => (
 						<li
 							key={index}
