@@ -388,9 +388,9 @@
 		}
 	},
 	"result": {
-		"homepage": "首頁",
-		"title": "產品服務",
-		"result": "工程實績",
+		"homepage": "Home",
+		"title": "Project Achievements",
+		"result": "Engineering Achievements",
 		"description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。",
 		"search": "搜尋專案名稱、地區或客戶...",
 		"category": "類別",
