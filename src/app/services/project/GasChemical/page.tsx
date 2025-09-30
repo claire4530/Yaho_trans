@@ -105,9 +105,9 @@ export default function IntroductionPage() {
                         </p>
                         {/* 主要範圍(空) */}
                         {/* 應用領域 */}
-                        <p className="text-sm sm:text-base leading-8 text-gray-700 mt-4 whitespace-pre-line">
+                        {/* <p className="text-sm sm:text-base leading-8 text-gray-700 mt-4 whitespace-pre-line">
                             <strong>{t("project application")} :</strong> {t("project.Gas Chemical application")}
-                        </p>
+                        </p> */}
                         {/* 服務特色(空) */}
                     </div>
                 </ZoomIn>

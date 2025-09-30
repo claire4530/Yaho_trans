@@ -30,9 +30,9 @@ const serviceItems = [
     link: "/services/project/AMHS",
   },
   {
-    key: "AMAT",
-    image: "/services/project/AMAT/1.jpg",
-    link: "/services/project/AMAT",
+    key: "Installation",
+    image: "/services/project/Installation/1.jpg",
+    link: "/services/project/Installation",
   },
   {
     key: "SMIFPOD",

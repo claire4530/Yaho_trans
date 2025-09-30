@@ -58,6 +58,10 @@ const Timeline = () => {
                         <p className="text-white text-sm sm:text-base md:text-xl leading-tight sm:leading-normal">
                             {t(`introduction.history.year${i}_description2`)}
                         </p>
+                        {/* 第二行描述文字（如果有的話） */}
+                        <p className="text-white text-sm sm:text-base md:text-xl leading-tight sm:leading-normal">
+                            {t(`introduction.history.year${i}_description3`)}
+                        </p>
                     </div>
                 </div>
                 ))}

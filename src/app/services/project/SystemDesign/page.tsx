@@ -16,10 +16,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export default function IntroductionPage() {
     const t = useTranslations("services");
     const images = [
-        "/services/project/design/1.png",
-        "/services/project/design/2.png",
-        "/services/project/design/3.jpg",
         "/services/project/design/4.png",
+        "/services/project/design/3.jpg",
         "/services/project/design/5.png",
         "/services/project/design/6.png",
         "/services/project/design/7.png",
@@ -105,7 +103,8 @@ export default function IntroductionPage() {
                     <div className="w-full flex flex-col justify-center px-8 lg:px-0">
                         <h2 className="hidden sm:flex text-2xl font-bold text-[#375978] mb-4">{t("project.system design")}</h2>
                         <p className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line">
-                            <strong>{t("project background")} :</strong>{"\n"}{t("project.system design description")}
+                            {/* <strong>{t("project background")} :</strong>{"\n"} */}
+                            {t("project.system design description")}
                         </p>
                         {/* <p className="text-sm sm:text-base leading-8 text-gray-700 mt-4 whitespace-pre-line">
                             <strong>{t("project.system design Comments")}{"\n"}</strong>

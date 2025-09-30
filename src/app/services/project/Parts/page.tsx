@@ -107,10 +107,9 @@ export default function IntroductionPage() {
                             {/* 缺少專案背景、主要範圍、應用領域的詳細說明 */}
                             {/* 服務特色 */}
                             <div className="mb-4">
-                                <strong>{t("project features")} :</strong>{"\n"}{t("project.Parts features")}
-                                <p className="ml-8"> 
-                                    {t("project.Parts features description")}
-                                </p>
+                                {/* <strong>{t("project features")} :</strong>{"\n"} */}
+                                {t("project.Parts features")}{"\n"}
+                                {t("project.Parts features description")}
                             </div>
                         </div>
                         

@@ -103,26 +103,22 @@ export default function IntroductionPage() {
                         {/* 標題 */}
                         <h2 className="hidden sm:flex text-2xl font-bold text-[#375978] mb-4">{t("project.AMHS")}</h2>
                         <div className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line">
-                            {/* 專案背景 */}
                             <p className="mb-4">
                                     
                                 {t("project.AMHS description")}
                             </p>
-                            {/* 主要範圍 */}
-                            <p className="mb-4">
+                            {/* <p className="mb-4">
                                 <strong>{t("project scope")} :</strong>{"\n"}
                                 {t("project.AMHS scope")}
                             </p>
-                            {/* 應用領域 */}
                             <p className="mb-4">
                                 <strong>{t("project application")} :</strong>{"\n"}
                                 {t("project.AMHS application")}
                             </p>
-                            {/* 服務特色 */}
                             <p className="mb-4">
                                 <strong>{t("project features")} :</strong>{"\n"}
                                 {t("project.AMHS features")}
-                            </p>
+                            </p> */}
                         </div>
                         
                     </div>

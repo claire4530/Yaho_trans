@@ -16,8 +16,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export default function IntroductionPage() {
     const t = useTranslations("services");
     const images = [
-        "/services/project/AMAT/1.jpg",
-        "/services/project/AMAT/2.jpg"
+        "/services/project/Installation/1.jpg",
+        "/services/project/Installation/2.jpg"
     ]
 
     return (
@@ -56,7 +56,7 @@ export default function IntroductionPage() {
                     <BreadcrumbItem>
                         <BreadcrumbLink asChild>
                             {/* AMAT */}
-                            <Link href="/services/project/AMAT" className="text-sm sm:text-base font-semibold">{t("project.AMAT")}</Link>
+                            <Link href="/services/project/Installation" className="text-sm sm:text-base font-semibold">{t("project.Installation")}</Link>
                         </BreadcrumbLink>
                     </BreadcrumbItem>
                 </BreadcrumbList>
@@ -66,7 +66,7 @@ export default function IntroductionPage() {
 
             {/* AMAT裝機服務標題 */}
             <div className="font-extrabold text-2xl md:text-3xl xl:text-4xl text-[#375978] p-4 md:p-8 ml-4 ">
-                {t("project.AMAT")}
+                {t("project.Installation")}
             </div>
             {/* AMAT裝機服務 左邊 Carousel 圖片+右邊文字 */}
             <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start p-4 md:p-8">
@@ -98,19 +98,19 @@ export default function IntroductionPage() {
                 <ZoomIn delay={0.2}>
                     <div className="w-full flex flex-col flex-1 justify-center px-8 lg:px-0">
                         {/* 標題 */}
-                        <h2 className="hidden sm:flex text-2xl font-bold text-[#375978] mb-4">{t("project.AMAT")}</h2>
+                        <h2 className="hidden sm:flex text-2xl font-bold text-[#375978] mb-4">{t("project.Installation")}</h2>
                         {/* 專案背景  */}
                         <div className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line ">
                             {/* 專案背景 */}
                             <p className="mb-4">
-                                <strong>{t("project background")} :</strong>{"\n"}
-                                {t("project.AMAT description")}
+                                {/* <strong>{t("project background")} :</strong>{"\n"} */}
+                                {t("project.Installation description")}
                             </p>
                             {/* 主要範圍 */}
-                            <p className="mb-4">
+                            {/* <p className="mb-4">
                                 <strong>{t("project features")} :</strong>{"\n"}
                                 {t("project.AMAT features")}
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </ZoomIn>

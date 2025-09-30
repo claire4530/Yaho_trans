@@ -51,6 +51,8 @@ const embedMap: Record<string, string> = {
   	"Taiwan-3": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.379998244364!2d121.00839007604529!3d24.78243834837396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683622ac0e8837%3A0x206e639fecde14e!2zMzAw5paw56u55biC5p2x5Y2A56eR5a245ZyS6LevMTYy5be3M-W8hDLomZ8!5e0!3m2!1szh-TW!2stw!4v1756276457234!5m2!1szh-TW!2stw",
   	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.162144848472!2d120.25546997601018!3d23.127747812393693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7be4916c95d5%3A0x8a6064d625f7f8a0!2zNzQ15Y-w5Y2X5biC5a6J5a6a5Y2AMi0xNA!5e0!3m2!1szh-TW!2stw!4v1756276526789!5m2!1szh-TW!2stw",
 	"Taiwan-5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.589153458087!2d120.34677797600233!3d22.743507126683394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e11d0cd5027bb%3A0x819994a86922584e!2zODE16auY6ZuE5biC5aSn56S-5Y2A5Lit5q2j6LevMzI5LTPomZ8!5e0!3m2!1szh-TW!2stw!4v1756276632022!5m2!1szh-TW!2stw",
+	"Taiwan-6": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2015482494635!2d121.36933877605063!3d25.02723333856273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681df5db1ef5bb%3A0xc7b8cf5f5e8040d6!2zMzMz5qGD5ZyS5biC6b6c5bGx5Y2A5oyv6IiI6LevMTA4NeiZnw!5e0!3m2!1szh-TW!2stw!4v1759204589304!5m2!1szh-TW!2stw",
+	"Taiwan-7": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.806216466875!2d120.24240437601709!3d23.467453499578742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9c0c868172af%3A0x2dda33803cd1b785!2zNjEz5ZiJ576p57ij5py05a2Q5biC6ZaL5YWD6LevMTM46Jmf!5e0!3m2!1szh-TW!2stw!4v1759204638439!5m2!1szh-TW!2stw",
 
   	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.7577681133057!2d-112.17437058846818!3d33.63752223940325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b691e113e26cf%3A0x6dc093d35b00a833!2zNTI2MCBXIFBoZWxwcyBSZCwgR2xlbmRhbGUsIEFaIDg1MzA2576O5ZyL!5e0!3m2!1szh-TW!2stw!4v1758244988429!5m2!1szh-TW!2stw",
   	"Japan-1": "",
@@ -209,7 +211,7 @@ export default function LocationSelector() {
 								<p className="text-sm lg:text-base"><strong>{t("locations.BusinessHours")} :</strong> {t("locations.businessHours")}</p>
 							</div>
 						</div>
-						<p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p>
+						{/* <p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p> */}
 					</div>
 				</div>
 			)}

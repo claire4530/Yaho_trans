@@ -102,7 +102,8 @@ export default function IntroductionPage() {
                     <div className="w-full flex flex-col justify-center px-8 lg:px-0">
                         <h2 className="hidden sm:flex text-2xl font-bold text-[#375978] mb-4">{t("project.SMIFPOD")}</h2>
                         <p className="text-sm sm:text-base leading-7 text-gray-700 whitespace-pre-line">
-                        <strong>{t("project background")} :</strong>{"\n"}{t("project.SMIFPOD description")}
+                        {/* <strong>{t("project background")} :</strong>{"\n"} */}
+                        {t("project.SMIFPOD description")}
                         </p>
                     </div>
                 </ZoomIn>
