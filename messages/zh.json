@@ -44,7 +44,7 @@
     "phone": "電話：04-25601662",
     "fax": "傳真：04-25601662",
     "email": "信箱：yaho-sales@zcstcl.com",
-    "rights": "Copyright © 2024 ZCSTCL All Rights Reserved.",
+    "rights": "Copyright © 2025 ZCSTCL All Rights Reserved.",
     "privacy": "隱私權政策與使用條款",
     "legal": "法律與商標",
     "global": "全球據點"
@@ -100,8 +100,13 @@
   },
   "Exhibition": {
     "exhibition1": {
-      "dateRange": "09/10(三) - 09/12(五)",
+      "dateRange": "2025/09/10(三) - 2025/09/12(五)",
       "title": "SEMICON Taiwan 2025",
+      "href": "/exhibition"
+    },
+    "exhibition2": {
+      "dateRange": "2024/09/04(三) - 2024/09/06(五)",
+      "title": "SEMICON Japan 2024",
       "href": "/exhibition"
     }
   },
@@ -286,7 +291,7 @@
           "mail1": "serenaw@zcstcl.com",
           "phone1": "480-350-7344",
           "address1": "5260 W Phelps Rd, Glendale, AZ 85306",
-          "content1": "業務拓展、客戶服務",
+          "content1": "如有業務／技術需求，歡迎透過電話或信箱聯繫！",
           "imageUrl1": "/frontPage/1.jpg"
         },
         "Japan": {
@@ -298,7 +303,7 @@
           "mail1": "yaho-sales@zcstcl.com",
           "phone1": "+886-4-25601662 #1212",
           "address1": "",
-          "content1": "業務拓展、客戶服務",
+          "content1": "如有業務／技術需求，歡迎透過電話或信箱聯繫！",
           "imageUrl1": "/frontPage/1.jpg"
         },
         "Germany": {
@@ -310,7 +315,7 @@
           "mail1": "yaho-sales@zcstcl.com",
           "phone1": "+886-4-25601662 #1212",
           "address1": "",
-          "content1": "業務拓展、客戶服務",
+          "content1": "如有業務／技術需求，歡迎透過電話或信箱聯繫！",
           "imageUrl1": "/frontPage/1.jpg"
         },
         "Singapore": {
@@ -322,7 +327,7 @@
           "mail1": "yaho-sales@zcstcl.com",
           "phone1": "+886-4-25601662 #1212",
           "address1": "8 KAKI BUKIT AVENUE 4, #08-32, PREMIER @ KAKI BUKIT, SINGAPORE 415875",
-          "content1": "業務拓展、客戶服務",
+          "content1": "如有業務／技術需求，歡迎透過電話或信箱聯繫！",
           "imageUrl1": "/frontPage/1.jpg"
         }
       } 

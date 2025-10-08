@@ -35,7 +35,7 @@
 		"phone": "Phone: +886-4-25601662",
 		"fax": "Fax: +886-4-25601662",
 		"email": "Email: yaho-sales@zcstcl.com",
-		"rights": "Copyright © 2024 ZCSTCL All Rights Reserved.",
+		"rights": "Copyright © 2025 ZCSTCL All Rights Reserved.",
 		"privacy": "Privacy Policy & Terms of Use",
 		"legal": "Legal & Trademarks",
 		"global": "Global Locations"
@@ -93,6 +93,11 @@
 		"exhibition1": {
 		"dateRange": "SEP.10(Wed) – SEP.12(Fri)",
 		"title": "Semicon Taiwan 2025",
+		"href": "/exhibition"
+		},
+		"exhibition2": {
+		"dateRange": "SEP.04(Wed) – SEP.06(Fri)",
+		"title": "Semicon Japan 2024",
 		"href": "/exhibition"
 		}
 	},
@@ -275,19 +280,19 @@
 			"mail1": "serenaw@zcstcl.com",
 			"phone1": "480-350-7344",
 			"address1": "26339 N 20th ave, Phoenix, Arizona, 85085, USA",
-			"content1": "Business Development, Customer Service",
+			"content1": "For business or technical inquiries, please feel free to contact us via phone or email!",
 			"imageUrl1": "/frontPage/1.jpg"
 			},
 			"Japan": {
 			"name": "Japan",
 			"Japan": "日本",
-			"title": "日本據點",
+			"title": "Japan Branch",
 			"branchesTotal": 1,
-			"branches1": "熊本分公司",
-			"mail1": "yaho.kumamoto@zcstcl.com",
-			"phone1": "+81-6-1234-5678",
-			"address1": "熊本市北區梅田1丁目",
-			"content1": "業務拓展、客戶服務",
+			"branches1": "Kumamoto Subsidiary",
+			"mail1": "yaho-sales@zcstcl.com",
+			"phone1": "+886-4-25601662 #1212",
+			"address1": "",
+			"content1": "For business or technical inquiries, please feel free to contact us via phone or email!",
 			"imageUrl1": "/frontPage/1.jpg"
 			},
 			"Germany": {
@@ -299,7 +304,7 @@
 			"mail1": "yaho.taichung@zcstcl.com",
 			"phone1": "+4930 30366 3776",
 			"address1": "Pappelallee 78/79 10437 Berlin",
-			"content1": "Business Development, Customer Service",
+			"content1": "For business or technical inquiries, please feel free to contact us via phone or email!",
 			"imageUrl1": "/frontPage/1.jpg"
 			},
 			"Singapore": {
@@ -311,7 +316,7 @@
 			"mail1": "yaho.taichung@zcstcl.com",
 			"phone1": "886 4 25601662 #1400",
 			"address1": "8 KAKI BUKIT AVENUE 4, #08-32, PREMIER @ KAKI BUKIT, SINGAPORE 415875",
-			"content1": "Business Development, Customer Service",
+			"content1": "For business or technical inquiries, please feel free to contact us via phone or email!",
 			"imageUrl1": "/frontPage/1.jpg"
 			}
 		} 

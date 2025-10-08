@@ -19,6 +19,11 @@ export default function Exhibition() {
 			dateRange: t('exhibition1.dateRange'),
 			title: t('exhibition1.title'),
 			href: "/about",
+		},
+		{
+			dateRange: t('exhibition2.dateRange'),
+			title: t('exhibition2.title'),
+			href: "/about",
 		}
 	];
 	return (

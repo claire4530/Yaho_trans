@@ -55,6 +55,7 @@ export default function IntroductionPage() {
             <div className="font-normal text-base lg:text-lg  xl:pt-8 m-2 md:m-4 leading-9 xl:my-10 xl:px-30 mb-10">
                 <p className="my-4 mx-8 md:mx-20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{t("jobs-description2")}</p>
                 <div className="flex md:gap-8">
+                    
                     <p className="my-4 mx-8 md:ml-20">{t("jobs-more")}</p>
                     <Link
                         href="https://www.104.com.tw/company/1a2x6bjp2x?jobsource=google"
@@ -66,6 +67,8 @@ export default function IntroductionPage() {
                         {t("jobs-104")}
                     </Link>
                 </div>
+                
+
             </div>
         </SlideInFromLeft> 
     </div>
