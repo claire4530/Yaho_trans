@@ -25,7 +25,7 @@ export default function AboutLink({ text, href }: TextLinkProps) {
                 </div>
 
                 {/* 這條線只在 link 區域 hover 才有效 */}
-                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
+                <span className="hover:ji absolute left-0 -bottom-1 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
             </div>
         </Link>
     );

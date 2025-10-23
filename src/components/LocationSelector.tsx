@@ -22,6 +22,7 @@ type BranchData = {
   phone: string;
   mail: string;
   address: string;
+  businessHours: string;
   content: string;
   imageUrl: string;
   mapEmbed?: string;
@@ -81,6 +82,7 @@ export function useBranchData(): BranchData[] {
 			phone: t(`locations.country.${country}.phone${i}`),
 			mail: t(`locations.country.${country}.mail${i}`),
 			address: t(`locations.country.${country}.address${i}`),
+			businessHours: t(`locations.country.${country}.businessHours${i}`),
 			content: t(`locations.country.${country}.content${i}`),
 			imageUrl: `/about/location/YAHO_${t(`locations.country.${country}.name`)}.jpg`, // 你可以自訂這邊邏輯
 			mapEmbed: embedMap[key], // 自動根據 country-index 對應嵌入地圖
@@ -208,7 +210,7 @@ export default function LocationSelector() {
 							</div>
 							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
 								<Clock className="w-5 h-5 lg:mt-0.5" />
-								<p className="text-sm lg:text-base"><strong>{t("locations.BusinessHours")} :</strong> {t("locations.businessHours")}</p>
+								<p className="text-sm lg:text-base"><strong>{t("locations.BusinessHours")} :</strong> {selectedBranch.businessHours}</p>
 							</div>
 						</div>
 						{/* <p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p> */}

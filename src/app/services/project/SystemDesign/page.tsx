@@ -18,7 +18,6 @@ export default function IntroductionPage() {
     const images = [
         "/services/project/design/4.png",
         "/services/project/design/3.jpg",
-        "/services/project/design/5.png",
         "/services/project/design/6.png",
         "/services/project/design/7.png",
         "/services/project/design/8.jpg",

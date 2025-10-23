@@ -111,7 +111,7 @@ export default function IntroductionPage() {
                                 <Image src={image} alt={t(`project.${key}`)} layout="fill" objectFit="cover" />
                                 {/* 標題 */}
                                 <div className="absolute bottom-10 left-4 z-10">
-                                    <span className="text-white font-bold text-lg md:text-2xl xl:text-3xl p-8 rounded">
+                                    <span className="bg-black/30 text-white font-bold text-lg md:text-2xl xl:text-3xl  rounded">
                                     {t(`project.${key}`)}
                                     </span>
                                 </div>
