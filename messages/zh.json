@@ -359,14 +359,7 @@
     "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過多年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電等產業提供完整、高品質的工程解決方案。",
     "jobs-more": "更多熱門職缺:",
     "jobs-104": "104人力銀行",
-    "benefits1": "我們提供員工旅遊補助，鼓勵同仁走出辦公室，放鬆心情、增進交流，讓身心都能充電再出發。",
-    "benefits2": "公司定期補助部門聚餐，讓團隊在輕鬆氛圍中加深情誼，培養默契，共創更有凝聚力的合作關係。",
-    "benefits3": "每年歲末舉辦尾牙盛宴與摸彩活動，感謝同仁一年的辛勤付出，讓大家共享喜悅與驚喜。",
-    "benefits4": "同仁每滿五年年資，公司將特別表揚並致贈紀念禮品，感謝一路相伴與付出，見證彼此的成長與榮耀。",
-    "benefits5": "優於法令的有薪生日假，並可獲得生日禮金，讓員工在生日當月可以享受一日專屬休息與歡慶時光。",
-    "benefits6": "公司提供節慶、結婚、生育及慰問金，透過實際支持表達對員工的關懷與祝福，在員工重要人生時刻獲得適切的支持與肯定。",
-    "benefits7": "我們重視每位同仁的成長，透過完善的專業訓練，陪伴員工持續學習與成長，讓每一步職涯都與公司一同前進。",
-    "benefits8": "公開透明定期調薪制度，支持員工一整年努力付出，共享營運成果。"
+    "jobs-url": "https://www.104.com.tw/company/1a2x6bjp2x?jobsource=google"
   },
   "services": {
     "title": "產品服務",
@@ -502,10 +495,10 @@
       "location": "工作地點",
       "location-description": "Bell Rd. & 51th Ave. / TSMC 鳳凰城廠區",
       "work-time": "上班時間",
-      "work-time-description": "8:00 AM – 5:00 PM（依職務不同可能略有調整，INTERN 另議）",
+      "work-time-description": "8:00 AM – 5:00 PM（依職務不同相應不同班別與工作時段，INTERN 另議）",
       "condition": "必備條件",
       "condition-description1": "須具備美國合法工作身分（VISA 類型不拘）",
-      "condition-description2": "看實務績效表現公司未來願意sponsor visa",
+      "condition-description2": "",
       "bonus": "加分條件",
       "bonus-description1": "工程、製造、電子等相關專業知識",
       "bonus-description2": "科技廠工作經驗",

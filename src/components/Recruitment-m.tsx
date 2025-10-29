@@ -271,7 +271,7 @@ export default function USRecruitPanelM() {
                                 <dd className="text-base text-gray-600 mt-1">
                                     <ul className="list-disc ml-5 space-y-1">
                                         <li>{t("condition-description1")}</li>
-                                        <li>{t("condition-description2")}</li>
+                                        {/* <li>{t("condition-description2")}</li> */}
                                     </ul>
                                 </dd>
                             </div>
@@ -340,7 +340,7 @@ export default function USRecruitPanelM() {
                             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                                 <div>
                                     <h3 className="text-xl font-bold text-[#0f5670]">{job.title}</h3>
-                                    <div className="my-2 text-sm text-gray-500">{job.location} • {job.time}</div>
+                                    <div className="my-2 text-sm text-gray-500">{job.location}</div>
                                     <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div>
                                             <h4 className="font-semibold">{t("job-description")}</h4>

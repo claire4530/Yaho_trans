@@ -220,6 +220,7 @@ export default function USRecruitPanel() {
                         </button>
                         )}
                     </div>
+                    
 
                     <button
                         onClick={() => {
@@ -230,9 +231,8 @@ export default function USRecruitPanel() {
                     >
                         {t("reset")}
                     </button>
-                </div>
+                </div>ji3j503l24s83kx7
             </header>
-
             <main className="mt-6 mx-16 grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* 左側大卡片 */}
                 <section className="md:col-span-1 bg-white rounded-2xl shadow-lg overflow-hidden">

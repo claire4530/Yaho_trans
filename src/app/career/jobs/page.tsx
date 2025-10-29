@@ -202,7 +202,7 @@ export default function IntroductionPage() {
                         
                         <p className="my-4 mx-8 md:ml-20">{t("jobs-more")}</p>
                         <Link
-                            href="https://www.104.com.tw/company/1a2x6bjp2x?jobsource=google"
+                            href= {t("jobs-url")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-[#f8af49] text-white px-4 sm:px-8 py-2 rounded-xl inline-flex items-center justify-center

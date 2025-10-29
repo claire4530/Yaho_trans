@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import LinkWrapper from "@/src/components/LinkWrapper";
 import LanguageSwitcherPhone from "@/src/components/LanguageSwitcherPhone";
+import SiteWideSearch from "@/src/components/SearchComponent";
 
 interface NavItem {
   label: string;
@@ -102,7 +103,6 @@ export default function Navbar() {
 		// 	],
 		// 	path: "/governance",
 		// }, // 公司治理
-		// { label: "search組件", path: "/contact" },
 	];
 
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -247,13 +247,16 @@ export default function Navbar() {
 
 						</li>
 					))}
+					<SiteWideSearch locale="zh" />
 					<LanguageSwitcher />
 				</ul>
 
 				{/* Right - Icons & Toggle */}
 				<div className="flex items-center gap-4 xl:hidden px-4">
 					{/* Icon 占位用 */}
-					{/* <Search className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" /> */}
+					<Search className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300 cursor-pointer" >
+					
+					</Search>
 					{/* <Globe className="text-[#375978] hover:text-[#F3981B] hover:scale-120 transition-transform duration-300" /> */}
 					<LanguageSwitcherPhone />
 					{/* 手機選單按鈕 */}

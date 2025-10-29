@@ -1,0 +1,45 @@
+[
+  {
+    "id": "home",
+    "title": "首頁",
+    "url": "/",
+    "excerpt": "垚鋐 : 專業連結世界，技術創造價值。專精廠務 安全高效十年經驗 技術領先誠實效率 客戶至上技術助力 拓展服務STK配管 自動化整合從設計到維運，為高科技產業打造完整工程解決方案告別繁瑣，迎接未來。我們是整合專業團隊，提供從規劃到安裝的全方位裝機服務，省時省力更省心。垚鋐以負責、誠信、效率、專業、客戶滿意為基石，與夥伴共創價值，從台灣邁向世界！",
+    "excerptDescription": "歡迎來到垚鋐系統官網，了解最新消息與服務",
+    "type": "page"
+  },
+  {
+    "id": "about",
+    "title": "關於我們",
+    "url": "/zh/about",
+    "excerpt": "我們的使命是把最佳產品帶給客戶。",
+    "type": "page"
+  },
+  {
+    "id": "product-a",
+    "title": "產品 A",
+    "url": "/zh/product-services/a",
+    "excerpt": "產品 A 提供功能 1、2、3，適用於企業客戶。",
+    "type": "product"
+  },
+  {
+    "id": "career",
+    "title": "職涯",
+    "url": "/zh/career",
+    "excerpt": "加入我們，一起成長。查看目前開放職缺。",
+    "type": "job"
+  },
+  {
+    "id": "job-frontend",
+    "title": "前端工程師",
+    "url": "/zh/career/frontend-engineer",
+    "excerpt": "使用 React 與 Next.js 建置使用者介面。",
+    "type": "job"
+  },
+  {
+    "id": "recruitment",
+    "title": "招募資訊",
+    "url": "/zh/recruitment",
+    "excerpt": "目前開放職缺、徵才流程與聯絡方式。",
+    "type": "job"
+  }
+]
