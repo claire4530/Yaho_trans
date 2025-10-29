@@ -215,36 +215,9 @@ export default function IntroductionPage() {
 
                 </div>
             </SlideInFromLeft> 
-                {/* <div className="p-6 md:p-10">
-                    <h1 className="text-3xl font-bold text-[#375978] mb-6">人才招募</h1>
-                    <section className="space-y-6">
-                        {jobs.map((job) => (
-                        <article key={job.id} className="border rounded-2xl p-6 bg-white shadow-sm">
-                            <h2 className="text-2xl font-semibold mb-3">{job.title}</h2>
-                            <div className="mb-4">
-                                <h3 className="font-bold text-lg mb-2">職務說明：</h3>
-                                <ul className="list-disc ml-6 space-y-1">
-                                    {job.description.map((desc, i) => (
-                                    <li key={i}>{desc}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg mb-2">職務要求：</h3>
-                                <ul className="list-disc ml-6 space-y-1">
-                                    {job.requirements.map((req, i) => (
-                                    <li key={i}>{req}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </article>
-                        ))}
-                    </section>
-                </div> */}
-            {/* <USRecruitPanel /> */}
-            <SlideInFromLeft delay={0.2}>
-                <USRecruitPanelM />
-            </SlideInFromLeft>
+            {/* <SlideInFromLeft delay={0.2}> */}
+            <USRecruitPanelM />
+            {/* </SlideInFromLeft> */}
             
 
         </div>
