@@ -190,7 +190,7 @@
         "Customer Satisfaction description": "於YAHO，客戶居核心地位。我們堅信，客戶之成功等同於我方之成就，並同等重視其競爭力及成長。"
       },
       "certificates": {
-        "title": "Company Certifications",
+        "title": "資質與認證",
         "Certification": "Certification",
         "tw company": "垚鋐系統科技股份有限公司",
         "tw iso": "ISO證書",
@@ -359,6 +359,14 @@
     "垚鋐是一家「專注於高科技廠房建置及維運、系統設備整合的技術型企業」，涵蓋hook up design、Tool design、裝機、維修與耗材服務的科技型產業。我們是一群擁有超過多年產業經驗的核心團隊，並以高效率與專業客服贏得客戶信賴。我們不僅深耕台灣市場，也積極拓展全球服務據點與技術合作，持續為半導體、光電等產業提供完整、高品質的工程解決方案。",
     "jobs-more": "更多熱門職缺:",
     "jobs-104": "104人力銀行",
+    "benefits1": "我們提供員工旅遊補助，鼓勵同仁走出辦公室，放鬆心情、增進交流，讓身心都能充電再出發。",
+    "benefits2": "公司定期補助部門聚餐，讓團隊在輕鬆氛圍中加深情誼，培養默契，共創更有凝聚力的合作關係。",
+    "benefits3": "每年歲末舉辦尾牙盛宴與摸彩活動，感謝同仁一年的辛勤付出，讓大家共享喜悅與驚喜。",
+    "benefits4": "同仁每滿五年年資，公司將特別表揚並致贈紀念禮品，感謝一路相伴與付出，見證彼此的成長與榮耀。",
+    "benefits5": "優於法令的有薪生日假，並可獲得生日禮金，讓員工在生日當月可以享受一日專屬休息與歡慶時光。",
+    "benefits6": "公司提供節慶、結婚、生育及慰問金，透過實際支持表達對員工的關懷與祝福，在員工重要人生時刻獲得適切的支持與肯定。",
+    "benefits7": "我們重視每位同仁的成長，透過完善的專業訓練，陪伴員工持續學習與成長，讓每一步職涯都與公司一同前進。",
+    "benefits8": "公開透明定期調薪制度，支持員工一整年努力付出，共享營運成果。",
     "jobs-url": "https://www.104.com.tw/company/1a2x6bjp2x?jobsource=google"
   },
   "services": {
@@ -379,7 +387,7 @@
       "system design Mainframe list": "27. Local Scrubber\n28. Gas & PCW’s panel\n29. Pumping-exhaust pipe\n30. Main power distribution",
       "Gas Chemical": "Gas & Chemical System",
       "Gas Chemical description": "依據客戶需求提供廠務端、氣體與化學品系統之配管施工服務。",
-      "Gas Chemical application": "光電產業, 半導體, 傳統產業, 電子產業, 醫療產業, 其他相關產業",
+      "Gas Chemical application": "光電產業, 半導體, 傳統產業, 電子產業, 其他相關產業",
       "AMHS": "AMHS自動倉儲搬運系統",
       "AMHS description": "根據 AMHS 需求，從設計到裝機，一站式解決。儲位櫃體管路之整體設計，完成管路預置、組裝、現場施工與系統裝機。",
       "AMHS scope": "根據 AMHS 需求，進行儲位櫃體管路之整體設計，完成管路預置、組裝、現場施工與系統裝機",
@@ -416,7 +424,7 @@
     },
     "result": {
       "title": "工程實績",
-      "description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電、醫療等產業的多項重要專案。",
+      "description": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電等產業的多項重要專案。",
       "search": "搜尋專案名稱、地區或客戶...",
       "category": "類別",
       "region": "地區",

@@ -3,43 +3,72 @@
     "id": "home",
     "title": "首頁",
     "url": "/",
-    "excerpt": "垚鋐 : 專業連結世界，技術創造價值。專精廠務 安全高效十年經驗 技術領先誠實效率 客戶至上技術助力 拓展服務STK配管 自動化整合從設計到維運，為高科技產業打造完整工程解決方案告別繁瑣，迎接未來。我們是整合專業團隊，提供從規劃到安裝的全方位裝機服務，省時省力更省心。垚鋐以負責、誠信、效率、專業、客戶滿意為基石，與夥伴共創價值，從台灣邁向世界！",
+    "excerpt": "垚鋐首頁官網簡介專業技術團隊聯繫方式電話地址",
     "excerptDescription": "歡迎來到垚鋐系統官網，了解最新消息與服務",
     "type": "page"
   },
   {
     "id": "about",
     "title": "關於我們",
-    "url": "/zh/about",
-    "excerpt": "我們的使命是把最佳產品帶給客戶。",
+    "url": "/about/introduction",
+    "excerpt": "關於我們簡介公司沿革願景與價值觀核心理念資質與認證獲獎事蹟",
+    "excerptDescription": "了解垚鋐的歷史、願景與價值觀。",
     "type": "page"
   },
   {
-    "id": "product-a",
-    "title": "產品 A",
-    "url": "/zh/product-services/a",
-    "excerpt": "產品 A 提供功能 1、2、3，適用於企業客戶。",
-    "type": "product"
+    "id": "organization",
+    "title": "組織架構",
+    "url": "/about/organization",
+    "excerpt": "組織架構介紹",
+    "excerptDescription": "組織架構介紹",
+    "type": "page"
+  },
+  {
+    "id": "locations",
+    "title": "公司據點",
+    "url": "/about/locations",
+    "excerpt": "台中總公司電話或信箱聯繫業務電子郵件地址營業時間台灣日本美國德國新加坡新竹寶山新竹科園台南安定高雄大社桃園龜山嘉義朴子服務中心亞歷桑那子公司熊本子公司德勒斯登子公司新加坡子公司",
+    "excerptDescription": "認識我們的公司據點",
+    "type": "page"
+  },
+  {
+    "id": "project",
+    "title": "服務項目",
+    "url": "/services/project",
+    "excerpt": "產品服務項目廠務系統設計 Gas & Chemical System AMHS 自動倉儲搬運系統裝機服務 YAHO SMIF POD 清洗機 Parts 耗材銷售 全方位裝機服務",
+    "excerptDescription": "服務項目展示",
+    "type": "service"
+  },
+  {
+    "id": "result",
+    "title": "工程實績",
+    "url": "/services/result",
+    "excerpt": "工程實績",
+    "excerptDescription": "工程實績展示",
+    "type": "service"
+  },
+  {
+    "id": "exhibition",
+    "title": "展覽活動",
+    "url": "/exhibition",
+    "excerpt": "南港展覽館 SEMICON Taiwan 2025 2024",
+    "excerptDescription": "最新展覽與活動資訊",
+    "type": "exhibition"
   },
   {
     "id": "career",
-    "title": "職涯",
-    "url": "/zh/career",
-    "excerpt": "加入我們，一起成長。查看目前開放職缺。",
-    "type": "job"
-  },
-  {
-    "id": "job-frontend",
-    "title": "前端工程師",
-    "url": "/zh/career/frontend-engineer",
-    "excerpt": "使用 React 與 Next.js 建置使用者介面。",
+    "title": "員工福利",
+    "url": "/career/benefits",
+    "excerpt": "員工福利職能培養旅遊補助部門聚餐尾牙年資專業訓練職涯有薪生日假調薪制度",
+    "excerptDescription": "加入我們，一起成長。",
     "type": "job"
   },
   {
     "id": "recruitment",
     "title": "招募資訊",
-    "url": "/zh/recruitment",
-    "excerpt": "目前開放職缺、徵才流程與聯絡方式。",
+    "url": "/career/jobs",
+    "excerpt": "徵才資訊104人力銀行美國人才招募",
+    "excerptDescription": "目前開放職缺、徵才流程與聯絡方式。",
     "type": "job"
   }
 ]

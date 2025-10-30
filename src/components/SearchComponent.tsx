@@ -100,16 +100,16 @@ export default function SiteWideSearch({ locale = "zh" }: { locale?: string }) {
     return (
         <div className="relative max-w-3xl mx-auto" onFocus={() => setOpen(true)}>
         <div className="relative">
-            <Search className="absolute left-3 top-3 text-gray-400" />
+            <Search className="absolute left-3 top-2 text-gray-400 " />
             <input
-            ref={inputRef}
-            value={query}
-            onChange={(e) => { setQuery(e.target.value); setOpen(true); setHighlightIdx(-1); }}
-            onFocus={() => setOpen(true)}
-            onBlur={() => { /* allow click on results - don't auto close here */ }}
-            placeholder={locale === "zh" ? "搜尋本站..." : "Search site..."}
-            className="w-full pl-10 pr-10 py-3 rounded-xl border border-gray-200 shadow-sm focus:outline-none"
-            aria-label="Site search"
+                ref={inputRef}
+                value={query}
+                onChange={(e) => { setQuery(e.target.value); setOpen(true); setHighlightIdx(-1); }}
+                onFocus={() => setOpen(true)}
+                onBlur={() => { /* allow click on results - don't auto close here */ }}
+                placeholder={locale === "zh" ? "搜尋本站..." : "Search site..."}
+                className="w-full pl-10 pr-10 py-2 rounded-xl border border-gray-200 shadow-sm focus:outline-none"
+                aria-label="Site search"
             />
         </div>
 
@@ -129,22 +129,23 @@ export default function SiteWideSearch({ locale = "zh" }: { locale?: string }) {
                     onMouseEnter={() => setHighlightIdx(i)}
                     onMouseLeave={() => setHighlightIdx(-1)}
                     >
-                    <div className="flex-1 min-w-0">
-                        <Link
-                            href={it.url}
-                            className="block text-base font-medium text-blue-700 break-words"
-                            dangerouslySetInnerHTML={{ __html: highlight(it.title, debouncedQuery) }}
-                        />
-                        {it.excerptDescription && (
-                        <p className="text-sm text-gray-600 mt-1" dangerouslySetInnerHTML={{ __html: highlight(it.excerptDescription, debouncedQuery) }} />
-                        )}
-                        {it.type && <div className="text-xs text-gray-400 mt-2">{it.type}</div>}
-                    </div>
+                        <div className="flex-1 min-w-0">
+                            <Link
+                                href={it.url}
+                                className="block text-base font-bold text-[#375978] break-words"
+                                dangerouslySetInnerHTML={{ __html: highlight(it.title, debouncedQuery) }}
+                            />
+                            {it.excerptDescription && (
+                            <p className="text-sm text-gray-600 mt-1" dangerouslySetInnerHTML={{ __html: highlight(it.excerptDescription, debouncedQuery) }} />
+                            )}
+                            {/* {it.type && <div className="text-xs text-gray-400 mt-2">{it.type}</div>} */}
+                        </div>
 
-                    <div className="flex flex-col gap-2">
-                        {/* <Link href={it.url} className="px-3 py-1 text-sm border rounded">前往</Link> */}
-                        <a href={it.url} target="_blank" rel="noopener noreferrer" className="px-3 py-1 text-sm border rounded">新分頁</a>
-                    </div>
+                        <div className="flex flex-col gap-2 relative group font-bold text-base transition-colors duration-300 cursor-pointer text-[#375978] hover:text-[#F3981B]">
+                            {/* <Link href={it.url} className="px-3 py-1 text-sm border rounded">前往</Link> */}
+                            <a href={it.url} target="_blank" rel="noopener noreferrer" className="px-1 py-1 text-sm rounded">前往</a>
+                            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
+                        </div>
                     </li>
                 ))}
                 </ul>

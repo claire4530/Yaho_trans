@@ -347,6 +347,14 @@
 		"jobs-description2": "YaoHong is a technology-driven enterprise focused on high-tech factory construction and maintenance, as well as system and equipment integration. Our services cover hook-up design, tool design, installation, maintenance, and consumable supply. Our core team has more of industry experience and has earned customer trust with efficiency and professional service. We not only cultivate the Taiwan market but also actively expand global service locations and technical partnerships, continuously delivering complete, high-quality engineering solutions for industries such as semiconductors, optoelectronics, and healthcare.",
 		"jobs-more": "More Popular Openings:",
 		"jobs-104": "Linkedin",
+		"benefits1": "We provide travel subsidies to encourage employees to step out of the office, relax, and enhance connections, allowing both body and mind to recharge.",
+		"benefits2": "The company regularly subsidizes team gatherings, creating a relaxed atmosphere to deepen bonds, build teamwork, and strengthen collaboration.",
+		"benefits3": "At the end of each year, we host a banquet and raffle to thank employees for their hard work, sharing joy and surprises together.",
+		"benefits4": "For every five years of service, employees receive special recognition and commemorative gifts, appreciating their dedication and celebrating mutual growth and achievements.",
+		"benefits5": "We offer paid birthday leave that exceeds legal requirements, along with a birthday bonus, so employees can enjoy a day of rest and celebration in their birthday month.",
+		"benefits6": "The company provides bonuses for festivals, weddings, childbirth, and condolences, expressing care and support during employees’ important life moments.",
+		"benefits7": "We value each employee’s growth, offering comprehensive professional training to support continuous learning and development, advancing together with the company at every step.",
+		"benefits8": "We implement a transparent, regular salary adjustment system, ensuring employees share in the company’s achievements for their year-round dedication.",
 		"jobs-url": "https://www.linkedin.com/company/yaho-system-technology-inc/"
 	},
 	"services": {
@@ -367,7 +375,7 @@
 	"system design Mainframe list": "27. Local Scrubber\n28. Gas & PCW’s panel\n29. Pumping-exhaust pipe\n30. Main power distribution",
 	"Gas Chemical": "Gas & Chemical System",
 	"Gas Chemical description": "Provide piping construction services for plant services, gas and chemical systems based on customer needs.",
-	"Gas Chemical application": "Optoelectronics, Semiconductors, Traditional Manufacturing, Electronics, Medical, and more.",
+	"Gas Chemical application": "Optoelectronics, Semiconductors, Traditional Manufacturing, Electronics, and more.",
 	"AMHS": "AMHS Automated Material Handling Systems",
 	"AMHS description": "According to AMHS requirements, we provide a one-stop solution from design to installation. We provide the overall design of the storage cabinet piping, complete piping pre-installation, assembly, on-site construction and system installation.",
 	"AMHS scope": "According to AMHS requirements, we perform comprehensive pipeline design for storage stockers, completing pipeline pre-fit, assembly, onsite installation, and system commissioning.",
@@ -404,7 +412,7 @@
 	},
 		"result": {
 			"title": "Project Achievements",
-			"description": "Our project achievements showcase our professional capabilities and successful cases across various industries, including semiconductor, optoelectronics, and medical sectors.",
+			"description": "Our project achievements showcase our professional capabilities and successful cases across various industries, including semiconductor, optoelectronics sectors.",
 			"search": "Search by project name, region, or client...",
 			"category": "Category",
 			"region": "Region",
