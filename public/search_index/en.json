@@ -1,0 +1,74 @@
+[
+  {
+    "id": "home",
+    "title": "homepage",
+    "url": "/",
+    "excerpt": "Yaho Yaohong Homepage Official Website About Us Professions Technology Team Contact Phone Address",
+    "excerptDescription": "Welcome to the Yaho(Yaohong) Systems official website for the latest news and services.",
+    "type": "page"
+  },
+  {
+    "id": "about",
+    "title": "About Us",
+    "url": "/about/introduction",
+    "excerpt": "About Us Company Profile Development History Vision and Values Core Concepts Qualifications and Certifications Awards and Achievements",
+    "excerptDescription": "Learn about Yaho's history, vision, and values.",
+    "type": "page"
+  },
+  {
+    "id": "organization",
+    "title": "Organizational Structure",
+    "url": "/about/organization",
+    "excerpt": "Organizational Structure Introduction organization",
+    "excerptDescription": "Organizational Structure Introduction",
+    "type": "page"
+  },
+  {
+    "id": "locations",
+    "title": "Company Locations",
+    "url": "/about/locations",
+    "excerpt": "Taichung Headquarters Phone or Email Contact Business Email Address Business Hours Taiwan Japan USA Germany Singapore Hsinchu Baoshan Hsinchu Science Park Tainan Anding Kaohsiung Dashe Taoyuan Guishan Chiayi Puzi Service Center Arizona Subsidiary Branch international division Kumamoto Subsidiary Dresden Subsidiary Singapore Subsidiary",
+    "excerptDescription": "Get to know our company locations",
+    "type": "page"
+  },
+  {
+    "id": "project",
+    "title": "Services",
+    "url": "/services/project",
+    "excerpt": "Services project Factory system design Gas & Chemical System AMHS Automated Material Handling Systems Tool Installation Services YAHO SMIF POD Cleaning Machine Parts & Consumables Full-Scope Installation Services secondary distribution hook up system",
+    "excerptDescription": "Services Showcase",
+    "type": "service"
+  },
+  {
+    "id": "result",
+    "title": "Services",
+    "url": "/services/result",
+    "excerpt": "Engineering Collaborators contractors Showcase",
+    "excerptDescription": "Engineering Collaborators Showcase",
+    "type": "service"
+  },
+  {
+    "id": "exhibition",
+    "title": "Exhibitions",
+    "url": "/exhibition",
+    "excerpt": "Nangang Exhibition Center, Hall 2 SEMICON Taiwan 2025 2024",
+    "excerptDescription": "Latest Exhibition and Event Information",
+    "type": "exhibition"
+  },
+  {
+    "id": "career",
+    "title": "Employee Benefits",
+    "url": "/career/benefits",
+    "excerpt": "Career Employment Hiring HR Employee Benefits Professional Development Travel Allowance Departmental Gatherings Year-End Party Seniority Professional Training Career Paid Birthday Leave Salary Adjustment System",
+    "excerptDescription": "Join us and grow together.",
+    "type": "job"
+  },
+  {
+    "id": "recruitment",
+    "title": "Recruitment Information",
+    "url": "/career/jobs",
+    "excerpt": "Recruitment Information 104 Job Bank US Talent Recruitment",
+    "excerptDescription": "Current Job Openings, Recruitment Process, and Contact Information.",
+    "type": "job"
+  }
+]

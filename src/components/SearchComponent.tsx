@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import Fuse from "fuse.js";
 import Link from "next/link";
 import { Search } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type IndexItem = {
     id: string;
@@ -14,7 +15,10 @@ type IndexItem = {
     type?: string;
 };
 
-export default function SiteWideSearch({ locale = "zh" }: { locale?: string }) {
+export default function SiteWideSearch({ locale }: { locale?: string }) {
+    const t = useTranslations("Language");
+    
+    
     const [query, setQuery] = useState("");
     const [indexData, setIndexData] = useState<IndexItem[]>([]);
     const [loading, setLoading] = useState(false);
@@ -107,7 +111,7 @@ export default function SiteWideSearch({ locale = "zh" }: { locale?: string }) {
                 onChange={(e) => { setQuery(e.target.value); setOpen(true); setHighlightIdx(-1); }}
                 onFocus={() => setOpen(true)}
                 onBlur={() => { /* allow click on results - don't auto close here */ }}
-                placeholder={locale === "zh" ? "搜尋本站..." : "Search site..."}
+                placeholder={t("search-placeholder")}
                 className="w-full pl-10 pr-10 py-2 rounded-xl border border-gray-200 shadow-sm focus:outline-none"
                 aria-label="Site search"
             />
@@ -143,7 +147,7 @@ export default function SiteWideSearch({ locale = "zh" }: { locale?: string }) {
 
                         <div className="flex flex-col gap-2 relative group font-bold text-base transition-colors duration-300 cursor-pointer text-[#375978] hover:text-[#F3981B]">
                             {/* <Link href={it.url} className="px-3 py-1 text-sm border rounded">前往</Link> */}
-                            <a href={it.url} target="_blank" rel="noopener noreferrer" className="px-1 py-1 text-sm rounded">前往</a>
+                            <a href={it.url} target="_blank" rel="noopener noreferrer" className="px-1 py-1 text-sm rounded">{t("go")}</a>
                             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#F3981B] transition-all duration-300 group-hover:w-full"></span>
                         </div>
                     </li>

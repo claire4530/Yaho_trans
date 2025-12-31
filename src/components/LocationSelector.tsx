@@ -1,11 +1,232 @@
-import { useState } from "react";
-import { useTranslations } from "next-intl";
+// import { useState } from "react";
+// import { useTranslations } from "next-intl";
+// import Image from "next/image";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+// } from "@/components/ui/carousel"
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select"
+// import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Building2 } from "lucide-react";
+// import { MapPinned, Phone, Mail, Clock } from 'lucide-react';
+// type BranchData = {
+//   country: string;
+//   name: string;
+//   phone: string;
+//   mail: string;
+//   address: string;
+//   businessHours: string;
+//   content: string;
+//   imageUrl: string;
+//   mapEmbed?: string;
+// };
+
+// // const countries = ["Taiwan", "Japan", "USA", "Germany", "Singapore"];
+// const countries = ["Taiwan", "Japan", "USA", "Germany", "Singapore"];
+
+// // const embedMap: Record<string, string> = {
+// //   	"Taiwan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.1751899851147!2d120.68961027512995!3d24.20064317836592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469179eff25048b%3A0xca382336ec6075f!2zNDA25Y-w54Gj5Y-w5Lit5biC5YyX5bGv5Y2A55Kw5Lit6Lev5LiA5q61NDg16Jmf!5e0!3m2!1szh-TW!2sus!4v1754533882444!5m2!1szh-TW!2sus",
+// //   	"Taiwan-2": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.5855686693476!2d120.99003997604417!3d24.741104350021875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346849868f83bb87%3A0x374a19df73dd9eac!2zMzA45paw56u557ij5a-25bGx6YSJ5bWp57-g6LevMTAz5be3NTjomZ8!5e0!3m2!1szh-TW!2stw!4v1756276333082!5m2!1szh-TW!2stw",
+// //   	"Taiwan-3": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.379998244364!2d121.00839007604529!3d24.78243834837396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683622ac0e8837%3A0x206e639fecde14e!2zMzAw5paw56u55biC5p2x5Y2A56eR5a245ZyS6LevMTYy5be3M-W8hDLomZ8!5e0!3m2!1szh-TW!2stw!4v1756276457234!5m2!1szh-TW!2stw",
+// //   	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.162144848472!2d120.25546997601018!3d23.127747812393693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7be4916c95d5%3A0x8a6064d625f7f8a0!2zNzQ15Y-w5Y2X5biC5a6J5a6a5Y2AMi0xNA!5e0!3m2!1szh-TW!2stw!4v1756276526789!5m2!1szh-TW!2stw",
+// // 	"Taiwan-5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.589153458087!2d120.34677797600233!3d22.743507126683394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e11d0cd5027bb%3A0x819994a86922584e!2zODE16auY6ZuE5biC5aSn56S-5Y2A5Lit5q2j6LevMzI5LTPomZ8!5e0!3m2!1szh-TW!2stw!4v1756276632022!5m2!1szh-TW!2stw",
+
+// //   	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7590289179345!2d-118.24368468478408!3d34.05223548060667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7bce472b0fb%3A0x5562a441bdd2bb1f!2zTG9zIEFuZ2VsZXMsIENBLCBVU0E!5e0!3m2!1sen!2sus!4v1690000000004",
+
+// //   	"Japan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.844535936671!2d135.49720481548952!3d34.70248558043142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0e84e12f321%3A0x84fbd0e7e4f97a0d!2zT3NhY2EsIEphcGFu!5e0!3m2!1sja!2sjp!4v1690000000006",
+
+// //   	"Germany-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.463088706809!2d13.411776577012185!3d52.543147834515125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a852003417ca55%3A0x282c62d383406b6d!2zUGFwcGVsYWxsZWUgNzgvNzksIDEwNDM3IEJlcmxpbiwg5b635ZyL!5e0!3m2!1szh-TW!2stw!4v1756272381235!5m2!1szh-TW!2stw",
+
+// //   	"Singapore-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.72979086235!2d103.90321457581662!3d1.3384157616107366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17e45292fb61%3A0x53f09ab2bb91b45!2s8%20Kaki%20Bukit%20Ave%204%2C%20Singapore%20415875!5e0!3m2!1szh-TW!2stw!4v1756273319284!5m2!1szh-TW!2stw"
+// // };
+// const embedMap: Record<string, string> = {
+//   	"Taiwan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.1751899851147!2d120.68961027512995!3d24.20064317836592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469179eff25048b%3A0xca382336ec6075f!2zNDA25Y-w54Gj5Y-w5Lit5biC5YyX5bGv5Y2A55Kw5Lit6Lev5LiA5q61NDg16Jmf!5e0!3m2!1szh-TW!2sus!4v1754533882444!5m2!1szh-TW!2sus",
+//   	"Taiwan-2": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.5855686693476!2d120.99003997604417!3d24.741104350021875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346849868f83bb87%3A0x374a19df73dd9eac!2zMzA45paw56u557ij5a-25bGx6YSJ5bWp57-g6LevMTAz5be3NTjomZ8!5e0!3m2!1szh-TW!2stw!4v1756276333082!5m2!1szh-TW!2stw",
+//   	"Taiwan-3": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.379998244364!2d121.00839007604529!3d24.78243834837396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683622ac0e8837%3A0x206e639fecde14e!2zMzAw5paw56u55biC5p2x5Y2A56eR5a245ZyS6LevMTYy5be3M-W8hDLomZ8!5e0!3m2!1szh-TW!2stw!4v1756276457234!5m2!1szh-TW!2stw",
+//   	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.162144848472!2d120.25546997601018!3d23.127747812393693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7be4916c95d5%3A0x8a6064d625f7f8a0!2zNzQ15Y-w5Y2X5biC5a6J5a6a5Y2AMi0xNA!5e0!3m2!1szh-TW!2stw!4v1756276526789!5m2!1szh-TW!2stw",
+// 	"Taiwan-5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.589153458087!2d120.34677797600233!3d22.743507126683394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e11d0cd5027bb%3A0x819994a86922584e!2zODE16auY6ZuE5biC5aSn56S-5Y2A5Lit5q2j6LevMzI5LTPomZ8!5e0!3m2!1szh-TW!2stw!4v1756276632022!5m2!1szh-TW!2stw",
+// 	"Taiwan-6": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2015482494635!2d121.36933877605063!3d25.02723333856273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681df5db1ef5bb%3A0xc7b8cf5f5e8040d6!2zMzMz5qGD5ZyS5biC6b6c5bGx5Y2A5oyv6IiI6LevMTA4NeiZnw!5e0!3m2!1szh-TW!2stw!4v1759204589304!5m2!1szh-TW!2stw",
+// 	"Taiwan-7": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.806216466875!2d120.24240437601709!3d23.467453499578742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9c0c868172af%3A0x2dda33803cd1b785!2zNjEz5ZiJ576p57ij5py05a2Q5biC6ZaL5YWD6LevMTM46Jmf!5e0!3m2!1szh-TW!2stw!4v1759204638439!5m2!1szh-TW!2stw",
+
+//   	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.7577681133057!2d-112.17437058846818!3d33.63752223940325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b691e113e26cf%3A0x6dc093d35b00a833!2zNTI2MCBXIFBoZWxwcyBSZCwgR2xlbmRhbGUsIEFaIDg1MzA2576O5ZyL!5e0!3m2!1szh-TW!2stw!4v1758244988429!5m2!1szh-TW!2stw",
+//   	"Japan-1": "",
+
+//   	"Germany-1": "",
+
+//   	"Singapore-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.728322921548!2d103.90377581100428!3d1.3393179616030164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1710c9e9eb27%3A0xd123a4b273817971!2sPremier%20%40%20Kaki%20Bukit!5e0!3m2!1szh-TW!2stw!4v1758528429646!5m2!1szh-TW!2stw"
+// };
+
+// export function useBranchData(): BranchData[] {
+// 	const t = useTranslations("about");
+    
+// 	const result: BranchData[] = [];
+	
+// 	countries.forEach((country) => {
+// 		const total = Number(t.raw(`locations.country.${country}.branchesTotal`)) || 0;
+
+// 		for (let i = 1; i <= total; i++) {
+// 		const name = t(`locations.country.${country}.branches${i}`);
+// 		if (!name || name.includes("locations.country")) continue;
+   
+// 		const key = `${country}-${i}`;
+// 		const branch: BranchData = {
+// 			country,
+// 			name,
+// 			phone: t(`locations.country.${country}.phone${i}`),
+// 			mail: t(`locations.country.${country}.mail${i}`),
+// 			address: t(`locations.country.${country}.address${i}`),
+// 			businessHours: t(`locations.country.${country}.businessHours${i}`),
+// 			content: t(`locations.country.${country}.content${i}`),
+// 			imageUrl: `/about/location/YAHO_${t(`locations.country.${country}.name`)}.jpg`, // 你可以自訂這邊邏輯
+// 			mapEmbed: embedMap[key], // 自動根據 country-index 對應嵌入地圖
+// 		};
+
+// 		result.push(branch);
+// 		}
+// 	});
+// 	return result;
+// }
+
+// export default function LocationSelector() {
+// 	const t = useTranslations("about");
+
+// 	const [selectedCountry, setSelectedCountry] = useState<string | null>("All");
+
+
+// 	const allBranches = useBranchData();
+
+// 	const defaultBranch = allBranches.find(
+// 	(b) => b.country === "Taiwan" && b.name.includes(t("locations.country.Taiwan.taichung"))
+// 	);
+
+//   	const [selectedBranch, setSelectedBranch] = useState<BranchData | null>(defaultBranch ?? null);
+
+// 	const filteredBranches = selectedCountry && selectedCountry !== "All"
+// 		? allBranches.filter((b) => b.country === selectedCountry)
+// 		: allBranches;
+
+// 	return (
+// 		<div className="p-6 space-y-8">
+// 			<div className="flex space-y-8">
+// 				{/* 國家選單 */}
+// 				<Select
+// 					onValueChange={(value) => {
+// 					setSelectedCountry(value);
+
+// 					if (value === "All") {
+// 						const fallback = allBranches.find(
+// 						(b) =>
+// 							b.country === "Taiwan" &&
+// 							b.name.includes(t("locations.country.Taiwan.taichung"))
+// 						);
+// 						setSelectedBranch(fallback ?? null);
+// 					} else {
+// 						const firstBranchOfCountry = allBranches.find(
+// 						(b) => b.country === value
+// 						);
+// 						setSelectedBranch(firstBranchOfCountry ?? null);
+// 					}
+// 					}}
+// 				>
+// 					<SelectTrigger className="w-[200px] mx-5">
+// 					<SelectValue placeholder="Select a country" />
+// 					</SelectTrigger>
+// 					<SelectContent>
+// 					<SelectItem value="All">All</SelectItem>
+// 					{countries.map((c) => (
+// 						<SelectItem key={c} value={c}>
+// 						{c}
+// 						</SelectItem>
+// 					))}
+// 					</SelectContent>
+// 				</Select>
+
+// 				{/* branch 選單（依照目前選到的國家過濾） */}
+// 				<Select value={selectedBranch?.name ?? ""}
+// 					onValueChange={(branchName) => {
+// 					const branch = allBranches.find((b) => b.name === branchName);
+// 					setSelectedBranch(branch ?? null);
+// 					}}
+// 				>
+// 					<SelectTrigger className="w-[300px] mx-5">
+// 						<SelectValue placeholder="Select a branch" />
+// 					</SelectTrigger>
+// 					<SelectContent>
+// 						{filteredBranches.map((branch) => (
+// 							<SelectItem key={branch.name} value={branch.name}>
+// 							{branch.name}
+// 							</SelectItem>
+// 						))}
+// 					</SelectContent>
+// 				</Select>
+				
+// 			</div>
+
+// 			{/* 詳細區塊 */}
+// 			{selectedBranch && (
+// 				<div className="grid md:grid-cols-2 rounded-lg items-stretch shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] m-2 lg:m-5">
+
+// 					{/* Google Map */}
+// 					<div className="w-full h-[200px] md:h-[400px] rounded-l-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+// 						{selectedBranch.mapEmbed ? (
+// 							<iframe
+// 							src={selectedBranch.mapEmbed}
+// 							width="100%"
+// 							height="100%"
+// 							style={{ border: 0 }}
+// 							allowFullScreen
+// 							loading="lazy"
+// 							></iframe>
+// 						) : (
+// 							<span className="text-gray-500">暫無地圖資訊</span>
+// 						)}
+// 					</div>
+// 					{/* 詳細資訊卡 */}
+// 					<div className="p-0 border-0 ">
+// 						<div className="flex px-6 md:px-10 lg:pl-20 py-8 lg:py-10 gap-2 text-[#375978]">
+// 							<Building2 className="lg:mt-1 " />
+// 							<div className="text-lg lg:text-2xl font-semibold ">{selectedBranch.name}</div>
+// 						</div>
+// 						{selectedBranch.content && <p className="mx-6 md:mx-10 lg:mx-20 text-base lg:text-lg font-bold text-gray-600"> {selectedBranch.content}</p>}
+// 						<div className="space-y-3 px-6 md:px-8 lg:px-20 my-6 lg:my-10">
+// 							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+// 								<Phone className="w-5 h-5 lg:mt-0.5" />
+// 								<p className="text-sm lg:text-base"><strong>{t("locations.Phone")} :</strong> {selectedBranch.phone}</p>
+// 							</div>
+// 							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+// 								<Mail className="w-5 h-5 lg:mt-0.5" />
+// 								<p className="text-sm lg:text-base"><strong>{t("locations.Email")} :</strong> {selectedBranch.mail}</p>
+// 							</div>
+// 							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+// 								<MapPinned className="w-5 h-5 lg:mt-0.5" />
+// 								<p className="text-sm lg:text-base"><strong>{t("locations.Address")} :</strong> {selectedBranch.address}</p>
+// 							</div>
+// 							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+// 								<Clock className="w-5 h-5 lg:mt-0.5" />
+// 								<p className="text-sm lg:text-base"><strong>{t("locations.BusinessHours")} :</strong> {selectedBranch.businessHours}</p>
+// 							</div>
+// 						</div>
+// 						{/* <p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p> */}
+// 					</div>
+// 				</div>
+// 			)}
+// 		</div>
+
+// 	);
+// }
+// src/components/LocationSelector.tsx
+"use client";
+
+import { useState, useMemo, useEffect } from "react";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel"
 import {
   Select,
   SelectContent,
@@ -13,211 +234,198 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2 } from "lucide-react";
 import { MapPinned, Phone, Mail, Clock } from 'lucide-react';
-type BranchData = {
-  country: string;
-  name: string;
-  phone: string;
-  mail: string;
-  address: string;
-  businessHours: string;
-  content: string;
-  imageUrl: string;
-  mapEmbed?: string;
-};
 
-// const countries = ["Taiwan", "Japan", "USA", "Germany", "Singapore"];
-const countries = ["Taiwan", "Japan", "USA", "Germany", "Singapore"];
-
-// const embedMap: Record<string, string> = {
-//   	"Taiwan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.1751899851147!2d120.68961027512995!3d24.20064317836592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469179eff25048b%3A0xca382336ec6075f!2zNDA25Y-w54Gj5Y-w5Lit5biC5YyX5bGv5Y2A55Kw5Lit6Lev5LiA5q61NDg16Jmf!5e0!3m2!1szh-TW!2sus!4v1754533882444!5m2!1szh-TW!2sus",
-//   	"Taiwan-2": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.5855686693476!2d120.99003997604417!3d24.741104350021875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346849868f83bb87%3A0x374a19df73dd9eac!2zMzA45paw56u557ij5a-25bGx6YSJ5bWp57-g6LevMTAz5be3NTjomZ8!5e0!3m2!1szh-TW!2stw!4v1756276333082!5m2!1szh-TW!2stw",
-//   	"Taiwan-3": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.379998244364!2d121.00839007604529!3d24.78243834837396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683622ac0e8837%3A0x206e639fecde14e!2zMzAw5paw56u55biC5p2x5Y2A56eR5a245ZyS6LevMTYy5be3M-W8hDLomZ8!5e0!3m2!1szh-TW!2stw!4v1756276457234!5m2!1szh-TW!2stw",
-//   	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.162144848472!2d120.25546997601018!3d23.127747812393693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7be4916c95d5%3A0x8a6064d625f7f8a0!2zNzQ15Y-w5Y2X5biC5a6J5a6a5Y2AMi0xNA!5e0!3m2!1szh-TW!2stw!4v1756276526789!5m2!1szh-TW!2stw",
-// 	"Taiwan-5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.589153458087!2d120.34677797600233!3d22.743507126683394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e11d0cd5027bb%3A0x819994a86922584e!2zODE16auY6ZuE5biC5aSn56S-5Y2A5Lit5q2j6LevMzI5LTPomZ8!5e0!3m2!1szh-TW!2stw!4v1756276632022!5m2!1szh-TW!2stw",
-
-//   	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7590289179345!2d-118.24368468478408!3d34.05223548060667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7bce472b0fb%3A0x5562a441bdd2bb1f!2zTG9zIEFuZ2VsZXMsIENBLCBVU0E!5e0!3m2!1sen!2sus!4v1690000000004",
-
-//   	"Japan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.844535936671!2d135.49720481548952!3d34.70248558043142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0e84e12f321%3A0x84fbd0e7e4f97a0d!2zT3NhY2EsIEphcGFu!5e0!3m2!1sja!2sjp!4v1690000000006",
-
-//   	"Germany-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.463088706809!2d13.411776577012185!3d52.543147834515125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a852003417ca55%3A0x282c62d383406b6d!2zUGFwcGVsYWxsZWUgNzgvNzksIDEwNDM3IEJlcmxpbiwg5b635ZyL!5e0!3m2!1szh-TW!2stw!4v1756272381235!5m2!1szh-TW!2stw",
-
-//   	"Singapore-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.72979086235!2d103.90321457581662!3d1.3384157616107366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17e45292fb61%3A0x53f09ab2bb91b45!2s8%20Kaki%20Bukit%20Ave%204%2C%20Singapore%20415875!5e0!3m2!1szh-TW!2stw!4v1756273319284!5m2!1szh-TW!2stw"
-// };
-const embedMap: Record<string, string> = {
-  	"Taiwan-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.1751899851147!2d120.68961027512995!3d24.20064317836592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469179eff25048b%3A0xca382336ec6075f!2zNDA25Y-w54Gj5Y-w5Lit5biC5YyX5bGv5Y2A55Kw5Lit6Lev5LiA5q61NDg16Jmf!5e0!3m2!1szh-TW!2sus!4v1754533882444!5m2!1szh-TW!2sus",
-  	"Taiwan-2": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.5855686693476!2d120.99003997604417!3d24.741104350021875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346849868f83bb87%3A0x374a19df73dd9eac!2zMzA45paw56u557ij5a-25bGx6YSJ5bWp57-g6LevMTAz5be3NTjomZ8!5e0!3m2!1szh-TW!2stw!4v1756276333082!5m2!1szh-TW!2stw",
-  	"Taiwan-3": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.379998244364!2d121.00839007604529!3d24.78243834837396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683622ac0e8837%3A0x206e639fecde14e!2zMzAw5paw56u55biC5p2x5Y2A56eR5a245ZyS6LevMTYy5be3M-W8hDLomZ8!5e0!3m2!1szh-TW!2stw!4v1756276457234!5m2!1szh-TW!2stw",
-  	"Taiwan-4": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.162144848472!2d120.25546997601018!3d23.127747812393693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7be4916c95d5%3A0x8a6064d625f7f8a0!2zNzQ15Y-w5Y2X5biC5a6J5a6a5Y2AMi0xNA!5e0!3m2!1szh-TW!2stw!4v1756276526789!5m2!1szh-TW!2stw",
-	"Taiwan-5": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.589153458087!2d120.34677797600233!3d22.743507126683394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e11d0cd5027bb%3A0x819994a86922584e!2zODE16auY6ZuE5biC5aSn56S-5Y2A5Lit5q2j6LevMzI5LTPomZ8!5e0!3m2!1szh-TW!2stw!4v1756276632022!5m2!1szh-TW!2stw",
-	"Taiwan-6": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2015482494635!2d121.36933877605063!3d25.02723333856273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681df5db1ef5bb%3A0xc7b8cf5f5e8040d6!2zMzMz5qGD5ZyS5biC6b6c5bGx5Y2A5oyv6IiI6LevMTA4NeiZnw!5e0!3m2!1szh-TW!2stw!4v1759204589304!5m2!1szh-TW!2stw",
-	"Taiwan-7": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.806216466875!2d120.24240437601709!3d23.467453499578742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9c0c868172af%3A0x2dda33803cd1b785!2zNjEz5ZiJ576p57ij5py05a2Q5biC6ZaL5YWD6LevMTM46Jmf!5e0!3m2!1szh-TW!2stw!4v1759204638439!5m2!1szh-TW!2stw",
-
-  	"USA-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.7577681133057!2d-112.17437058846818!3d33.63752223940325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b691e113e26cf%3A0x6dc093d35b00a833!2zNTI2MCBXIFBoZWxwcyBSZCwgR2xlbmRhbGUsIEFaIDg1MzA2576O5ZyL!5e0!3m2!1szh-TW!2stw!4v1758244988429!5m2!1szh-TW!2stw",
-  	"Japan-1": "",
-
-  	"Germany-1": "",
-
-  	"Singapore-1": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.728322921548!2d103.90377581100428!3d1.3393179616030164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1710c9e9eb27%3A0xd123a4b273817971!2sPremier%20%40%20Kaki%20Bukit!5e0!3m2!1szh-TW!2stw!4v1758528429646!5m2!1szh-TW!2stw"
-};
-
-export function useBranchData(): BranchData[] {
-	const t = useTranslations("about");
-    
-	const result: BranchData[] = [];
-	
-	countries.forEach((country) => {
-		const total = Number(t.raw(`locations.country.${country}.branchesTotal`)) || 0;
-
-		for (let i = 1; i <= total; i++) {
-		const name = t(`locations.country.${country}.branches${i}`);
-		if (!name || name.includes("locations.country")) continue;
-   
-		const key = `${country}-${i}`;
-		const branch: BranchData = {
-			country,
-			name,
-			phone: t(`locations.country.${country}.phone${i}`),
-			mail: t(`locations.country.${country}.mail${i}`),
-			address: t(`locations.country.${country}.address${i}`),
-			businessHours: t(`locations.country.${country}.businessHours${i}`),
-			content: t(`locations.country.${country}.content${i}`),
-			imageUrl: `/about/location/YAHO_${t(`locations.country.${country}.name`)}.jpg`, // 你可以自訂這邊邏輯
-			mapEmbed: embedMap[key], // 自動根據 country-index 對應嵌入地圖
-		};
-
-		result.push(branch);
-		}
-	});
-	return result;
+// 定義資料庫傳入的資料型別
+interface LocationData {
+    id: number;
+    country: string;
+    country_name: any; // jsonb {zh:..., en:...}
+    branch_name: any;  // jsonb
+    phone: string;
+    email: string;
+    address: any;      // jsonb
+    business_hours: any; // jsonb
+    description: any;  // jsonb (對應你的 content)
+    image_url: string;
+    google_map_link: string;
 }
 
-export default function LocationSelector() {
-	const t = useTranslations("about");
+interface Props {
+    locations: LocationData[];
+}
 
-	const [selectedCountry, setSelectedCountry] = useState<string | null>("All");
+export default function LocationSelector({ locations = [] }: Props) {
+    const t = useTranslations("about");
+    const locale = useLocale(); // 取得目前語言 'zh' 或 'en'
 
+    // 1. 動態計算有哪些國家 (不重複)
+    const countries = useMemo(() => {
+        const uniqueCountryCodes = Array.from(new Set(locations.map(l => l.country)));
+        // 為了保持順序，我們可以依照你原本的順序排列，或是直接用資料庫順序
+        // 這裡建立一個簡單的對照表來抓取顯示名稱
+        return uniqueCountryCodes.map(code => {
+            const loc = locations.find(l => l.country === code);
+            return {
+                value: code,
+                label: loc?.country_name?.[locale] || code
+            };
+        });
+    }, [locations, locale]);
 
-	const allBranches = useBranchData();
+    const [selectedCountry, setSelectedCountry] = useState<string>("All");
 
-	const defaultBranch = allBranches.find(
-	(b) => b.country === "Taiwan" && b.name.includes(t("locations.country.Taiwan.taichung"))
-	);
+    // 2. 設定預設分店 (優先找台灣台中，找不到就拿第一筆)
+    const defaultBranch = useMemo(() => {
+        if (locations.length === 0) return null;
+        return locations.find(b => b.country === "Taiwan" && JSON.stringify(b.branch_name).includes("台中")) || locations[0];
+    }, [locations]);
 
-  	const [selectedBranch, setSelectedBranch] = useState<BranchData | null>(defaultBranch ?? null);
+    const [selectedBranch, setSelectedBranch] = useState<LocationData | null>(defaultBranch);
 
-	const filteredBranches = selectedCountry && selectedCountry !== "All"
-		? allBranches.filter((b) => b.country === selectedCountry)
-		: allBranches;
+    // 確保當 locations 資料載入後 (如果是異步)，selectedBranch 有值
+    useEffect(() => {
+        if (!selectedBranch && locations.length > 0) {
+            setSelectedBranch(locations[0]);
+        }
+    }, [locations]);
 
-	return (
-		<div className="p-6 space-y-8">
-			<div className="flex space-y-8">
-				{/* 國家選單 */}
-				<Select
-					onValueChange={(value) => {
-					setSelectedCountry(value);
+    // 3. 過濾邏輯
+    const filteredBranches = useMemo(() => {
+        return selectedCountry && selectedCountry !== "All"
+            ? locations.filter((b) => b.country === selectedCountry)
+            : locations;
+    }, [selectedCountry, locations]);
 
-					if (value === "All") {
-						const fallback = allBranches.find(
-						(b) =>
-							b.country === "Taiwan" &&
-							b.name.includes(t("locations.country.Taiwan.taichung"))
-						);
-						setSelectedBranch(fallback ?? null);
-					} else {
-						const firstBranchOfCountry = allBranches.find(
-						(b) => b.country === value
-						);
-						setSelectedBranch(firstBranchOfCountry ?? null);
-					}
-					}}
-				>
-					<SelectTrigger className="w-[200px] mx-5">
-					<SelectValue placeholder="Select a country" />
-					</SelectTrigger>
-					<SelectContent>
-					<SelectItem value="All">All</SelectItem>
-					{countries.map((c) => (
-						<SelectItem key={c} value={c}>
-						{c}
-						</SelectItem>
-					))}
-					</SelectContent>
-				</Select>
+    return (
+        <div className="p-6 space-y-8">
+            <div className="flex space-y-8">
+                {/* 國家選單 */}
+                <Select
+                    value={selectedCountry}
+                    onValueChange={(value) => {
+                        setSelectedCountry(value);
 
-				{/* branch 選單（依照目前選到的國家過濾） */}
-				<Select value={selectedBranch?.name ?? ""}
-					onValueChange={(branchName) => {
-					const branch = allBranches.find((b) => b.name === branchName);
-					setSelectedBranch(branch ?? null);
-					}}
-				>
-					<SelectTrigger className="w-[300px] mx-5">
-						<SelectValue placeholder="Select a branch" />
-					</SelectTrigger>
-					<SelectContent>
-						{filteredBranches.map((branch) => (
-							<SelectItem key={branch.name} value={branch.name}>
-							{branch.name}
-							</SelectItem>
-						))}
-					</SelectContent>
-				</Select>
-				
-			</div>
+                        // 切換國家時的自動選擇邏輯
+                        if (value === "All") {
+                            // 回到 All 時，嘗試選回預設 (台中) 或第一筆
+                            const fallback = locations.find(
+                                (b) => b.country === "Taiwan" && JSON.stringify(b.branch_name).includes("台中")
+                            ) || locations[0];
+                            setSelectedBranch(fallback ?? null);
+                        } else {
+                            // 選特定國家時，選該國家的第一筆
+                            const firstBranchOfCountry = locations.find(
+                                (b) => b.country === value
+                            );
+                            setSelectedBranch(firstBranchOfCountry ?? null);
+                        }
+                    }}
+                >
+                    <SelectTrigger className="w-[200px] mx-5">
+                        <SelectValue placeholder="Select a country" />
+                    </SelectTrigger>
+                    <SelectContent>
+                        <SelectItem value="All">All</SelectItem>
+                        {countries.map((c) => (
+                            <SelectItem key={c.value} value={c.value}>
+                                {c.value} {/* 這裡維持顯示英文代號(Taiwan)，若要顯示中文可改 {c.label} */}
+                            </SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
 
-			{/* 詳細區塊 */}
-			{selectedBranch && (
-				<div className="grid md:grid-cols-2 rounded-lg items-stretch shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] m-2 lg:m-5">
+                {/* branch 選單 */}
+                <Select
+                    // 這裡使用 ID 轉字串作為 Value，避免名稱重複問題，但顯示時顯示名稱
+                    value={selectedBranch ? String(selectedBranch.id) : ""}
+                    onValueChange={(branchId) => {
+                        const branch = locations.find((b) => String(b.id) === branchId);
+                        setSelectedBranch(branch ?? null);
+                    }}
+                >
+                    <SelectTrigger className="w-[300px] mx-5">
+                        <SelectValue placeholder="Select a branch">
+                            {selectedBranch?.branch_name?.[locale]}
+                        </SelectValue>
+                    </SelectTrigger>
+                    <SelectContent>
+                        {filteredBranches.map((branch) => (
+                            <SelectItem key={branch.id} value={String(branch.id)}>
+                                {branch.branch_name?.[locale]}
+                            </SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
 
-					{/* Google Map */}
-					<div className="w-full h-[200px] md:h-[400px] rounded-l-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-						{selectedBranch.mapEmbed ? (
-							<iframe
-							src={selectedBranch.mapEmbed}
-							width="100%"
-							height="100%"
-							style={{ border: 0 }}
-							allowFullScreen
-							loading="lazy"
-							></iframe>
-						) : (
-							<span className="text-gray-500">暫無地圖資訊</span>
-						)}
-					</div>
-					{/* 詳細資訊卡 */}
-					<div className="p-0 border-0 ">
-						<div className="flex px-6 md:px-10 lg:pl-20 py-8 lg:py-10 gap-2 text-[#375978]">
-							<Building2 className="lg:mt-1 " />
-							<div className="text-lg lg:text-2xl font-semibold ">{selectedBranch.name}</div>
-						</div>
-						{selectedBranch.content && <p className="mx-6 md:mx-10 lg:mx-20 text-base lg:text-lg font-bold text-gray-600"> {selectedBranch.content}</p>}
-						<div className="space-y-3 px-6 md:px-8 lg:px-20 my-6 lg:my-10">
-							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
-								<Phone className="w-5 h-5 lg:mt-0.5" />
-								<p className="text-sm lg:text-base"><strong>{t("locations.Phone")} :</strong> {selectedBranch.phone}</p>
-							</div>
-							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
-								<Mail className="w-5 h-5 lg:mt-0.5" />
-								<p className="text-sm lg:text-base"><strong>{t("locations.Email")} :</strong> {selectedBranch.mail}</p>
-							</div>
-							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
-								<MapPinned className="w-5 h-5 lg:mt-0.5" />
-								<p className="text-sm lg:text-base"><strong>{t("locations.Address")} :</strong> {selectedBranch.address}</p>
-							</div>
-							<div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
-								<Clock className="w-5 h-5 lg:mt-0.5" />
-								<p className="text-sm lg:text-base"><strong>{t("locations.BusinessHours")} :</strong> {selectedBranch.businessHours}</p>
-							</div>
-						</div>
-						{/* <p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p> */}
-					</div>
-				</div>
-			)}
-		</div>
+            </div>
 
-	);
+            {/* 詳細區塊 - 樣式完全保留你原本的設定 */}
+            {selectedBranch && (
+                <div className="grid md:grid-cols-2 rounded-lg items-stretch shadow-[0_5px_20px_rgba(0,0,0,0.1),0_-5px_20px_rgba(0,0,0,0.1)] m-2 lg:m-5">
+
+                    {/* Google Map */}
+                    <div className="w-full h-[200px] md:h-[400px] rounded-l-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+                        {selectedBranch.google_map_link ? (
+                            <iframe
+                                src={selectedBranch.google_map_link}
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                            ></iframe>
+                        ) : (
+                            <span className="text-gray-500">暫無地圖資訊</span>
+                        )}
+                    </div>
+                    
+                    {/* 詳細資訊卡 */}
+                    <div className="p-0 border-0 ">
+                        <div className="flex px-6 md:px-10 lg:pl-20 py-8 lg:py-10 gap-2 text-[#375978]">
+                            <Building2 className="lg:mt-1 " />
+                            <div className="text-lg lg:text-2xl font-semibold ">
+                                {selectedBranch.branch_name?.[locale]}
+                            </div>
+                        </div>
+                        
+                        {selectedBranch.description?.[locale] && (
+                            <p className="mx-6 md:mx-10 lg:mx-20 text-base lg:text-lg font-bold text-gray-600">
+                                {selectedBranch.description[locale]}
+                            </p>
+                        )}
+
+                        <div className="space-y-3 px-6 md:px-8 lg:px-20 my-6 lg:my-10">
+                            <div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+                                <Phone className="w-5 h-5 lg:mt-0.5" />
+                                <p className="text-sm lg:text-base">
+                                    <strong>{t("locations.Phone")} :</strong> {selectedBranch.phone}
+                                </p>
+                            </div>
+                            <div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+                                <Mail className="w-5 h-5 lg:mt-0.5" />
+                                <p className="text-sm lg:text-base">
+                                    <strong>{t("locations.Email")} :</strong> {selectedBranch.email}
+                                </p>
+                            </div>
+                            <div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+                                <MapPinned className="w-5 h-5 lg:mt-0.5" />
+                                <p className="text-sm lg:text-base">
+                                    <strong>{t("locations.Address")} :</strong> {selectedBranch.address?.[locale]}
+                                </p>
+                            </div>
+                            <div className="flex gap-2 space-y-2 hover:scale-105 transition-transform duration-600">
+                                <Clock className="w-5 h-5 lg:mt-0.5" />
+                                <p className="text-sm lg:text-base">
+                                    <strong>{t("locations.BusinessHours")} :</strong> {selectedBranch.business_hours?.[locale]}
+                                </p>
+                            </div>
+                        </div>
+                        {/* <p className="md:text-right px-6 md:px-3 pb-4 md:pb-0 text-sm">{t("locations.ContactUs")}</p> */}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
 }

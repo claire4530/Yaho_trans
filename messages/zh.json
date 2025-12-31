@@ -51,7 +51,10 @@
   },
   "Language": {
     "zh": "繁體中文",
-    "en": "English"
+    "en": "English",
+    "search": "zh",
+    "go": "前往",
+    "search-placeholder": "搜尋本站..."
   },
   "HomePage": {
     "title1": "垚鋐 : ",
@@ -96,7 +99,7 @@
     "title1": "服務項目",
     "description1": "我們提供多樣化的產品與服務，專注於滿足客戶需求，並致力於創新與品質。無論是軟體開發、系統整合還是技術支援，我們都能提供專業的解決方案。",
     "title2": "工程實績",
-    "description2": "我們的工程實績展示了我們在各\n個領域的專業能力與成功案例，涵\n蓋了半導體、光電等產業的\n多項重要專案。"
+    "description2": "我們的工程實績展示了我們在各個領域的專業能力與成功案例，涵蓋了半導體、光電等產業的多項重要專案。"
   },
   "Exhibition": {
     "exhibition1": {
@@ -399,7 +402,7 @@
       "SMIFPOD": "YAHO SMIF POD 清洗機",
       "SMIFPOD description": "提供 YAHO SMIF POD 清洗機的安裝、調試與維護服務，確保設備的最佳運行狀態。",
       "Parts": "Parts 耗材銷售",
-      "Parts description": "從工程設計、設備裝機至零件需求，垚鋐提供完整支援",
+      "Parts description": "從工程設計、設備裝機至零件需求，垚鋐提供完整支援。",
       "Parts features": "針對現場設備零件需求，垚鋐具備逆向工程、分析、重建與複製之深厚經驗，現已開放客製化報價。",
       "Parts features description": "壓克力件 - EMO COVER、RACK COVER、GANTRY POWER COVER、DPN COVER、防夾塊、機台壓克力牌等\n不鏽鋼件 - 零件置物箱、ISSG三角架、不鏽鋼腳踏板、手推台車、不鏽鋼IPA存放筒、不鏽鋼圓形垃圾桶及螺絲等",
       "OneStop": "全方位裝機服務",

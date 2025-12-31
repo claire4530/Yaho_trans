@@ -25,6 +25,7 @@ const logoUrl = [
 
 export default function Navbar() {
 	const t = useTranslations("Navigation");
+	const s = useTranslations("Language");
 	const router = useRouter();
 
 	const navItems = [
@@ -247,7 +248,7 @@ export default function Navbar() {
 
 						</li>
 					))}
-					<SiteWideSearch locale="zh" />
+					<SiteWideSearch locale={s("search")} />
 					<LanguageSwitcher />
 				</ul>
 
@@ -274,7 +275,7 @@ export default function Navbar() {
 						<div key={index}>
 							<span className="block font-bold text-[#375978]">{label}</span>
 								{submenu && (
-								<ul className="pl-4 mt-2 space-y-2">
+								<ul className="pl-4 mt-2 space-y-2">58
 									{submenu.map((item, i) => {
 										if ("submenu" in item && Array.isArray(item.submenu)) {
 											return (
