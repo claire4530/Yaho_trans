@@ -2,7 +2,7 @@ import { createClient } from '@/src/utils/supabase/server';
 import ServiceDetailClient from '@/src/components/ui/ServiceDetailClient';
 import { notFound } from 'next/navigation';
 
-export default async function ServiceDetailPage({ params }: { params: { slug: string } }) {
+export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const supabase = await createClient();
   const { slug } = await params;
 
