@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import {
   Breadcrumb,
@@ -14,9 +13,27 @@ import SlideInFromLeft from "@/src/components/animations/SlideInFromLeft";
 import ZoomIn from "@/src/components/animations/ZoomIn";
 import Image from "next/image";
 import LinkWrapper from "@/src/components/LinkWrapper";
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+// 2. 加入這段：告訴 Next.js 要產生 zh 和 en 的靜態頁面
+export function generateStaticParams() {
+  return [
+    { locale: 'zh' },
+    { locale: 'en' }
+  ];
+}
 
-export default function OrganizationPage() {
-    const t = useTranslations("investors");
+// 3. 修正 params 的寫法 (Next.js 15 需要 await)
+export default async function InvestorsPage({ 
+  params 
+}: { 
+  params: Promise<{ locale: string }> 
+}) {
+    const { locale } = await params;
+
+    // 5. 設定當前語言環境 (這行最關鍵，沒加會報錯)
+    setRequestLocale(locale);
+    const t = await getTranslations('investors');
+    
     const financeList = [
         {
             title: t("month"),

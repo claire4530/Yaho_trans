@@ -12,28 +12,8 @@ model User {
   email     String   @unique
   name      String?
   password  String
-  role      Role     @default(USER)
+  role      String   @default("user")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
-enum Role {
-  ADMIN
-  EDITOR
-  USER
-}
-
-model Product {
-  id          Int      @id @default(autoincrement())
-  name        String
-  description String?
-  imageUrl    String?
-  createdAt   DateTime @default(now())
-}
-
-model News {
-  id        Int      @id @default(autoincrement())
-  title     String
-  content   String
-  createdAt DateTime @default(now())
-}
